@@ -1,2 +1,1 @@
-# OSQplus100
-No secret Intellectual Property here !!!
+# Do not add any confidential Intellectual Property here!
