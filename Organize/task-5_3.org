@@ -10,7 +10,7 @@ You're here: [[¤CONTINUE HERE][¤CONTINUE HERE]] <<¤CONTINUE HERE>>
 
 * Task Description
 
-   Task 5.3: Software stack
+   _Task 5.3: Software stack_
 
    (Partners involved: UTartu*, Wigner RCP, Qruise, TNO, FZJ; Duration: M1-M42)
 
@@ -22,27 +22,52 @@ You're here: [[¤CONTINUE HERE][¤CONTINUE HERE]] <<¤CONTINUE HERE>>
    Creation of an *optimizing compiler* will be led by UTartu and be comprised of two steps.  In *Phase 1*
    (deliverable D5.3) WP4[sic! should be 5] shall implement an optimizing compiler which would allow arbitrary
    quantum circuits to be executed on OpenSuperQPlus100 hardware.  Optimized mapping of circuit layout and
-   gate-set.  In *Phase 2*, the Phase 1 compiler shall be extended to include dynamic adaptation to newly
-   calibrated gates and gate error rates as well as support for integration of classical logic in the quantum
+   gate-set.  In *Phase 2*, the Phase 1 compiler shall be extended to include /dynamic adaptation to newly
+   calibrated gates and gate error rates/ as well as support for /integration of classical logic/ in the quantum
    circuit for error correction implementation.
 
    To allow efficient work by the various project partners, we must allow for shared usage of the QCs.  In other
-   words – we must provide for private cloud access.  This will comprise of a means of sending circuits to be
-   evaluated, a circuit queue, and a mechanism to return results (milestone MS17).  Further, to allow certain
+   words – we must provide for private *cloud access*.  This will comprise of a means of sending circuits to be
+   evaluated, a circuit *queue*, and a mechanism to return results (milestone MS17).  Further, to allow certain
    maintenance operations of the QCs and to prevent interactive algorithms from going back to the end of the queue
    in each iteration, priorities shall be built into the queuing mechanism.
 
-   It is imperative that QPUs keep operating at the lowest error rates.  For that purpose, recalibration shall be
+   It is imperative that QPUs keep operating at the lowest error rates.  For that purpose, *recalibration* shall be
    implemented, with the goal of minimizing QC downtime and maximizing fidelities throughout.  Finally, basic
-   monitoring capabilities will be provided (deliverable D5.7), to allow QC operators to view system health and
+   *monitoring* capabilities will be provided (deliverable D5.7), to allow QC operators to view system health and
    performance.
 
 
-* 
+* Task Outline: Milestones, Deliverables, etc
 
-* Task-Leader Report Nov 2023
+** Components
 
-** 1. Task 5.3: Software Stack
+    + Optimizing Compiler
+      - Phase 1
+      - Phase 2
+    + Quantum OS
+      - Cloud access
+        - Scheduler
+      - Recalibration
+      - Monitoring
+
+** Relies on
+
+    | Key  | Name                                   |      Start |       Dead |
+    |------+----------------------------------------+------------+------------|
+    | M3   | Low-level interface phase 1 definition | 2023-07-01 | 2023-08-31 |
+    | M17  | Low-level interface phase 2 definition | 2025-01-01 | 2025-02-28 |
+
+** Output
+
+    | Key  | Name                                      |      Start |       Dead |
+    |------+-------------------------------------------+------------+------------|
+    | D5.3 | Optimizing Compiler v1                    | 2025-01-01 | 2025-02-28 |
+    | D5.7 | Quantum OS — Monitoring and recalibration | 2026-07-01 | 2026-08-31 |
+
+
+* Task-Leader Reports
+** TLR Nov 2023: Task 5.3 /Software Stack/
 
 *** Other project partners participating in the task: UTartu*, Wigner RCP, Qruise, TNO, FZJ
 
