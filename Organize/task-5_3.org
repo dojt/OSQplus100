@@ -1,7 +1,7 @@
-#+TITLE:  Task Leader Report for Task 5.3
+#+TITLE:  Task 5.3 -- Org
 #+AUTHOR: Dirk Oliver Theis, University of Tartu, Estonia
 #+EMAIL:  dotheis@ut.ee
-#+DATE:   Wed Nov 22 17:37:13 EET 2023
+#+DATE:   Thu Nov 23 12:08:33 EET 2023
 
 #+STARTUP: show3levels
 #+SEQ_TODO: TODO DOING CONT In-Tst ARGH ↘️ | ToTST DONE
@@ -38,9 +38,9 @@ You're here: [[¤CONTINUE HERE][¤CONTINUE HERE]] <<¤CONTINUE HERE>>
    performance.
 
 
-* Next Blah
+* 
 
-* The TLR
+* Task-Leader Report Nov 2023
 
 ** 1. Task 5.3: Software Stack
 
