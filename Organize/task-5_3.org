@@ -42,21 +42,24 @@ You're here: [[¤CONTINUE HERE][¤CONTINUE HERE]] <<¤CONTINUE HERE>>
 
 ** Components
 
-    + Optimizing Compiler
-      - Phase 1
-      - Phase 2
-    + Quantum OS
-      - Cloud access
+    * Optimizing Compiler (UTartu)
+      + Phase 1
+      + Phase 2
+
+    * Quantum OS (Qruise)
+      + Cloud access
         - Scheduler
-      - Recalibration
-      - Monitoring
+      + Recalibration
+      + Monitoring
 
 ** Relies on
 
-    | Key  | Name                                   |      Start |       Dead |
-    |------+----------------------------------------+------------+------------|
-    | M3   | Low-level interface phase 1 definition | 2023-07-01 | 2023-08-31 |
-    | M17  | Low-level interface phase 2 definition | 2025-01-01 | 2025-02-28 |
+    | Key | Name                                                                      | Respo. | Start |  Dead |
+    |-----+---------------------------------------------------------------------------+--------+-------+-------|
+    | M7  | User reqs, system specs & breakdown based on plans, interface defs agreed | Orange | 24-01 | 24-02 |
+    | M9  | Interface [from WP4] to WP5 operational                                   | Orange | 24-04 | 24-05 |
+    | M3  | Low-level interface phase 1 definition                                    | Qruise | 23-07 | 23-08 |
+    | M17 | Low-level interface phase 2 definition                                    | Qruise | 25-01 | 25-02 |
 
 ** Output
 
