@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-11-24 Fri 15:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>OSQ+100 Task 5.3 "Software Stack" &#x2013; Project Management</title>
+<meta name="author" content="Dirk Oliver Theis, University of Tartu, Estonia" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">OSQ+100 Task 5.3 "Software Stack" &#x2013; Project Management</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgef6ea51">1. Task Description</a></li>
+<li><a href="#orge6eb62c">2. Task Outline: Milestones, Deliverables, etc</a>
+<ul>
+<li><a href="#org26cc4fb">2.1. Components</a></li>
+<li><a href="#org2379478">2.2. Relies on</a></li>
+<li><a href="#org0e55f62">2.3. Output</a></li>
+</ul>
+</li>
+<li><a href="#org3b5b3ae">3. Task-Leader Reports</a>
+<ul>
+<li><a href="#org6b9535e">3.1. TLR Nov 2023: Task 5.3 <i>Software Stack</i></a>
+<ul>
+<li><a href="#org9df444e">3.1.1. Deviations from Annex I., the consequences and the proposed corrective actions</a></li>
+<li><a href="#org2551a22">3.1.2. Activities / critical objectives or deliverables</a></li>
+<li><a href="#orga6424d8">3.1.3. Implementation risks and mitigation actions</a></li>
+<li><a href="#org0f6c024">3.1.4. Unforeseen Risks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org178910d">4. End Of File</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgef6ea51" class="outline-2">
+<h2 id="orgef6ea51"><span class="section-number-2">1.</span> Task Description</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<span class="underline">Task 5.3: Software stack</span>
+</p>
+
+<p>
+(Partners involved: UTartu*, Wigner RCP, Qruise, TNO, FZJ; Duration: M1-M42)
+</p>
+
+<p>
+Once the QC is fully calibrated, we require an optimizing compiler to best match users’ circuits to each
+hardware’s specific capabilities.  In addition, a Quantum OS is required, allowing lab members and trusted
+collaborators to submit circuits for execution (a.k.a. private cloud), and including everything needed for
+ongoing operations: a scheduler, recalibration and status monitoring.
+</p>
+
+<p>
+Creation of an <b>optimizing compiler</b> will be led by UTartu and be comprised of two steps.  In <b>Phase 1</b>
+(deliverable D5.3) WP5 shall implement an optimizing compiler which would allow arbitrary quantum circuits
+to be executed on OpenSuperQPlus100 hardware.  Optimized mapping of circuit layout and gate-set.  In <b>Phase 2</b>,
+the Phase 1 compiler shall be extended to include <i>dynamic adaptation to newly calibrated gates and gate error
+rates</i> as well as support for <i>integration of classical logic</i> in the quantum circuit for error correction
+implementation.
+</p>
+
+<p>
+To allow efficient work by the various project partners, we must allow for shared usage of the QCs.  In other
+words – we must provide for private <b>cloud access</b>.  This will comprise of a means of sending circuits to be
+evaluated, a circuit <b>queue</b>, and a mechanism to return results (milestone MS17).  Further, to allow certain
+maintenance operations of the QCs and to prevent interactive algorithms from going back to the end of the queue
+in each iteration, priorities shall be built into the queuing mechanism.
+</p>
+
+<p>
+It is imperative that QPUs keep operating at the lowest error rates.  For that purpose, <b>recalibration</b> shall be
+implemented, with the goal of minimizing QC downtime and maximizing fidelities throughout.  Finally, basic
+<b>monitoring</b> capabilities will be provided (deliverable D5.7), to allow QC operators to view system health and
+performance.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orge6eb62c" class="outline-2">
+<h2 id="orge6eb62c"><span class="section-number-2">2.</span> Task Outline: Milestones, Deliverables, etc</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org26cc4fb" class="outline-3">
+<h3 id="org26cc4fb"><span class="section-number-3">2.1.</span> Components</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>Optimizing Compiler (UTartu)
+<ul class="org-ul">
+<li>Phase 1</li>
+<li>Phase 2</li>
+</ul></li>
+
+<li>Quantum OS (Qruise)
+<ul class="org-ul">
+<li>Cloud access
+<ul class="org-ul">
+<li>Scheduler</li>
+</ul></li>
+<li>Recalibration</li>
+<li>Monitoring</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2379478" class="outline-3">
+<h3 id="org2379478"><span class="section-number-3">2.2.</span> Relies on</h3>
+<div class="outline-text-3" id="text-2-2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Name</th>
+<th scope="col" class="org-left">Respo.</th>
+<th scope="col" class="org-right">Start</th>
+<th scope="col" class="org-right">Dead</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">M7</td>
+<td class="org-left">User reqs, system specs &amp; breakdown based on plans, interface defs agreed</td>
+<td class="org-left">Orange</td>
+<td class="org-right">24-01</td>
+<td class="org-right">24-02</td>
+</tr>
+
+<tr>
+<td class="org-left">M9</td>
+<td class="org-left">Interface [from WP4] to WP5 operational</td>
+<td class="org-left">Orange</td>
+<td class="org-right">24-04</td>
+<td class="org-right">24-05</td>
+</tr>
+
+<tr>
+<td class="org-left">M3</td>
+<td class="org-left">Low-level interface phase 1 definition</td>
+<td class="org-left">Qruise</td>
+<td class="org-right">23-07</td>
+<td class="org-right">23-08</td>
+</tr>
+
+<tr>
+<td class="org-left">M17</td>
+<td class="org-left">Low-level interface phase 2 definition</td>
+<td class="org-left">Qruise</td>
+<td class="org-right">25-01</td>
+<td class="org-right">25-02</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org0e55f62" class="outline-3">
+<h3 id="org0e55f62"><span class="section-number-3">2.3.</span> Output</h3>
+<div class="outline-text-3" id="text-2-3">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Key</th>
+<th scope="col" class="org-left">Name</th>
+<th scope="col" class="org-right">Start</th>
+<th scope="col" class="org-right">Dead</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">D5.3</td>
+<td class="org-left">Optimizing Compiler v1</td>
+<td class="org-right">2025-01-01</td>
+<td class="org-right">2025-02-28</td>
+</tr>
+
+<tr>
+<td class="org-left">D5.7</td>
+<td class="org-left">Quantum OS — Monitoring and recalibration</td>
+<td class="org-right">2026-07-01</td>
+<td class="org-right">2026-08-31</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org3b5b3ae" class="outline-2">
+<h2 id="org3b5b3ae"><span class="section-number-2">3.</span> Task-Leader Reports</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org6b9535e" class="outline-3">
+<h3 id="org6b9535e"><span class="section-number-3">3.1.</span> TLR Nov 2023: Task 5.3 <i>Software Stack</i></h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>Task leader:
+<ul class="org-ul">
+<li>UTartu</li>
+</ul></li>
+<li>Other project partners participating in the task:
+<ul class="org-ul">
+<li>Wigner RCP</li>
+<li>Qruise</li>
+<li>TNO</li>
+<li>FZJ</li>
+</ul></li>
+</ul>
+</div>
+
+<div id="outline-container-org9df444e" class="outline-4">
+<h4 id="org9df444e"><span class="section-number-4">3.1.1.</span> Deviations from Annex I., the consequences and the proposed corrective actions</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<p>
+None.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2551a22" class="outline-4">
+<h4 id="org2551a22"><span class="section-number-4">3.1.2.</span> Activities / critical objectives or deliverables</h4>
+<div class="outline-text-4" id="text-3-1-2">
+<p>
+On the management level, the management of the components of Task 5.3 has been split.  Qruise will organize the
+work on the Quantum OS, which comprises: cloud access (incl. scheduler); recalibration; monitorying.  UTartu will
+organize the work on the optimizing compiler, phase 1 and phase 2.
+</p>
+
+<p>
+On the development level, Wigner RCP contributes improved gate factorization to the optimizing compiler; they have
+reached TRL 4 with that work.  UTartu will integrate the components of the compiler based on, as much as possible,
+freely available open-source components; they have started to work on that: One of the senior researchers has 5%
+workload on it as of Oct 1.  Development work on the compiler is waiting for the <i>Low-level interface phase 1
+definition</i> (M3).
+</p>
+
+<p>
+The next deliverable is D5.3 <i>Optimizing Compiler v1</i> in Jan-Feb, 2025.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orga6424d8" class="outline-4">
+<h4 id="orga6424d8"><span class="section-number-4">3.1.3.</span> Implementation risks and mitigation actions</h4>
+<div class="outline-text-4" id="text-3-1-3">
+<p>
+N/A
+</p>
+
+<p>
+(Risk № 5 "No hardware available for testing of software stack" does not apply as there's nothing to be tested
+yet.)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0f6c024" class="outline-4">
+<h4 id="org0f6c024"><span class="section-number-4">3.1.4.</span> Unforeseen Risks</h4>
+<div class="outline-text-4" id="text-3-1-4">
+<p>
+No unforeseen risks are foreseen.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org178910d" class="outline-2">
+<h2 id="org178910d"><span class="section-number-2">4.</span> End Of File</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: Fri Nov 24 15:17:23 EET 2023</p>
+<p class="author">Author: Dirk Oliver Theis, University of Tartu, Estonia</p>
+<p class="date">Created: 2023-11-24 Fri 15:17</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
