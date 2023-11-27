@@ -1,43 +1,46 @@
 #+TITLE:  OSQ+100 Task 5.3 "Software Stack" -- Project Management
 #+AUTHOR: Dirk Oliver Theis, University of Tartu, Estonia
 #+EMAIL:  dotheis@ut.ee
-#+DATE:   Fri Nov 24 15:17:23 EET 2023
+#+DATE:   Fri Nov 24 15:55:20 EET 2023
 
 #+STARTUP: show3levels
 #+SEQ_TODO: TODO DOING CONT In-Tst ARGH ↘️ | ToTST DONE
 
 * Task Description
 
-   _Task 5.3: Software stack_
+From the Grant Agreement
 
-   (Partners involved: UTartu*, Wigner RCP, Qruise, TNO, FZJ; Duration: M1-M42)
+   #+BEGIN_QUOTE
+      _Task 5.3: Software stack_
 
-   Once the QC is fully calibrated, we require an optimizing compiler to best match users’ circuits to each
-   hardware’s specific capabilities.  In addition, a Quantum OS is required, allowing lab members and trusted
-   collaborators to submit circuits for execution (a.k.a. private cloud), and including everything needed for
-   ongoing operations: a scheduler, recalibration and status monitoring.
+      (Partners involved: UTartu*, Wigner RCP, Qruise, TNO, FZJ; Duration: M1-M42)
 
-   Creation of an *optimizing compiler* will be led by UTartu and be comprised of two steps.  In *Phase 1*
-   (deliverable D5.3) WP5 shall implement an optimizing compiler which would allow arbitrary quantum circuits
-   to be executed on OpenSuperQPlus100 hardware.  Optimized mapping of circuit layout and gate-set.  In *Phase 2*,
-   the Phase 1 compiler shall be extended to include /dynamic adaptation to newly calibrated gates and gate error
-   rates/ as well as support for /integration of classical logic/ in the quantum circuit for error correction
-   implementation.
+      Once the QC is fully calibrated, we require an optimizing compiler to best match users’ circuits to each
+      hardware’s specific capabilities.  In addition, a Quantum OS is required, allowing lab members and trusted
+      collaborators to submit circuits for execution (a.k.a. private cloud), and including everything needed for
+      ongoing operations: a scheduler, recalibration and status monitoring.
 
-   To allow efficient work by the various project partners, we must allow for shared usage of the QCs.  In other
-   words – we must provide for private *cloud access*.  This will comprise of a means of sending circuits to be
-   evaluated, a circuit *queue*, and a mechanism to return results (milestone MS17).  Further, to allow certain
-   maintenance operations of the QCs and to prevent interactive algorithms from going back to the end of the queue
-   in each iteration, priorities shall be built into the queuing mechanism.
+      Creation of an *optimizing compiler* will be led by UTartu and be comprised of two steps.  In *Phase 1*
+      (deliverable D5.3) WP5 shall implement an optimizing compiler which would allow arbitrary quantum circuits to
+      be executed on OpenSuperQPlus100 hardware.  Optimized mapping of circuit layout and gate-set.  In *Phase 2*,
+      the Phase 1 compiler shall be extended to include /dynamic adaptation to newly calibrated gates and gate
+      error rates/ as well as support for /integration of classical logic/ in the quantum circuit for error
+      correction implementation.
 
-   It is imperative that QPUs keep operating at the lowest error rates.  For that purpose, *recalibration* shall be
-   implemented, with the goal of minimizing QC downtime and maximizing fidelities throughout.  Finally, basic
-   *monitoring* capabilities will be provided (deliverable D5.7), to allow QC operators to view system health and
-   performance.
+      To allow efficient work by the various project partners, we must allow for shared usage of the QCs.  In other
+      words – we must provide for private *cloud access*.  This will comprise of a means of sending circuits to be
+      evaluated, a circuit *queue*, and a mechanism to return results (milestone MS17).  Further, to allow certain
+      maintenance operations of the QCs and to prevent interactive algorithms from going back to the end of the
+      queue in each iteration, priorities shall be built into the queuing mechanism.
+
+      It is imperative that QPUs keep operating at the lowest error rates.  For that purpose, *recalibration* shall
+      be implemented, with the goal of minimizing QC downtime and maximizing fidelities throughout.  Finally, basic
+      *monitoring* capabilities will be provided (deliverable D5.7), to allow QC operators to view system health
+      and performance.
+   #+END_QUOTE
 
 
 * Task Outline: Milestones, Deliverables, etc
-
 ** Components
 
     * Optimizing Compiler (UTartu)
@@ -67,6 +70,18 @@
     | D5.7 | Quantum OS — Monitoring and recalibration | 2026-07-01 | 2026-08-31 |
 
 
+** Contributing partners
+
+      | Partner    | Total PMs |
+      |            |    in WP5 |
+      |------------+-----------|
+      | _UTartu_   |       2.0 |
+      | Qruise     |      40.5 |
+      | FZJ        |      26.0 |
+      | TNO        |      21.3 |
+      | Wigner RCP |      10.0 |
+
+
 * Task-Leader Reports
 ** TLR Nov 2023: Task 5.3 /Software Stack/
 
@@ -80,33 +95,32 @@
 
 *** Deviations from Annex I., the consequences and the proposed corrective actions
 
-None.
+     None.
 
 *** Activities / critical objectives or deliverables
 
-On the management level, the management of the components of Task 5.3 has been split.  Qruise will organize the
-work on the Quantum OS, which comprises: cloud access (incl. scheduler); recalibration; monitorying.  UTartu will
-organize the work on the optimizing compiler, phase 1 and phase 2.
+     On the management level, the management of the components of Task 5.3 has been split.  Qruise will organize
+     the work on the Quantum OS, which comprises: cloud access (incl. scheduler); recalibration; monitorying.
+     UTartu will organize the work on the optimizing compiler, phase 1 and phase 2.
 
-On the development level, Wigner RCP contributes improved gate factorization to the optimizing compiler; they have
-reached TRL 4 with that work.  UTartu will integrate the components of the compiler based on, as much as possible,
-freely available open-source components; they have started to work on that: One of the senior researchers has 5%
-workload on it as of Oct 1.  Development work on the compiler is waiting for the /Low-level interface phase 1
-definition/ (M3).
+     On the development level, Wigner RCP contributes improved gate factorization to the optimizing compiler; they
+     have reached TRL 4 with that work.  UTartu will integrate the components of the compiler based on, as much as
+     possible, freely available open-source components; they have started to work on that: One of the senior
+     researchers has 5% workload on it as of Oct 1.  Development work on the compiler is waiting for the /Low-level
+     interface phase 1 definition/ (M3).
 
-The next deliverable is D5.3 /Optimizing Compiler v1/ in Jan-Feb, 2025.
-
+     The next deliverable is D5.3 /Optimizing Compiler v1/ in Jan-Feb, 2025.
 
 *** Implementation risks and mitigation actions
 
-N/A
+     N/A
 
-(Risk № 5 "No hardware available for testing of software stack" does not apply as there's nothing to be tested
-yet.)
+     (Risk № 5 "No hardware available for testing of software stack" does not apply as there's nothing to be tested
+     yet.)
 
 *** Unforeseen Risks
 
-No unforeseen risks are foreseen.
+     No unforeseen risks are foreseen.
 
 * End Of File
 # Local Variables:

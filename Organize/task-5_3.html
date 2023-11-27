@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-11-24 Fri 15:17 -->
+<!-- 2023-11-24 Fri 15:55 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>OSQ+100 Task 5.3 "Software Stack" &#x2013; Project Management</title>
@@ -201,34 +201,40 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgef6ea51">1. Task Description</a></li>
-<li><a href="#orge6eb62c">2. Task Outline: Milestones, Deliverables, etc</a>
+<li><a href="#org6ec8cce">1. Task Description</a></li>
+<li><a href="#org889af53">2. Task Outline: Milestones, Deliverables, etc</a>
 <ul>
-<li><a href="#org26cc4fb">2.1. Components</a></li>
-<li><a href="#org2379478">2.2. Relies on</a></li>
-<li><a href="#org0e55f62">2.3. Output</a></li>
+<li><a href="#org8547b55">2.1. Components</a></li>
+<li><a href="#orgb3fb41f">2.2. Relies on</a></li>
+<li><a href="#orgce930fe">2.3. Output</a></li>
+<li><a href="#org97601df">2.4. Contributing partners</a></li>
 </ul>
 </li>
-<li><a href="#org3b5b3ae">3. Task-Leader Reports</a>
+<li><a href="#org1110a9e">3. Task-Leader Reports</a>
 <ul>
-<li><a href="#org6b9535e">3.1. TLR Nov 2023: Task 5.3 <i>Software Stack</i></a>
+<li><a href="#orgc742509">3.1. TLR Nov 2023: Task 5.3 <i>Software Stack</i></a>
 <ul>
-<li><a href="#org9df444e">3.1.1. Deviations from Annex I., the consequences and the proposed corrective actions</a></li>
-<li><a href="#org2551a22">3.1.2. Activities / critical objectives or deliverables</a></li>
-<li><a href="#orga6424d8">3.1.3. Implementation risks and mitigation actions</a></li>
-<li><a href="#org0f6c024">3.1.4. Unforeseen Risks</a></li>
+<li><a href="#org922d327">3.1.1. Deviations from Annex I., the consequences and the proposed corrective actions</a></li>
+<li><a href="#orgab71ff4">3.1.2. Activities / critical objectives or deliverables</a></li>
+<li><a href="#org613dbd5">3.1.3. Implementation risks and mitigation actions</a></li>
+<li><a href="#org10b691f">3.1.4. Unforeseen Risks</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org178910d">4. End Of File</a></li>
+<li><a href="#org1dae9e3">4. End Of File</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgef6ea51" class="outline-2">
-<h2 id="orgef6ea51"><span class="section-number-2">1.</span> Task Description</h2>
+<div id="outline-container-org6ec8cce" class="outline-2">
+<h2 id="org6ec8cce"><span class="section-number-2">1.</span> Task Description</h2>
 <div class="outline-text-2" id="text-1">
+<p>
+From the Grant Agreement
+</p>
+
+<blockquote>
 <p>
 <span class="underline">Task 5.3: Software stack</span>
 </p>
@@ -246,37 +252,38 @@ ongoing operations: a scheduler, recalibration and status monitoring.
 
 <p>
 Creation of an <b>optimizing compiler</b> will be led by UTartu and be comprised of two steps.  In <b>Phase 1</b>
-(deliverable D5.3) WP5 shall implement an optimizing compiler which would allow arbitrary quantum circuits
-to be executed on OpenSuperQPlus100 hardware.  Optimized mapping of circuit layout and gate-set.  In <b>Phase 2</b>,
-the Phase 1 compiler shall be extended to include <i>dynamic adaptation to newly calibrated gates and gate error
-rates</i> as well as support for <i>integration of classical logic</i> in the quantum circuit for error correction
-implementation.
+(deliverable D5.3) WP5 shall implement an optimizing compiler which would allow arbitrary quantum circuits to
+be executed on OpenSuperQPlus100 hardware.  Optimized mapping of circuit layout and gate-set.  In <b>Phase 2</b>,
+the Phase 1 compiler shall be extended to include <i>dynamic adaptation to newly calibrated gates and gate
+error rates</i> as well as support for <i>integration of classical logic</i> in the quantum circuit for error
+correction implementation.
 </p>
 
 <p>
 To allow efficient work by the various project partners, we must allow for shared usage of the QCs.  In other
 words – we must provide for private <b>cloud access</b>.  This will comprise of a means of sending circuits to be
 evaluated, a circuit <b>queue</b>, and a mechanism to return results (milestone MS17).  Further, to allow certain
-maintenance operations of the QCs and to prevent interactive algorithms from going back to the end of the queue
-in each iteration, priorities shall be built into the queuing mechanism.
+maintenance operations of the QCs and to prevent interactive algorithms from going back to the end of the
+queue in each iteration, priorities shall be built into the queuing mechanism.
 </p>
 
 <p>
-It is imperative that QPUs keep operating at the lowest error rates.  For that purpose, <b>recalibration</b> shall be
-implemented, with the goal of minimizing QC downtime and maximizing fidelities throughout.  Finally, basic
-<b>monitoring</b> capabilities will be provided (deliverable D5.7), to allow QC operators to view system health and
-performance.
+It is imperative that QPUs keep operating at the lowest error rates.  For that purpose, <b>recalibration</b> shall
+be implemented, with the goal of minimizing QC downtime and maximizing fidelities throughout.  Finally, basic
+<b>monitoring</b> capabilities will be provided (deliverable D5.7), to allow QC operators to view system health
+and performance.
 </p>
+</blockquote>
 </div>
 </div>
 
 
-<div id="outline-container-orge6eb62c" class="outline-2">
-<h2 id="orge6eb62c"><span class="section-number-2">2.</span> Task Outline: Milestones, Deliverables, etc</h2>
+<div id="outline-container-org889af53" class="outline-2">
+<h2 id="org889af53"><span class="section-number-2">2.</span> Task Outline: Milestones, Deliverables, etc</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org26cc4fb" class="outline-3">
-<h3 id="org26cc4fb"><span class="section-number-3">2.1.</span> Components</h3>
+<div id="outline-container-org8547b55" class="outline-3">
+<h3 id="org8547b55"><span class="section-number-3">2.1.</span> Components</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>Optimizing Compiler (UTartu)
@@ -298,8 +305,8 @@ performance.
 </div>
 </div>
 
-<div id="outline-container-org2379478" class="outline-3">
-<h3 id="org2379478"><span class="section-number-3">2.2.</span> Relies on</h3>
+<div id="outline-container-orgb3fb41f" class="outline-3">
+<h3 id="orgb3fb41f"><span class="section-number-3">2.2.</span> Relies on</h3>
 <div class="outline-text-3" id="text-2-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -361,8 +368,8 @@ performance.
 </div>
 </div>
 
-<div id="outline-container-org0e55f62" class="outline-3">
-<h3 id="org0e55f62"><span class="section-number-3">2.3.</span> Output</h3>
+<div id="outline-container-orgce930fe" class="outline-3">
+<h3 id="orgce930fe"><span class="section-number-3">2.3.</span> Output</h3>
 <div class="outline-text-3" id="text-2-3">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -402,15 +409,68 @@ performance.
 </table>
 </div>
 </div>
+
+
+<div id="outline-container-org97601df" class="outline-3">
+<h3 id="org97601df"><span class="section-number-3">2.4.</span> Contributing partners</h3>
+<div class="outline-text-3" id="text-2-4">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Partner</th>
+<th scope="col" class="org-right">Total PMs</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">in WP5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><span class="underline">UTartu</span></td>
+<td class="org-right">2.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Qruise</td>
+<td class="org-right">40.5</td>
+</tr>
+
+<tr>
+<td class="org-left">FZJ</td>
+<td class="org-right">26.0</td>
+</tr>
+
+<tr>
+<td class="org-left">TNO</td>
+<td class="org-right">21.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Wigner RCP</td>
+<td class="org-right">10.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </div>
 
 
-<div id="outline-container-org3b5b3ae" class="outline-2">
-<h2 id="org3b5b3ae"><span class="section-number-2">3.</span> Task-Leader Reports</h2>
+<div id="outline-container-org1110a9e" class="outline-2">
+<h2 id="org1110a9e"><span class="section-number-2">3.</span> Task-Leader Reports</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org6b9535e" class="outline-3">
-<h3 id="org6b9535e"><span class="section-number-3">3.1.</span> TLR Nov 2023: Task 5.3 <i>Software Stack</i></h3>
+<div id="outline-container-orgc742509" class="outline-3">
+<h3 id="orgc742509"><span class="section-number-3">3.1.</span> TLR Nov 2023: Task 5.3 <i>Software Stack</i></h3>
 <div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
 <li>Task leader:
@@ -427,8 +487,8 @@ performance.
 </ul>
 </div>
 
-<div id="outline-container-org9df444e" class="outline-4">
-<h4 id="org9df444e"><span class="section-number-4">3.1.1.</span> Deviations from Annex I., the consequences and the proposed corrective actions</h4>
+<div id="outline-container-org922d327" class="outline-4">
+<h4 id="org922d327"><span class="section-number-4">3.1.1.</span> Deviations from Annex I., the consequences and the proposed corrective actions</h4>
 <div class="outline-text-4" id="text-3-1-1">
 <p>
 None.
@@ -436,21 +496,21 @@ None.
 </div>
 </div>
 
-<div id="outline-container-org2551a22" class="outline-4">
-<h4 id="org2551a22"><span class="section-number-4">3.1.2.</span> Activities / critical objectives or deliverables</h4>
+<div id="outline-container-orgab71ff4" class="outline-4">
+<h4 id="orgab71ff4"><span class="section-number-4">3.1.2.</span> Activities / critical objectives or deliverables</h4>
 <div class="outline-text-4" id="text-3-1-2">
 <p>
-On the management level, the management of the components of Task 5.3 has been split.  Qruise will organize the
-work on the Quantum OS, which comprises: cloud access (incl. scheduler); recalibration; monitorying.  UTartu will
-organize the work on the optimizing compiler, phase 1 and phase 2.
+On the management level, the management of the components of Task 5.3 has been split.  Qruise will organize
+the work on the Quantum OS, which comprises: cloud access (incl. scheduler); recalibration; monitorying.
+UTartu will organize the work on the optimizing compiler, phase 1 and phase 2.
 </p>
 
 <p>
-On the development level, Wigner RCP contributes improved gate factorization to the optimizing compiler; they have
-reached TRL 4 with that work.  UTartu will integrate the components of the compiler based on, as much as possible,
-freely available open-source components; they have started to work on that: One of the senior researchers has 5%
-workload on it as of Oct 1.  Development work on the compiler is waiting for the <i>Low-level interface phase 1
-definition</i> (M3).
+On the development level, Wigner RCP contributes improved gate factorization to the optimizing compiler; they
+have reached TRL 4 with that work.  UTartu will integrate the components of the compiler based on, as much as
+possible, freely available open-source components; they have started to work on that: One of the senior
+researchers has 5% workload on it as of Oct 1.  Development work on the compiler is waiting for the <i>Low-level
+interface phase 1 definition</i> (M3).
 </p>
 
 <p>
@@ -460,8 +520,8 @@ The next deliverable is D5.3 <i>Optimizing Compiler v1</i> in Jan-Feb, 2025.
 </div>
 
 
-<div id="outline-container-orga6424d8" class="outline-4">
-<h4 id="orga6424d8"><span class="section-number-4">3.1.3.</span> Implementation risks and mitigation actions</h4>
+<div id="outline-container-org613dbd5" class="outline-4">
+<h4 id="org613dbd5"><span class="section-number-4">3.1.3.</span> Implementation risks and mitigation actions</h4>
 <div class="outline-text-4" id="text-3-1-3">
 <p>
 N/A
@@ -474,8 +534,8 @@ yet.)
 </div>
 </div>
 
-<div id="outline-container-org0f6c024" class="outline-4">
-<h4 id="org0f6c024"><span class="section-number-4">3.1.4.</span> Unforeseen Risks</h4>
+<div id="outline-container-org10b691f" class="outline-4">
+<h4 id="org10b691f"><span class="section-number-4">3.1.4.</span> Unforeseen Risks</h4>
 <div class="outline-text-4" id="text-3-1-4">
 <p>
 No unforeseen risks are foreseen.
@@ -485,16 +545,16 @@ No unforeseen risks are foreseen.
 </div>
 </div>
 
-<div id="outline-container-org178910d" class="outline-2">
-<h2 id="org178910d"><span class="section-number-2">4.</span> End Of File</h2>
+<div id="outline-container-org1dae9e3" class="outline-2">
+<h2 id="org1dae9e3"><span class="section-number-2">4.</span> End Of File</h2>
 <div class="outline-text-2" id="text-4">
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Date: Fri Nov 24 15:17:23 EET 2023</p>
+<p class="date">Date: Fri Nov 24 15:55:20 EET 2023</p>
 <p class="author">Author: Dirk Oliver Theis, University of Tartu, Estonia</p>
-<p class="date">Created: 2023-11-24 Fri 15:17</p>
+<p class="date">Created: 2023-11-24 Fri 15:55</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
