@@ -106,7 +106,7 @@ From the Grant Agreement
      On the development level, Wigner RCP contributes improved gate factorization to the optimizing compiler; they
      have reached TRL 4 with that work.  UTartu will integrate the components of the compiler based on, as much as
      possible, freely available open-source components; they have started to work on that: One of the senior
-     researchers has 5% workload on it as of Oct 1.  Development work on the compiler is waiting for the /Low-level
+     researchers works part-time on it as of Oct 1.  Development work on the compiler is waiting for the /Low-level
      interface phase 1 definition/ (M3).
 
      The next deliverable is D5.3 /Optimizing Compiler v1/ in Jan-Feb, 2025.

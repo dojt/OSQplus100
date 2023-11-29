@@ -89,8 +89,8 @@
      communication with the implementers of Task 8.3 "Standards and interfaces".
 
      The process of identifying candidate methods for verification has commenced, and UTartu hired
-     researcher/specialist to work with 50% workload for identifying and implementing verification methods.  One of
-     the senior researchers at UTartu has 10% workload on verification methodology as of Oct 1.
+     researcher/specialist to work part-time for identifying and implementing verification methods.  One of the
+     senior researchers at UTartu also works part-time on verification methodology as of Oct 1.
 
 *** Implementation risks and mitigation actions
 
