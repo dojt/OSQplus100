@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-11-29 Wed 11:30 -->
+<!-- 2023-11-29 Wed 18:22 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>OSQ+100 Task 5.3 "Software Stack" &#x2013; Project Management</title>
@@ -201,39 +201,27 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgc3e4a5b">1. Task Description</a></li>
-<li><a href="#org4c1c8fb">2. Task Outline: Milestones, Deliverables, etc</a>
+<li><a href="#org89ff568">1. Task Description in GA</a></li>
+<li><a href="#org9575261">2. Task Outline: Milestones, Deliverables, etc</a>
 <ul>
-<li><a href="#orgec51490">2.1. Components</a></li>
-<li><a href="#org07a236f">2.2. Relies on</a></li>
-<li><a href="#orgcfb87af">2.3. Output</a></li>
-<li><a href="#org40c4203">2.4. Contributing partners</a></li>
+<li><a href="#org4b90b19">2.1. Components</a></li>
+<li><a href="#org5d69c0e">2.2. Relies on</a>
+<ul>
+<li><a href="#org740deef">2.2.1. Partners (in other tasks) that this task relies on</a></li>
 </ul>
 </li>
-<li><a href="#org1f63bfc">3. Task-Leader Reports</a>
-<ul>
-<li><a href="#org53b3c1f">3.1. TLR Nov 2023: Task 5.3 <i>Software Stack</i></a>
-<ul>
-<li><a href="#org218c450">3.1.1. Deviations from Annex I., the consequences and the proposed corrective actions</a></li>
-<li><a href="#orgb006f65">3.1.2. Activities / critical objectives or deliverables</a></li>
-<li><a href="#orgb7462c5">3.1.3. Implementation risks and mitigation actions</a></li>
-<li><a href="#orgec45be5">3.1.4. Unforeseen Risks</a></li>
+<li><a href="#orga051773">2.3. Output</a></li>
+<li><a href="#orge34704d">2.4. Contributing partners</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#orgcdb3b46">4. End Of File</a></li>
+<li><a href="#orgb23efc3">3. End of File</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgc3e4a5b" class="outline-2">
-<h2 id="orgc3e4a5b"><span class="section-number-2">1.</span> Task Description</h2>
+<div id="outline-container-org89ff568" class="outline-2">
+<h2 id="org89ff568"><span class="section-number-2">1.</span> Task Description in GA</h2>
 <div class="outline-text-2" id="text-1">
-<p>
-From the Grant Agreement
-</p>
-
 <blockquote>
 <p>
 <span class="underline">Task 5.3: Software stack</span>
@@ -252,7 +240,7 @@ ongoing operations: a scheduler, recalibration and status monitoring.
 
 <p>
 Creation of an <b>optimizing compiler</b> will be led by UTartu and be comprised of two steps.  In <b>Phase 1</b>
-(deliverable D5.3) WP5 shall implement an optimizing compiler which would allow arbitrary quantum circuits to
+(deliverable D5.3) WP5<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup> shall implement an optimizing compiler which would allow arbitrary quantum circuits to
 be executed on OpenSuperQPlus100 hardware.  Optimized mapping of circuit layout and gate-set.  In <b>Phase 2</b>,
 the Phase 1 compiler shall be extended to include <i>dynamic adaptation to newly calibrated gates and gate
 error rates</i> as well as support for <i>integration of classical logic</i> in the quantum circuit for error
@@ -278,12 +266,12 @@ and performance.
 </div>
 
 
-<div id="outline-container-org4c1c8fb" class="outline-2">
-<h2 id="org4c1c8fb"><span class="section-number-2">2.</span> Task Outline: Milestones, Deliverables, etc</h2>
+<div id="outline-container-org9575261" class="outline-2">
+<h2 id="org9575261"><span class="section-number-2">2.</span> Task Outline: Milestones, Deliverables, etc</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgec51490" class="outline-3">
-<h3 id="orgec51490"><span class="section-number-3">2.1.</span> Components</h3>
+<div id="outline-container-org4b90b19" class="outline-3">
+<h3 id="org4b90b19"><span class="section-number-3">2.1.</span> Components</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>Optimizing Compiler (UTartu)
@@ -305,8 +293,8 @@ and performance.
 </div>
 </div>
 
-<div id="outline-container-org07a236f" class="outline-3">
-<h3 id="org07a236f"><span class="section-number-3">2.2.</span> Relies on</h3>
+<div id="outline-container-org5d69c0e" class="outline-3">
+<h3 id="org5d69c0e"><span class="section-number-3">2.2.</span> Relies on</h3>
 <div class="outline-text-3" id="text-2-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -366,10 +354,72 @@ and performance.
 </tbody>
 </table>
 </div>
+
+<div id="outline-container-org740deef" class="outline-4">
+<h4 id="org740deef"><span class="section-number-4">2.2.1.</span> Partners (in other tasks) that this task relies on</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Partner</th>
+<th scope="col" class="org-left">Main</th>
+<th scope="col" class="org-left">Others</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">Contacts</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">ZI</td>
+<td class="org-left">lukas.sigl@zhinst.com</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">claudius.riek@zhinst.com</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">moritz.kirste@zhinst.com</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Orange</td>
+<td class="org-left">Anna Shchygol (Task 6.3)</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">anna@orangeqs.com</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </div>
 
-<div id="outline-container-orgcfb87af" class="outline-3">
-<h3 id="orgcfb87af"><span class="section-number-3">2.3.</span> Output</h3>
+<div id="outline-container-orga051773" class="outline-3">
+<h3 id="orga051773"><span class="section-number-3">2.3.</span> Output</h3>
 <div class="outline-text-3" id="text-2-3">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -410,9 +460,8 @@ and performance.
 </div>
 </div>
 
-
-<div id="outline-container-org40c4203" class="outline-3">
-<h3 id="org40c4203"><span class="section-number-3">2.4.</span> Contributing partners</h3>
+<div id="outline-container-orge34704d" class="outline-3">
+<h3 id="orge34704d"><span class="section-number-3">2.4.</span> Contributing partners</h3>
 <div class="outline-text-3" id="text-2-4">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -421,42 +470,78 @@ and performance.
 <col  class="org-left" />
 
 <col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
 </colgroup>
 <thead>
 <tr>
 <th scope="col" class="org-left">Partner</th>
 <th scope="col" class="org-right">Total PMs</th>
+<th scope="col" class="org-left">Main</th>
+<th scope="col" class="org-left">Other</th>
 </tr>
 
 <tr>
 <th scope="col" class="org-left">&#xa0;</th>
 <th scope="col" class="org-right">in WP5</th>
+<th scope="col" class="org-left">Contacts</th>
+<th scope="col" class="org-left">Implementers</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="org-left"><span class="underline">UTartu</span></td>
 <td class="org-right">2.0</td>
+<td class="org-left">dotheis.UTartu@gmail.com</td>
+<td class="org-left">todo</td>
 </tr>
-
+</tbody>
+<tbody>
 <tr>
 <td class="org-left">Qruise</td>
 <td class="org-right">40.5</td>
+<td class="org-left">Shai Machnes</td>
+<td class="org-left">&#xa0;</td>
 </tr>
-
+</tbody>
+<tbody>
 <tr>
 <td class="org-left">FZJ</td>
 <td class="org-right">26.0</td>
+<td class="org-left">Felix: f.motzoi@fz-juelich.de</td>
+<td class="org-left">&#xa0;</td>
 </tr>
-
+</tbody>
+<tbody>
 <tr>
 <td class="org-left">TNO</td>
 <td class="org-right">21.3</td>
+<td class="org-left">richard.versluis@tno.nl</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">christiaan.hollemans@tno.nl</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
 <td class="org-left">Wigner RCP</td>
 <td class="org-right">10.0</td>
+<td class="org-left">zimboras.zoltan@wigner.hu</td>
+<td class="org-left">rakyta.peter@wigner.mta.hu</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">szendrak.erika@wigner.mta.hu</td>
 </tr>
 </tbody>
 </table>
@@ -465,95 +550,26 @@ and performance.
 </div>
 
 
-<div id="outline-container-org1f63bfc" class="outline-2">
-<h2 id="org1f63bfc"><span class="section-number-2">3.</span> Task-Leader Reports</h2>
+<div id="outline-container-orgb23efc3" class="outline-2">
+<h2 id="orgb23efc3"><span class="section-number-2">3.</span> End of File</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org53b3c1f" class="outline-3">
-<h3 id="org53b3c1f"><span class="section-number-3">3.1.</span> TLR Nov 2023: Task 5.3 <i>Software Stack</i></h3>
-<div class="outline-text-3" id="text-3-1">
-<ul class="org-ul">
-<li>Task leader:
-<ul class="org-ul">
-<li>UTartu</li>
-</ul></li>
-<li>Other project partners participating in the task:
-<ul class="org-ul">
-<li>Wigner RCP</li>
-<li>Qruise</li>
-<li>TNO</li>
-<li>FZJ</li>
-</ul></li>
-</ul>
 </div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
 
-<div id="outline-container-org218c450" class="outline-4">
-<h4 id="org218c450"><span class="section-number-4">3.1.1.</span> Deviations from Annex I., the consequences and the proposed corrective actions</h4>
-<div class="outline-text-4" id="text-3-1-1">
-<p>
-None.
-</p>
-</div>
-</div>
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+I fixed a typo here: The GA says "WP4".
+</p></div></div>
 
-<div id="outline-container-orgb006f65" class="outline-4">
-<h4 id="orgb006f65"><span class="section-number-4">3.1.2.</span> Activities / critical objectives or deliverables</h4>
-<div class="outline-text-4" id="text-3-1-2">
-<p>
-On the management level, the management of the components of Task 5.3 has been split.  Qruise will organize
-the work on the Quantum OS, which comprises: cloud access (incl. scheduler); recalibration; monitorying.
-UTartu will organize the work on the optimizing compiler, phase 1 and phase 2.
-</p>
 
-<p>
-On the development level, Wigner RCP contributes improved gate factorization to the optimizing compiler; they
-have reached TRL 4 with that work.  UTartu will integrate the components of the compiler based on, as much as
-possible, freely available open-source components; they have started to work on that: One of the senior
-researchers works part-time on it as of Oct 1.  Development work on the compiler is waiting for the <i>Low-level
-interface phase 1 definition</i> (M3).
-</p>
-
-<p>
-The next deliverable is D5.3 <i>Optimizing Compiler v1</i> in Jan-Feb, 2025.
-</p>
 </div>
-</div>
-
-<div id="outline-container-orgb7462c5" class="outline-4">
-<h4 id="orgb7462c5"><span class="section-number-4">3.1.3.</span> Implementation risks and mitigation actions</h4>
-<div class="outline-text-4" id="text-3-1-3">
-<p>
-N/A
-</p>
-
-<p>
-(Risk № 5 "No hardware available for testing of software stack" does not apply as there's nothing to be tested
-yet.)
-</p>
-</div>
-</div>
-
-<div id="outline-container-orgec45be5" class="outline-4">
-<h4 id="orgec45be5"><span class="section-number-4">3.1.4.</span> Unforeseen Risks</h4>
-<div class="outline-text-4" id="text-3-1-4">
-<p>
-No unforeseen risks are foreseen.
-</p>
-</div>
-</div>
-</div>
-</div>
-
-<div id="outline-container-orgcdb3b46" class="outline-2">
-<h2 id="orgcdb3b46"><span class="section-number-2">4.</span> End Of File</h2>
-<div class="outline-text-2" id="text-4">
-</div>
-</div>
-</div>
+</div></div>
 <div id="postamble" class="status">
 <p class="date">Date: Fri Nov 24 15:55:20 EET 2023</p>
 <p class="author">Author: Dirk Oliver Theis, University of Tartu, Estonia</p>
-<p class="date">Created: 2023-11-29 Wed 11:30</p>
+<p class="date">Created: 2023-11-29 Wed 18:22</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

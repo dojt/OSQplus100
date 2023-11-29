@@ -6,9 +6,7 @@
 #+STARTUP: show3levels
 #+SEQ_TODO: TODO DOING CONT In-Tst ARGH ↘️ | ToTST DONE
 
-* Task Description
-
-From the Grant Agreement
+* Task Description in GA
 
    #+BEGIN_QUOTE
       _Task 5.3: Software stack_
@@ -21,7 +19,7 @@ From the Grant Agreement
       ongoing operations: a scheduler, recalibration and status monitoring.
 
       Creation of an *optimizing compiler* will be led by UTartu and be comprised of two steps.  In *Phase 1*
-      (deliverable D5.3) WP5 shall implement an optimizing compiler which would allow arbitrary quantum circuits to
+      (deliverable D5.3) WP5[fn:1] shall implement an optimizing compiler which would allow arbitrary quantum circuits to
       be executed on OpenSuperQPlus100 hardware.  Optimized mapping of circuit layout and gate-set.  In *Phase 2*,
       the Phase 1 compiler shall be extended to include /dynamic adaptation to newly calibrated gates and gate
       error rates/ as well as support for /integration of classical logic/ in the quantum circuit for error
@@ -38,6 +36,8 @@ From the Grant Agreement
       *monitoring* capabilities will be provided (deliverable D5.7), to allow QC operators to view system health
       and performance.
    #+END_QUOTE
+
+[fn:1] I fixed a typo here: The GA says "WP4".
 
 
 * Task Outline: Milestones, Deliverables, etc
@@ -62,6 +62,19 @@ From the Grant Agreement
     | M3  | Low-level interface phase 1 definition                                    | Qruise | 23-07 | 23-08 |
     | M17 | Low-level interface phase 2 definition                                    | Qruise | 25-01 | 25-02 |
 
+*** Partners (in other tasks) that this task relies on
+
+     | Partner | Main                     | Others |
+     |         | Contacts                 |        |
+     |---------+--------------------------+--------|
+     | ZI      | lukas.sigl@zhinst.com    |        |
+     |         | claudius.riek@zhinst.com |        |
+     |         | moritz.kirste@zhinst.com |        |
+     |---------+--------------------------+--------|
+     | Orange  | Anna Shchygol (Task 6.3) |        |
+     |         | anna@orangeqs.com        |        |
+     |---------+--------------------------+--------|
+
 ** Output
 
     | Key  | Name                                      |      Start |       Dead |
@@ -69,60 +82,26 @@ From the Grant Agreement
     | D5.3 | Optimizing Compiler v1                    | 2025-01-01 | 2025-02-28 |
     | D5.7 | Quantum OS — Monitoring and recalibration | 2026-07-01 | 2026-08-31 |
 
-
 ** Contributing partners
 
-      | Partner    | Total PMs |
-      |            |    in WP5 |
-      |------------+-----------|
-      | _UTartu_   |       2.0 |
-      | Qruise     |      40.5 |
-      | FZJ        |      26.0 |
-      | TNO        |      21.3 |
-      | Wigner RCP |      10.0 |
+    | Partner    | Total PMs | Main                          | Other                        |
+    |            |    in WP5 | Contacts                      | Implementers                 |
+    |------------+-----------+-------------------------------+------------------------------|
+    | _UTartu_   |       2.0 | dotheis.UTartu@gmail.com      | todo                         |
+    |------------+-----------+-------------------------------+------------------------------|
+    | Qruise     |      40.5 | Shai Machnes                  |                              |
+    |------------+-----------+-------------------------------+------------------------------|
+    | FZJ        |      26.0 | Felix: f.motzoi@fz-juelich.de |                              |
+    |------------+-----------+-------------------------------+------------------------------|
+    | TNO        |      21.3 | richard.versluis@tno.nl       |                              |
+    |            |           | christiaan.hollemans@tno.nl   |                              |
+    |------------+-----------+-------------------------------+------------------------------|
+    | Wigner RCP |      10.0 | zimboras.zoltan@wigner.hu     | rakyta.peter@wigner.mta.hu   |
+    |            |           |                               | szendrak.erika@wigner.mta.hu |
+    |------------+-----------+-------------------------------+------------------------------|
 
 
-* Task-Leader Reports
-** TLR Nov 2023: Task 5.3 /Software Stack/
-
-    * Task leader:
-      + UTartu
-    * Other project partners participating in the task:
-      + Wigner RCP
-      + Qruise
-      + TNO
-      + FZJ
-
-*** Deviations from Annex I., the consequences and the proposed corrective actions
-
-     None.
-
-*** Activities / critical objectives or deliverables
-
-     On the management level, the management of the components of Task 5.3 has been split.  Qruise will organize
-     the work on the Quantum OS, which comprises: cloud access (incl. scheduler); recalibration; monitorying.
-     UTartu will organize the work on the optimizing compiler, phase 1 and phase 2.
-
-     On the development level, Wigner RCP contributes improved gate factorization to the optimizing compiler; they
-     have reached TRL 4 with that work.  UTartu will integrate the components of the compiler based on, as much as
-     possible, freely available open-source components; they have started to work on that: One of the senior
-     researchers works part-time on it as of Oct 1.  Development work on the compiler is waiting for the /Low-level
-     interface phase 1 definition/ (M3).
-
-     The next deliverable is D5.3 /Optimizing Compiler v1/ in Jan-Feb, 2025.
-
-*** Implementation risks and mitigation actions
-
-     N/A
-
-     (Risk № 5 "No hardware available for testing of software stack" does not apply as there's nothing to be tested
-     yet.)
-
-*** Unforeseen Risks
-
-     No unforeseen risks are foreseen.
-
-* End Of File
+* End of File
 # Local Variables:
 # fill-column: 115
 # End:
