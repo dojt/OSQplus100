@@ -3,7 +3,7 @@
 #+EMAIL:  dotheis@ut.ee
 #+DATE:   Fri Nov 24 15:55:20 EET 2023
 
-#+STARTUP: show3levels
+#+STARTUP: show2levels
 #+SEQ_TODO: TODO DOING CONT In-Tst ARGH ↘️ | ToTST DONE
 
 * Task Description in GA
