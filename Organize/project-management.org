@@ -1,12 +1,14 @@
-#+TITLE:  OSQ+100 Task 5.3 "Software Stack" -- Project Management
+#+TITLE:  OSQ+100 @ UTartu — Project Management
 #+AUTHOR: Dirk Oliver Theis, University of Tartu, Estonia
-#+EMAIL:  dotheis@ut.ee
-#+DATE:   Fri Nov 24 15:55:20 EET 2023
+#+EMAIL:  dotheis.UTartu@gmail.com
+#+DATE:   Mon Nov 27 16:42:19 EET 2023
 
-#+STARTUP: show2levels
+#+STARTUP: show3levels
 #+SEQ_TODO: TODO DOING CONT In-Tst ARGH ↘️ | ToTST DONE
 
-* Task Description in GA
+* WP 5
+** Task 5.3 /Software Stack/ -- Project Management
+** Task Description in GA
 
    #+BEGIN_QUOTE
       _Task 5.3: Software stack_
@@ -39,9 +41,8 @@
 
 [fn:1] I fixed a typo here: The GA says "WP4".
 
-
-* Task Outline: Milestones, Deliverables, etc
-** Components
+** Task Outline: Milestones, Deliverables, etc
+*** Components
 
     * Optimizing Compiler (UTartu)
       + Phase 1
@@ -53,7 +54,7 @@
       + Recalibration
       + Monitoring
 
-** Relies on
+*** Relies on
 
     | Key | Name                                                                      | Respo. | Start |  Dead |
     |-----+---------------------------------------------------------------------------+--------+-------+-------|
@@ -62,7 +63,7 @@
     | M3  | Low-level interface phase 1 definition                                    | Qruise | 23-07 | 23-08 |
     | M17 | Low-level interface phase 2 definition                                    | Qruise | 25-01 | 25-02 |
 
-*** Partners (in other tasks) that this task relies on
+**** Partners (in other tasks) that this task relies on
 
      | Partner | Main                     | Others |
      |         | Contacts                 |        |
@@ -75,14 +76,14 @@
      |         | anna@orangeqs.com        |        |
      |---------+--------------------------+--------|
 
-** Output
+*** Output
 
     | Key  | Name                                      |      Start |       Dead |
     |------+-------------------------------------------+------------+------------|
     | D5.3 | Optimizing Compiler v1                    | 2025-01-01 | 2025-02-28 |
     | D5.7 | Quantum OS — Monitoring and recalibration | 2026-07-01 | 2026-08-31 |
 
-** Contributing partners
+*** Contributing partners
 
     | Partner    | Total PMs | Main                          | Other                        |
     |            |    in WP5 | Contacts                      | Implementers                 |
@@ -101,7 +102,117 @@
     |------------+-----------+-------------------------------+------------------------------|
 
 
-* End of File
+* WP 7
+** Task 7.3 /Verification & Validation/
+*** Task Description
+
+   From the Grant Agreement
+
+   #+BEGIN_QUOTE
+      _Task 7.3: Verification and Validation_
+
+      (Partners involved: UTartu*, UPV/EHU, CHALMERS, FZJ, Qruise, Duration: month 1-42)
+
+      The levels of the enabling software stack communicate via interfaces.  This task is concerned with (a)
+      *validating* that the top-level interfaces meet the requirements for application quantum software, including
+      quantum gates/circuits with fault tolerance, and (b) *verifying* that the implementations match the
+      specifications.  CHALMERS and UPV/EHU will do (a) as /part of their development of application software/ as
+      part of the test suite in Tasks 7.1 and 7.2., scheduling it to match the timelines for those tasks.  The
+      results of Task 7.3 will be applied at *test nodes* in Task 1.2.  FZJ, Qruise, and UTartu will /develop
+      methodology/ for verifying the correctness of the implementations (D7.3 in M42; candidate methods will be
+      identified by M6, implementation and validation of the software will begin before M24).  For levels of the
+      software stack that link classical input to classical output (e.g., optimization phases in the quantum
+      compiler), /quantum simulation/ will be deployed (see Task 7.5).  For the levels of the software stack that
+      directly communicate with the control hardware, process tomography and randomized benchmarking, *et cetera*,
+      will be used.  CHALMERS will assist with state and process tomography.
+   #+END_QUOTE
+
+
+*** Task Outline: Milestones, Deliverables, etc
+**** Components
+
+    * Validation (UPV/EHU, CHALMERS)
+    * Verification (FZJ, Qruise, UTartu)
+
+**** Relies on
+
+    | Key | Name                                                                      | Respo. | Start |  Dead |
+    |-----+---------------------------------------------------------------------------+--------+-------+-------|
+    | M7  | User reqs, system specs & breakdown based on plans, interface defs agreed | Orange | 24-01 | 24-02 |
+
+**** Output
+
+    | Key  | Name                                                           |      Start |       Dead |
+    |------+----------------------------------------------------------------+------------+------------|
+    | O7.3 | Develop protocols, software for verif.+valid. of full QC stack |        n/a |        n/a |
+    | M24  | Consensus of interface specifications for verification         | 2026-01-01 | 2026-02-28 |
+    | D7.3 | Methodology for verifying the quantum stack                    | 2026-07-01 | 2026-08-31 |
+
+**** Contributing partners
+
+      | Partner    | Total PMs |
+      |            | in WP7    |
+      |------------+-----------|
+      | _UTartu_   | 36        |
+      | FZJ        | 70        |
+      | CHALMERS   | 54        |
+      | UPV/EHU    | 38        |
+      | Qruise     | 0         |
+
+
+
+*** Task-Leader Reports
+**** TLR Nov 2023: Task 7.3 /Verification and Validation/
+
+    * Task leader:
+      + UTartu
+    * Other project partners participating in the task:
+      + FZJ
+      + Qruise
+      + UPV/EHU
+      + CHALMERS
+
+***** Deviations from Annex I., the consequences and the proposed corrective actions
+
+     None.
+
+***** Activities / critical objectives or deliverables
+
+     As indicated in the task description in the GA and then discussed in the consortium meeting in July in Bilbao,
+     the work for the valification will be carried out by UPV/EHU and CHALMERS, as, in the context of developing
+     applications to run on the stack, they are in the best position to validate the interfaces.
+
+     The next milestone concerning Verification is M24 /M24 Consensus of OpenSuperQPlus100 interface specifications
+     for verification/ in Jan-Feb, 2026.  In moving towards that milestone, Task 7.3 implementers are in
+     communication with the implementers of Task 8.3 "Standards and interfaces".
+
+     The process of identifying candidate methods for verification has commenced, and UTartu hired
+     researcher/specialist to work part-time for identifying and implementing verification methods.  One of the
+     senior researchers at UTartu also works part-time on verification methodology as of Oct 1.
+
+***** Implementation risks and mitigation actions
+
+     N/A
+
+***** Unforeseen Risks
+
+     No unforeseen risks are foreseen.
+
+** Sub-Task 7.4.1 /Generic simulator with simple noise models/
+*** Task description
+
+      From Grant Agreement: (highlight & paragraph break mine):
+
+      #+BEGIN_QUOTE
+      *UTartu* will *make the cuQuantum* or QuEST quantum-circuit simulator *available* to OpenSuperQPlus100
+      partners and *add noise models from OpenSuperQPlus100 hardware*.
+
+      CHALMERS will survey alternative quantum-circuit simulators. Wigner RCP will create infrastructure for
+      testing of sampling algorithms and quantum-kernel-based algorithms, using FPGA-based dataflow engines.
+      #+END_QUOTE
+
+
+* End Of File
 # Local Variables:
 # fill-column: 115
 # End:
