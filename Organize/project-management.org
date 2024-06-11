@@ -12,22 +12,45 @@ Sparse tree showing all items that are not done: C-c / t
 #+END_COMMENT
 :END:
 
-* Overview
+*Overview: UTartu's Jobs*
 
-    | Key    | Name                                                           |       Dead |
-    |--------+----------------------------------------------------------------+------------|
-    | O7.3   | Develop protocols, software for verif.+valid. of full QC stack |            |
-    | D5.3   | Optimizing Compiler v1                                         | 2025-02-28 |
-    | M24    | Consensus of interface specifications for verification         | 2026-02-28 |
-    | D5.7   | Quantum OS — Monitoring and recalibration                      | 2026-08-31 |
-    | D7.3   | Methodology for verifying the quantum stack                    | 2026-08-31 |
-    | T7.4.1 | Make cuQuantum available; w/ noise models                      |            |
+      _Task 5.3_
+
+      | Key  | Name                   | Dead     |
+      |------+------------------------+----------|
+      | D5.3 | Optimizing Compiler v1 | 2025 Feb |
+      |      | <62>                   |          |
 
 
-* WP 5
-** Task 5.3 /Software Stack/ -- Project Management
-*** Task Outline
-**** Task Description in GA
+      _Task 7.3_
+
+      | Key  | Name                                                           | Dead     |
+      |------+----------------------------------------------------------------+----------|
+      | O7.3 | Develop protocols, software for verif.+valid. of full QC stack |          |
+      | M24  | Consensus of interface specifications for verification         | 2026 Feb |
+      | D7.3 | Methodology for verifying the quantum stack                    | 2026 Aug |
+      |      | <64>                                                           |          |
+
+      _Sub-Task 7.4.1_
+
+      | Key    | Name                                      | Dead |
+      |--------+-------------------------------------------+------|
+      | T7.4.1 | Make cuQuantum available; w/ noise models |      |
+      | <4>    | <62>                                      |      |
+
+
+* Work
+** TODO D5.3   /Optimizing Compiler v1/
+** TODO M24    /Consensus of interface specifications for verification/
+** TODO D7.3   /Methodology for verifying the quantum stack/
+** TODO T7.4.1 /cuQuantum/
+
+
+* Descriptions
+** WP 5
+*** Task 5.3 /Software Stack/ -- Project Management
+**** Task Outline
+***** Task Description in GA
 
    #+BEGIN_QUOTE
       _Task 5.3: Software stack_
@@ -59,7 +82,7 @@ Sparse tree showing all items that are not done: C-c / t
    #+END_QUOTE
 
 [fn:1] I fixed a typo here: The GA says "WP4".
-**** Components
+***** Components
 
     * Optimizing Compiler (UTartu)
       + Phase 1
@@ -71,7 +94,7 @@ Sparse tree showing all items that are not done: C-c / t
       + Recalibration
       + Monitoring
 
-**** Relies on
+***** Relies on
 
     | Key | Name                                                                      | Respo. | Start |  Dead |
     |-----+---------------------------------------------------------------------------+--------+-------+-------|
@@ -80,7 +103,7 @@ Sparse tree showing all items that are not done: C-c / t
     | M3  | Low-level interface phase 1 definition                                    | Qruise | 23-07 | 23-08 |
     | M17 | Low-level interface phase 2 definition                                    | Qruise | 25-01 | 25-02 |
 
-***** Partners (in other tasks) that this task relies on
+****** Partners (in other tasks) that this task relies on
 
      | Partner | Main                     | Others |
      |         | Contacts                 |        |
@@ -93,14 +116,14 @@ Sparse tree showing all items that are not done: C-c / t
      |         | anna@orangeqs.com        |        |
      |---------+--------------------------+--------|
 
-**** Output
+***** Output
 
     | Key  | Name                                      |      Start |       Dead |
     |------+-------------------------------------------+------------+------------|
     | D5.3 | Optimizing Compiler v1                    | 2025-01-01 | 2025-02-28 |
     | D5.7 | Quantum OS — Monitoring and recalibration | 2026-07-01 | 2026-08-31 |
 
-**** Contributing partners
+***** Contributing partners
 
     | Partner    | Total PMs | Main                          | Other                        |
     |            |    in WP5 | Contacts                      | Implementers                 |
@@ -118,12 +141,10 @@ Sparse tree showing all items that are not done: C-c / t
     |            |           |                               | szendrak.erika@wigner.mta.hu |
     |------------+-----------+-------------------------------+------------------------------|
 
-** D5.3  /Optimizing Compiler v1/
-
-* WP 7
-** Task 7.3 /Verification & Validation/
-*** Task Outline
-**** Task Description
+** WP 7
+*** Task 7.3 /Verification & Validation/
+**** Task Outline
+***** Task Description
 
    From the Grant Agreement
 
@@ -145,18 +166,18 @@ Sparse tree showing all items that are not done: C-c / t
       directly communicate with the control hardware, process tomography and randomized benchmarking, *et cetera*,
       will be used.  CHALMERS will assist with state and process tomography.
    #+END_QUOTE
-**** Components
+***** Components
 
     * Validation (UPV/EHU, CHALMERS)
     * Verification (FZJ, Qruise, UTartu)
 
-**** Relies on
+***** Relies on
 
     | Key | Name                                                                      | Respo. | Start |  Dead |
     |-----+---------------------------------------------------------------------------+--------+-------+-------|
     | M7  | User reqs, system specs & breakdown based on plans, interface defs agreed | Orange | 24-01 | 24-02 |
 
-**** Output
+***** Output
 
     | Key  | Name                                                           |      Start |       Dead |
     |------+----------------------------------------------------------------+------------+------------|
@@ -164,7 +185,7 @@ Sparse tree showing all items that are not done: C-c / t
     | M24  | Consensus of interface specifications for verification         | 2026-01-01 | 2026-02-28 |
     | D7.3 | Methodology for verifying the quantum stack                    | 2026-07-01 | 2026-08-31 |
 
-**** Contributing partners
+***** Contributing partners
 
       | Partner    | Total PMs |
       |            | in WP7    |
@@ -175,9 +196,8 @@ Sparse tree showing all items that are not done: C-c / t
       | UPV/EHU    | 38        |
       | Qruise     | 0         |
 
-
-** Sub-Task 7.4.1 /Generic simulator with simple noise models/
-*** Task description
+*** Sub-Task 7.4.1 /Generic simulator with simple noise models/
+**** Task description
 
       From Grant Agreement: (highlight & paragraph break mine):
 
