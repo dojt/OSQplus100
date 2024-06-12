@@ -14,7 +14,7 @@ Sparse tree showing all items that are not done: C-c / t
 
 * Overview: UTartu's Jobs
 
-      _Task 5.3_
+      _Task 5.3 Software Stack_
 
       | Key  | Name                   | Dead     | Soon |
       |------+------------------------+----------+------|
@@ -22,7 +22,7 @@ Sparse tree showing all items that are not done: C-c / t
       |      | <62>                   |          | <c>  |
 
 
-      _Task 7.3_
+      _Task 7.3 Verification & Validation_
 
       | Key  | Name                                                           | Dead     | Soon |
       |------+----------------------------------------------------------------+----------+------|
@@ -73,7 +73,7 @@ Sparse tree showing all items that are not done: C-c / t
 
 
 * Descriptions
-** WP 5
+** WP 5 /Enabling Software/
 *** Task 5.3 /Software Stack/ -- Project Management
 **** Task Outline
 ***** Task Description in GA
@@ -151,6 +151,9 @@ Sparse tree showing all items that are not done: C-c / t
 
 ***** Contributing partners
 
+    UTartu has 2 PM in this WP, which amounts to *347.6 hours*.
+
+
     | Partner    | Total PMs | Main                          | Other                        |
     |            |    in WP5 | Contacts                      | Implementers                 |
     |------------+-----------+-------------------------------+------------------------------|
@@ -167,7 +170,7 @@ Sparse tree showing all items that are not done: C-c / t
     |            |           |                               | szendrak.erika@wigner.mta.hu |
     |------------+-----------+-------------------------------+------------------------------|
 
-** WP 7
+** WP 7 /Application & Test Suite/
 *** Task 7.3 /Verification & Validation/
 **** Task Outline
 ***** Task Description
@@ -257,10 +260,22 @@ Sparse tree showing all items that are not done: C-c / t
 
 * Reports etc
 ** Budapest 2024-06
-*** WP5
-      * Requested:
-        + 
-*** WP7
+*** NOW WP5
+      * /»short *presentation* (no more than 8-10 minutes please) to bring everybody up to speed on your
+        institute's WP5 contributions.«/
+
+      * From other funding sources: Started work on
+        + Review of existing IRs for lattice surgery
+        + Review of existing MLIR-for-quantum compiler technology
+        + Create MLIR-based lattice surgery IR
+        + Create MLIR-based quantum-classical low-level IR ("Pauli Assembler")
+        + Develop lattice surgery compiler.
+
+*** WP7 [3/3]
+      * [X] Presentation about Task 7.3
+      * [X] 1 slide for sub-task 7.4.1
+      * [X] 1 slide for sub-task 7.5.1
+
 
 * End Of File
 # Local Variables:
