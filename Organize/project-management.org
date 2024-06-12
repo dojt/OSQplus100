@@ -12,38 +12,64 @@ Sparse tree showing all items that are not done: C-c / t
 #+END_COMMENT
 :END:
 
-*Overview: UTartu's Jobs*
+* Overview: UTartu's Jobs
 
       _Task 5.3_
 
-      | Key  | Name                   | Dead     |
-      |------+------------------------+----------|
-      | D5.3 | Optimizing Compiler v1 | 2025 Feb |
-      |      | <62>                   |          |
+      | Key  | Name                   | Dead     | Soon |
+      |------+------------------------+----------+------|
+      | D5.3 | Optimizing Compiler v1 | 2025 Feb |  𝗫   |
+      |      | <62>                   |          | <c>  |
 
 
       _Task 7.3_
 
-      | Key  | Name                                                           | Dead     |
-      |------+----------------------------------------------------------------+----------|
-      | O7.3 | Develop protocols, software for verif.+valid. of full QC stack |          |
-      | M24  | Consensus of interface specifications for verification         | 2026 Feb |
-      | D7.3 | Methodology for verifying the quantum stack                    | 2026 Aug |
-      |      | <64>                                                           |          |
+      | Key  | Name                                                           | Dead     | Soon |
+      |------+----------------------------------------------------------------+----------+------|
+      | O7.3 | Develop protocols, software for verif.+valid. of full QC stack |          |      |
+      | M24  | Consensus of interface specifications for verification         | 2026 Feb |      |
+      | D7.3 | Methodology for verifying the quantum stack                    | 2026 Aug |      |
+      |      | <64>                                                           |          | <c>  |
 
       _Sub-Task 7.4.1_
 
-      | Key    | Name                                      | Dead |
-      |--------+-------------------------------------------+------|
-      | T7.4.1 | Make cuQuantum available; w/ noise models |      |
-      | <4>    | <62>                                      |      |
+      | Key  | Name                                      | Dead     | Soon |
+      |------+-------------------------------------------+----------+------|
+      | 741, | Make cuQuantum available; w/ noise models | 2025 Feb |  𝗫   |
+      |      | <62>                                      |          | <c>  |
+
+
+      _Sub-Task 7.5.1_
+
+      | Key  | Name                            | Dead     | Soon |
+      |------+---------------------------------+----------+------|
+      | 751a | Integrate qcirc-sim in HPC-APIs | 2026 Aug |      |
+      | 751b | Develop qcirc-opt tools         | 2026 Aug |      |
+      |      | <62>                            |          | <c>  |
 
 
 * Work
 ** TODO D5.3   /Optimizing Compiler v1/
+   DEADLINE: <2025-02-28>
 ** TODO M24    /Consensus of interface specifications for verification/
+   DEADLINE: <2026-02-28>
 ** TODO D7.3   /Methodology for verifying the quantum stack/
+   DEADLINE: <2026-08-31>
 ** TODO T7.4.1 /cuQuantum/
+   DEADLINE: <2025-02-28> (of D7.4.)
+
+      #+BEGIN_QUOTE
+      *UTartu* will *make the cuQuantum* or QuEST quantum-circuit simulator *available* to OpenSuperQPlus100
+      partners and *add noise models from OpenSuperQPlus100 hardware*.
+      #+END_QUOTE
+
+** TODO T7.5.1 /HPC/
+   DEADLINE: <2026-08-31> (of D7.5.)
+
+      #+BEGIN_QUOTE
+      *UTartu will integrate quantum-circuit simulator software with HPC APIs*. \\
+      CHALMERS, *UTartu*, and Wigner RCP will develop *HPC circuit-optimization tools*.
+      #+END_QUOTE
 
 
 * Descriptions
@@ -196,7 +222,7 @@ Sparse tree showing all items that are not done: C-c / t
       | UPV/EHU    | 38        |
       | Qruise     | 0         |
 
-*** Sub-Task 7.4.1 /Generic simulator with simple noise models/
+*** Sub-task 7.4.1 /Generic simulator with simple noise models/
 **** Task description
 
       From Grant Agreement: (highlight & paragraph break mine):
@@ -209,7 +235,32 @@ Sparse tree showing all items that are not done: C-c / t
       testing of sampling algorithms and quantum-kernel-based algorithms, using FPGA-based dataflow engines.
       #+END_QUOTE
 
+*** Sub-task 7.5.1 /HPC connection/
+**** Task description
+      #+BEGIN_QUOTE
+      HPC methods will play a key role in enabling testing and use of quantum computers, both for simulation of
+      them (Task 7.4) and as part of hybrid quantum-classical algorithms (Task 7.1).  This task will be aligned
+      with the NordIQuEst and EuroHPC projects; CHALMERS and UTartu will be liaisons to NordIQuEst, and FZJ and
+      CHALMERS will be liaisons to EuroHPC.
 
+      *UTartu will integrate quantum-circuit simulator software with HPC APIs*.
+
+      CHALMERS, *UTartu*, and Wigner RCP will develop *HPC circuit-optimization tools*.
+
+      FZJ and CHALMERS will develop tools for hybrid quantum algorithms (VQAs) with possible extensions to
+      multi-HPC - multi-QC systems.
+      #+END_QUOTE
+
+      * »The techniques and their impact on other tasks will be described in a report (D7.5).«
+      * Due: 2026-08-31
+
+
+* Reports etc
+** Budapest 2024-06
+*** WP5
+      * Requested:
+        + 
+*** WP7
 
 * End Of File
 # Local Variables:
