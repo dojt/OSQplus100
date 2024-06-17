@@ -33,10 +33,11 @@ Sparse tree showing all items that are not done: C-c / t
 
       _Sub-Task 7.4.1_
 
-      | Key  | Name                                      | Dead     | Soon |
-      |------+-------------------------------------------+----------+------|
-      | 741, | Make cuQuantum available; w/ noise models | 2025 Feb |  𝗫   |
-      |      | <62>                                      |          | <c>  |
+      | Key  | Name                                           | Dead     | Soon |
+      |------+------------------------------------------------+----------+------|
+      | 741, | Make cuQuantum available; w/ noise models      |          |  𝗫   |
+      | M19  | Circ-simu available used by at least 3 parners | 2025 Feb | 𝗫𝗫𝗫  |
+      |      | <62>                                           |          | <c>  |
 
 
       _Sub-Task 7.5.1_
@@ -63,11 +64,11 @@ Sparse tree showing all items that are not done: C-c / t
       partners and *add noise models from OpenSuperQPlus100 hardware*.
       #+END_QUOTE
 
-      _Done:_
+      _Milestone 19:_ Software used by at least 3 OSQ partners
 
       * [X] Make cuQuantum run locally
 
-      _Todo:_ Make it "available":
+      Todo: Make it "available":
 
       * [ ] Make a program which takes an OpenQASM file as input, and writes the output.
       * [ ] Make a Qiskit template for use.
