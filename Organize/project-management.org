@@ -55,13 +55,22 @@ Sparse tree showing all items that are not done: C-c / t
    DEADLINE: <2026-02-28>
 ** TODO D7.3   /Methodology for verifying the quantum stack/
    DEADLINE: <2026-08-31>
-** TODO T7.4.1 /cuQuantum/
+** [1/3]️ T7.4.1 /cuQuantum/
    DEADLINE: <2025-02-28> (of D7.4.)
 
       #+BEGIN_QUOTE
       *UTartu* will *make the cuQuantum* or QuEST quantum-circuit simulator *available* to OpenSuperQPlus100
       partners and *add noise models from OpenSuperQPlus100 hardware*.
       #+END_QUOTE
+
+      _Done:_
+
+      * [X] Make cuQuantum run locally
+
+      _Todo:_ Make it "available":
+
+      * [ ] Make a program which takes an OpenQASM file as input, and writes the output.
+      * [ ] Make a Qiskit template for use.
 
 ** TODO T7.5.1 /HPC/
    DEADLINE: <2026-08-31> (of D7.5.)
@@ -258,9 +267,12 @@ Sparse tree showing all items that are not done: C-c / t
       * Due: 2026-08-31
 
 
-* Reports etc
+* Meetings & Reports
 ** Budapest 2024-06
-*** NOW WP5
+*** Notes
+**** WP5
+**** WP7
+*** DONE Preparation for WP5
       * /»short *presentation* (no more than 8-10 minutes please) to bring everybody up to speed on your
         institute's WP5 contributions.«/
 
@@ -271,7 +283,7 @@ Sparse tree showing all items that are not done: C-c / t
         + Create MLIR-based quantum-classical low-level IR ("Pauli Assembler")
         + Develop lattice surgery compiler.
 
-*** WP7 [3/3]
+*** [3/3] Preparation for WP7
       * [X] Presentation about Task 7.3
       * [X] 1 slide for sub-task 7.4.1
       * [X] 1 slide for sub-task 7.5.1
