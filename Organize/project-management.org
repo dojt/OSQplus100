@@ -5,7 +5,7 @@
 #+DATE:   Tue Jun 11 12:19:44 CEST 2024
 #+STARTUP: latexpreview
 #+STARTUP: show2levels
-#+SEQ_TODO: TODO NOW CONT ARGH ↘️ | DONE
+#+SEQ_TODO: :::: NOW! NEXT ARGH ↘️ | DONE
 #+COLUMNS: %70ITEM %TODO
 #+BEGIN_COMMENT
 Sparse tree showing all items that are not done: C-c / t
@@ -50,13 +50,13 @@ Sparse tree showing all items that are not done: C-c / t
 
 
 * Work
-** TODO D5.3   /Optimizing Compiler v1/
+** NEXT D5.3   /Optimizing Compiler v1/
    DEADLINE: <2025-02-28>
-** TODO M24    /Consensus of interface specifications for verification/
+** :::: M24    /Consensus of interface specifications for verification/
    DEADLINE: <2026-02-28>
-** TODO D7.3   /Methodology for verifying the quantum stack/
+** :::: D7.3   /Methodology for verifying the quantum stack/
    DEADLINE: <2026-08-31>
-** [1/3]️ T7.4.1 /cuQuantum/
+** NOW! [1/3]️ T7.4.1 /cuQuantum/
    DEADLINE: <2025-02-28> (of D7.4.)
 
       #+BEGIN_QUOTE
@@ -73,7 +73,7 @@ Sparse tree showing all items that are not done: C-c / t
       * [ ] Make a program which takes an OpenQASM file as input, and writes the output.
       * [ ] Make a Qiskit template for use.
 
-** TODO T7.5.1 /HPC/
+** :::: T7.5.1 /HPC/
    DEADLINE: <2026-08-31> (of D7.5.)
 
       #+BEGIN_QUOTE
@@ -270,9 +270,10 @@ Sparse tree showing all items that are not done: C-c / t
 
 * Meetings & Reports
 ** Budapest 2024-06
-*** Notes
-**** WP5
-**** WP7
+*** Organizational notes
+
+      *Every minute spent on this project is wasted time.*
+
 *** DONE Preparation for WP5
       * /»short *presentation* (no more than 8-10 minutes please) to bring everybody up to speed on your
         institute's WP5 contributions.«/
