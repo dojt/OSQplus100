@@ -83,7 +83,9 @@
 
       * Transversal :: (Only if lengths of Z,X observables are both odd)[fn:river]
 
-      * Apply ➛Z➛X➛ ::
+      * Apply ➛Z➛X➛ or ➛X➛Z➛; e.g., ~X{virt}, Ztrans~
+        - difference is global phase
+        - can be done in parallel 
 
 *** State preparation
 ***** MORE ±Z, ±X
@@ -101,7 +103,7 @@
 
 
 * Footnotes = Bibliography
-1. Riverlane [fn:river:: arXiv:2307.03233 "Compilation of a simple chemistry application" (Riverlane)]
+1. Riverlane [fn:river: arXiv:2307.03233 "Compilation of a simple chemistry application" (Riverlane)]
 # Local Variables:
 # fill-column: 115
 # End:
