@@ -64,7 +64,7 @@
 *** Syndrome measurement
 *** Decoding
 *** Fixing
-** Operations
+** ↘️ Operations
 *** MORE Single qubit Clifford gates
 ***** Pauli-{X,Z} gates
 
@@ -87,7 +87,7 @@
         - difference is global phase
         - can be done in parallel 
 
-*** State preparation
+*** ↘️ State preparation
 ***** MORE ±Z, ±X
 
       * +𝛔 where 𝛔 ∈ {Z,X}:
