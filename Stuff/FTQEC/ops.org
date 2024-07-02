@@ -1,0 +1,107 @@
+#+TITLE:  Neural Network Bug Detection for Clifford Circuits
+#+DATE:   Thu May 23 18:10:10 EEST 2024
+#+SETUPFILE: ./org-mode-header.org
+:SET_STUFF_UP:
+#+INCLUDE: "~/Git/DOT_LaTeX/org-latex-export-defs.org"
+#+STARTUP: overview
+#+SEQ_TODO: TODO MORE ↘️ | NEW
+#+BEGIN_HTML
+\(
+\newcommand{\sodifjosidjfosidjfosijdfosijdfoisjdfoijsdofijsodifjosidjfosidj}{\mathscr{A}}
+\newcommand{\viusbidufhwiefsdofijsoifjaoidsjfoiqhwoeufhaosudfhoauisdhfoaiwe}[1]{A #1}
+\)
+#+END_HTML
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+BEGIN_COMMENT
+❗️ *WARNING!  GPLv3*
+#+END_COMMENT
+#+PROPERTY: header-args :eval never :exports code :noweb no-export :noweb-prefix no
+:END:
+
+* Lattice Surgery
+** ↘️ Code
+***** Shapes
+
+      * Textbook shape d=7: 7×7 physical qubits
+        #+BEGIN_EXAMPLE
+         ∧ ∧ ∧
+         XOXOXO⟩
+        ⟨OXOXOX
+         XOXOXO⟩
+        ⟨OXOXOX
+         XOXOXO⟩
+        ⟨OXOXOX
+          ∨ ∨ ∨
+        #+END_EXAMPLE
+
+      * (more)
+
+***** MORE "Logical contributions" of physical qubit neighborhoods
+
+      * In the bulk: 1-(1/4+1/4+1/4+1/4)               = 0
+        #+BEGIN_EXAMPLE
+        O X
+         ⋅
+        X O
+        #+END_EXAMPLE
+      * On an edge: 1-(1/4-1/4-1/2)                    = 0
+        #+BEGIN_EXAMPLE
+        X
+         ⋅
+        O ⟩
+        #+END_EXAMPLE
+      * Convex corner ┐: 1-(1/4-1/2)                   = 1/4
+        #+BEGIN_EXAMPLE
+        ∧
+         ⋅
+        O ⟩
+        #+END_EXAMPLE
+      * etc
+      * etc
+      * etc
+
+** TODO Memory
+*** Syndrome measurement
+*** Decoding
+*** Fixing
+** Operations
+*** MORE Single qubit Clifford gates
+***** Pauli-{X,Z} gates
+
+      * Transversal :: (Only if length of observable is odd)[fn:river]
+        - Space-time cost: Time = 1 cycle
+        - Error cost:
+          + *Z*: with /virtual/ Z-gate: 0
+          + *X*, *Z* w/o virtual Z-gate: loads of 1-qubit gates
+
+      * Virtual P   :: Flip /frame/ of every physical qubit & *propagate*
+        - ??? This doesn't look like it makes any sense...
+
+      * Virtual L   :: Flip sign of logical op[fn:river]
+
+***** Pauli-Y gate
+
+      * Transversal :: (Only if lengths of Z,X observables are both odd)[fn:river]
+
+      * Apply ➛Z➛X➛ ::
+
+*** Preparation
+***** MORE ±Z, ±X
+
+      * +𝛔 where 𝛔 ∈ {Z,X}:
+        #+BEGIN_SRC python
+          for q in dataqubits:
+              q.init(+𝛔)
+          EC(d times)
+        #+END_SRC
+
+      * TODO :: There's sure to be a shortcut for preparing -Z and -X
+
+***** TODO ±Y
+
+
+* Bibliography
+[fn:river] arXiv:2307.03233 "Compilation of a simple chemistry application" (Riverlane)
+# Local Variables:
+# fill-column: 115
+# End:
