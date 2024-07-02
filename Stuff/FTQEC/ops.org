@@ -1,4 +1,4 @@
-#+TITLE:  Encyclopedia of Lattice-Surgery Operations
+#+TITLE:  Encyclopedia of Stabilizer Code Operations
 #+DATE:   Thu May 23 18:10:10 EEST 2024
 #+SETUPFILE: ./org-mode-header.org
 :SET_STUFF_UP:
