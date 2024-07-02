@@ -56,7 +56,7 @@ Sparse tree showing all items that are not done: C-c / t
    DEADLINE: <2026-02-28>
 ** :::: D7.3   /Methodology for verifying the quantum stack/
    DEADLINE: <2026-08-31>
-** NOW! [1/3]️ T7.4.1 /cuQuantum/
+** NOW! T7.4.1 /cuQuantum/ [1/3]️
    DEADLINE: <2025-02-28> (of D7.4.)
 
       #+BEGIN_QUOTE
