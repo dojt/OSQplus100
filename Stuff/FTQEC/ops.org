@@ -4,7 +4,7 @@
 :SET_STUFF_UP:
 #+INCLUDE: "~/Git/DOT_LaTeX/org-latex-export-defs.org"
 #+STARTUP: overview
-#+SEQ_TODO: TODO MORE ↘️ | NEW
+#+SEQ_TODO: TODO MORE ↘️ | REVIEW NEW
 #+BEGIN_HTML
 \(
 \newcommand{\sodifjosidjfosidjfosijdfosijdfoisjdfoijsdofijsodifjosidjfosidj}{\mathscr{A}}
@@ -25,12 +25,12 @@
       * Textbook shape d=7: 7×7 physical qubits
         #+BEGIN_EXAMPLE
          ∧ ∧ ∧
-         XOXOXO⟩
-        ⟨OXOXOX
-         XOXOXO⟩
-        ⟨OXOXOX
-         XOXOXO⟩
-        ⟨OXOXOX
+         XZXZXZ⟩
+        ⟨ZXZXZX
+         XZXZXZ⟩
+        ⟨ZXZXZX
+         XZXZXZ⟩
+        ⟨ZXZXZX
           ∨ ∨ ∨
         #+END_EXAMPLE
 
@@ -40,39 +40,111 @@
 
       * In the bulk: 1-(1/4+1/4+1/4+1/4)               = 0
         #+BEGIN_EXAMPLE
-        O X
+        Z X
          ⋅
-        X O
+        X Z
         #+END_EXAMPLE
       * On an edge: 1-(1/4-1/4-1/2)                    = 0
         #+BEGIN_EXAMPLE
         X
          ⋅
-        O ⟩
+        Z ⟩
         #+END_EXAMPLE
       * Convex corner ┐: 1-(1/4-1/2)                   = 1/4
         #+BEGIN_EXAMPLE
         ∧
          ⋅
-        O ⟩
+        Z ⟩
         #+END_EXAMPLE
       * etc
       * etc
       * etc
 
+
 ** TODO Memory
 *** Syndrome measurement
 *** Decoding
 *** Fixing
+
+
+** ↘️ Shape changes & moves
+***** TODO Expand
+***** TODO Split
+
+      * Definitions (with ZX-diagrams)
+        + Z-split = |00⟩⟨0| + |11⟩⟨1|
+          #+BEGIN_EXAMPLE
+             ╱
+           ─Z
+             ╲
+          #+END_EXAMPLE
+        + X-split = |++⟩⟨+| + |--⟩⟨-|  = (|00⟩+|11⟩)⟨0| + (|01⟩+|10⟩)⟨1|  ⫽√2
+          #+BEGIN_EXAMPLE
+             ╱
+           ─X
+             ╲
+          #+END_EXAMPLE
+
+***** TODO Merge
+
+      * Definitions (with ZX-diagrams)
+        + Merges have a classical outcome, 𝖺, so they reduce the quantum degrees of freedom from 2 to 1
+        + Z-merge = |0⟩⟨0𝖺| + |1⟩⟨1𝖺̅|
+          #+BEGIN_EXAMPLE
+          ───┐
+             Z─
+          ─Xₐ┘
+          #+END_EXAMPLE
+        + X-merge = |+⟩⟨+𝑎| + |-⟩⟨-𝑎̅|  where 𝑎 = (-1)ᵃ, and 𝑎̅ = -(-1)ᵃ
+          #+BEGIN_EXAMPLE
+          ───┐
+             X─
+          ─Zₐ┘
+          #+END_EXAMPLE
+
+***** REVIEW Full rotate
+
+      * Meaning: Z-boundary and X-boundary are exchanged.
+        + ... but what happens with logical Z,X — are they kept?
+
+      * Htrans + Hvirt :: Possibly in parallel:
+        + Apply H to each data qubit (transversal [[H-gate]])
+        + Swap Z,X logical ops (virtual [[H-gate]])
+
+***** TODO FoGi rotate
+
+      From [fn:FoGiLS]
+
+***** TODO etc
+
+
 ** ↘️ Operations
+*** ↘️ State preparation
+***** MORE ±Z, ±X
+
+      * +𝛔 where 𝛔 ∈ {Z,X}:
+        #+BEGIN_SRC python
+          for q in dataqubits:
+              q.init(+𝛔)
+          EC(d times)
+        #+END_SRC
+        Cost:
+        + 1 QEC cycle
+          - ... that can be merged with next op[fn:river]
+          - TODO :: how exactly?
+
+      * TODO :: There's sure to be a shortcut for preparing -Z and -X
+
+***** TODO ±Y
+
 *** MORE Single qubit Clifford gates
-***** Pauli-{X,Z} gates
+***** REVIEW Pauli-{X,Z} gates
 
       * Transversal :: (Only if length of observable is odd)[fn:river]
-        - Space-time cost: Time = 1 cycle
-        - Error cost:
-          + *Z*: with /virtual/ Z-gate: 0
-          + *X*, *Z* w/o virtual Z-gate: loads of 1-qubit gates
+        + Space-time cost: Time = 1 cycle
+        + Error cost:
+          - *Z*: with /virtual/ Z-gate: 0
+          - *X*, *Z* w/o virtual Z-gate: loads of 1-qubit gates
 
       * Virtual P   :: Flip /frame/ of every physical qubit & *propagate*
         - ??? This doesn't look like it makes any sense...
@@ -85,25 +157,52 @@
 
       * Apply ➛Z➛X➛ or ➛X➛Z➛; e.g., ~X{virt}, Ztrans~
         - difference is global phase
-        - can be done in parallel 
+        - can be done in parallel
 
-*** ↘️ State preparation
-***** MORE ±Z, ±X
+***** REVIEW H-gate
 
-      * +𝛔 where 𝛔 ∈ {Z,X}:
-        #+BEGIN_SRC python
-          for q in dataqubits:
-              q.init(+𝛔)
-          EC(d times)
-        #+END_SRC
+      * Transversal :: (TODO explain)
 
-      * TODO :: There's sure to be a shortcut for preparing -Z and -X
+      * Virtual :: Swap Z,X logical ops
+        + I.e., say,
+          - before: Z̅ between Z-boundaries, X̅  between X-boundaries;
+          - after:  Z̅ between X-boundaries, X̅  between Z-boundaries.
+        + Cf. [[Full rotate]]
 
-***** TODO ±Y
+*** ↘️ Single-qubit measurement
+***** Z,X
 
+      * Destructive :: Measure all data qubits.[fn:river:]
+
+      * Slice-off   :: = trivial [[Split]]
+        + Split off 1 column/row of weight-4 stabilizers
+        + ➾ each data qubit in single remaining column/row holds observable value up to sign
+        + Careful: distance may decrease ([[Expand]] before?)
+        + TODO :: how to handle error detecting info that arises?
+
+*** 2-qubit ZZ,XX measurement
+*** CNOT
+***** Split + merge
+
+      * Definition (via ZX-diagram)
+        #+BEGIN_EXAMPLE
+        ──Z──[fix]─
+          │
+          │
+          Zₐ
+          │
+        ──X──
+        #+END_EXAMPLE
+        where 'fix' refers to fixing the effect of the measurement outcome "𝖺": a Z-gate has to be applied if that
+        𝖺=1.  (Of course, applying the Z-gate can be done virtually.)  The vertical line in the ZX-diagram can be
+        thought of as an auxiliary logical qubit.
+
+***** mZZ + mXX
 
 * Footnotes = Bibliography
-1. Riverlane [fn:river: arXiv:2307.03233 "Compilation of a simple chemistry application" (Riverlane)]
+  * Riverlane [fn:river: ~arXiv:2307.03233~ /Compilation of a simple chemistry application/ (Riverlane)]
+  * Fowler-Gidney-LS [fn:FoGiLS: ~arXiv:1808.06709~ /Low overhead quantum computation using lattice surgery/ Fowler & Gidney]
+** EOF
 # Local Variables:
 # fill-column: 115
 # End:
