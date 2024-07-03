@@ -311,28 +311,108 @@
           - The ~X₀~ state preparation (i.e., |0⟩) can be a performed on a trivial logical qubit consisting of
 
 *** 2-qubit ZZ,XX measurement
-*** CNOT
-***** Split + merge
+*** 2-qubit Clifford gates
+***** MORE CNOT
 
-      * Definition (via ZX-diagram)
-        #+BEGIN_EXAMPLE
-        ──Z──[fix]─
-          │
-          │
-          Zₐ
-          │
-        ──X──
-        #+END_EXAMPLE
-        where 'fix' refers to fixing the effect of the measurement outcome "𝖺": a Z-gate has to be applied if that
-        𝖺=1.  (Of course, applying the Z-gate can be done virtually.)  The vertical line in the ZX-diagram can be
-        thought of as an auxiliary logical qubit.
+      * Z-split + X-merge + fix
+        + 'Fix' refers to fixing the effect of the measurement outcome "𝖺": a Z-gate has to be applied if that 𝖺=1.
+        + ZX-diagram:
+          #+BEGIN_EXAMPLE
+           +--------+
+           |        |
+          ────Z──Zₐ───
+           |  │     |
+           |  │     |
+           |  Zₐ    |
+           |  │     |
+          ────X───────
+           |        |
+           +--------+
+          #+END_EXAMPLE
+        + The vertical line in the ZX-diagram can be thought of as an auxiliary logical qubit.
+        + Applying the Z-gate can be done virtually, of course.
+        + TODO :: Split & merge can be done in parallel — TODO: *Work out how!*[fn:GiCNOT]
+        + TODO :: Work out cost & compare with ⦨ZZ+⦨XX
 
+      * ⦨ZZ + ⦨XX + fix
+        + ZX-diagram:
+          #+BEGIN_EXAMPLE
+           +--------+
+           |        |
+          ────Z──Zₐ───
+           |  │     |
+           |  │     |
+           |  Zₐ    |
+           |  │     |
+          ────X───────
+           |        |
+           +--------+
+          #+END_EXAMPLE
+
+*** Multi-qubit Pauli measurement
 ***** Measure ZZ,XX
+
+      * Z-split /then/ Z-merge
+        + ZX-diagram for ⦨ZZ
+          #+BEGIN_EXAMPLE
+           +--------+
+           |        |
+          ───Z────────
+           |  ╲     |
+           |   ╲    |
+           |    Xₐ  |
+           |     ╲  |
+          ────────Z───
+           |        |
+           +--------+
+          #+END_EXAMPLE
+
+      * Z-merge /then/ Z-split, plus fix
+        + ZX-diagram for ⦨ZZ
+          #+BEGIN_EXAMPLE
+           +------------+
+           |            |
+          ──────┐  ┌──────
+           |    │  │    |
+           |    Z──Z    |
+           |    │  │    |
+          ───Xₐ─┘  └─Xₐ───
+           |            |
+           +------------+
+          #+END_EXAMPLE
+        + Why is this correct?  Transform ZX-diagram above ("1.") as follows:
+          2. [@2]
+             #+BEGIN_EXAMPLE
+              +------------+
+              |            |
+             ──────Z─────────
+              |    │       |
+              |    │       |
+              |    │       |
+             ───Xₐ─Z────Xₐ───
+              |            |
+              +------------+
+             #+END_EXAMPLE
+          3.
+             #+BEGIN_EXAMPLE
+              +------------+
+              |            |
+             ──────Z─────────
+              |    │       |
+              |    Xₐ      |
+              |    │       |
+             ──────Z─────────
+              |            |
+              +------------+
+             #+END_EXAMPLE
 
 
 * Footnotes = Bibliography
   * Riverlane [fn:river: ~arXiv:2307.03233~ /Compilation of a simple chemistry application/ (Riverlane)]
   * Fowler-Gidney-LS [fn:FoGiLS: ~arXiv:1808.06709~ /Low overhead quantum computation using lattice surgery/ Fowler & Gidney]
+  * Gidney-QCSX-CNOT [fn:GiCNOT: Gidney's answer on Quantum-Computing Stackexchange,
+    [[https://quantumcomputing.stackexchange.com/questions/20830/how-can-surface-codes-perform-splitting-and-merging-at-the-same-time-when-they-i]]]
+  * DOT: Read this! [[https://quantumcomputing.stackexchange.com/questions/38232/deformation-rules-for-zx-pipe-diagrams][Gidney's reply to /Deformation rules for ZX-pipe diagrams/.]]
 ** EOF
 # Local Variables:
 # fill-column: 115
