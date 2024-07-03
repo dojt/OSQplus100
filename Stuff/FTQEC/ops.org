@@ -38,25 +38,73 @@
 
 ***** MORE "Logical contributions" of physical qubit neighborhoods
 
-      * In the bulk: 1-(1/4+1/4+1/4+1/4)               = 0
+      * In the bulk: 1-(1/4+1/4+1/4+1/4)                      = 0
         #+BEGIN_EXAMPLE
         Z X
-         ⋅
+         ⊙
         X Z
         #+END_EXAMPLE
-      * On an edge: 1-(1/4-1/4-1/2)                    = 0
+
+      * On an edge: 1-(1/4+1/4+1/2)                           = 0
         #+BEGIN_EXAMPLE
         X
-         ⋅
+         ⊙
         Z ⟩
         #+END_EXAMPLE
-      * Convex corner ┐: 1-(1/4-1/2)                   = 1/4
+
+      * Convex corner std Z-X: 1-(1/4+1/2)                    = 1/4
+        #+BEGIN_EXAMPLE
+        ∧   ∧
+         ⋅ ⋅ ⊙
+        Z X Z
+         ⋅ ⋅ ⋅
+        X Z X ⟩
+        #+END_EXAMPLE
+
+      * Convex corner weird 𝛔-𝛔:  1-(1/4+1/2+1/2)             = -1/4
+        #+BEGIN_EXAMPLE
+        ∧   ∧
+         ⋅ ⋅ ⊙
+        Z X Z ⟩
+         ⋅ ⋅ ⋅
+        X Z X
+         ⋅ ⋅ ⋅
+        Z X Z ⟩
+        #+END_EXAMPLE
+
+      * Convex corner obtuse 𝛔-𝛔 near:  3 − 2⋅(1/2+1/4+1/3) − (1/4+1/4+1/4+1/3)  = -1/4
+        #+BEGIN_EXAMPLE
+          ∧
+         ⋅ ⊙
+        Z X ◺
+         ⋅ ⊙ ⊙
+        X Z X ⟩
+         ⋅ ⋅ ⋅
+        Z X Z
+        #+END_EXAMPLE
+
+      * Convex corner obtuse 𝛔-𝛔 far:  3 − 2⋅(1/4+1/3) − (1/4+1/4+1/4+1/3)  = 3/4 = SHIT
         #+BEGIN_EXAMPLE
         ∧
-         ⋅
-        Z ⟩
+         ⋅ ⊙
+        Z X ◺
+         ⋅ ⊙ ⊙
+        X Z X
+         ⋅ ⋅ ⋅
+        Z X Z ⟩
         #+END_EXAMPLE
-      * etc
+
+      * Convex corner obtuse Z-X:  3 − (1/2+1/4+1/3) − (1/4+1/3) − (1/4+1/4+1/4+1/3) = 1/4
+        #+BEGIN_EXAMPLE
+          ∧
+         ⋅ ⊙
+        Z X ◺
+         ⋅ ⊙ ⊙
+        X Z X
+         ⋅ ⋅ ⋅
+        Z X Z ⟩
+        #+END_EXAMPLE
+
       * etc
       * etc
 
@@ -69,19 +117,52 @@
 
 ** ↘️ Shape changes & moves
 ***** TODO Expand
-***** TODO Split
+***** MORE Split
 
-      * Definitions (with ZX-diagrams)
-        + Z-split = |00⟩⟨0| + |11⟩⟨1|
-          #+BEGIN_EXAMPLE
-             ╱
-           ─Z
-             ╲
-          #+END_EXAMPLE
-        + X-split = |++⟩⟨+| + |--⟩⟨-|  = (|00⟩+|11⟩)⟨0| + (|01⟩+|10⟩)⟨1|  ⫽√2
+      * X-split = |++⟩⟨+| + |--⟩⟨-|  = (|00⟩+|11⟩)⟨0| + (|01⟩+|10⟩)⟨1|  ⫽√2
+        + ZX-diagram
           #+BEGIN_EXAMPLE
              ╱
            ─X
+             ╲
+          #+END_EXAMPLE
+        + Measurement pattern
+          1. Center part of logical qubit, boundaries left and right, not shown, are Z; logX is vertical X's:
+            #+BEGIN_EXAMPLE
+            ∧   ∧   ∧
+             ⋅ ⋅ ⋅ ⋅ ⋅
+            Z X 𝗭 X Z
+             ⋅ ⋅ ⋅ ⋅ ⋅
+            X Z 𝗫 Z X
+             ⋅ ⋅ ⋅ ⋅ ⋅
+            Z X 𝗭 X Z
+             ⋅ ⋅ ⋅ ⋅ ⋅
+            X Z 𝗫 Z X
+             ⋅ ⋅ ⋅ ⋅ ⋅
+              ∨   ∨
+            #+END_EXAMPLE
+          2. Measure Z⊗Z (vertical) on the left of each of the bold 𝗭s (the pairs on the right are implied).
+          3. Result: 𝛕 := tensor of all X's left and right of the removed stabilizer column; plus:
+            #+BEGIN_EXAMPLE
+            ∧        ∧
+             ⋅ ⋅  ⋅ ⋅ ⋅
+            Z X ⟩⟨ X Z
+             ⋅ ⋅  ⋅ ⋅ ⋅
+            X Z    Z X
+             ⋅ ⋅  ⋅ ⋅ ⋅
+            Z X ⟩⟨ X Z
+             ⋅ ⋅  ⋅ ⋅ ⋅
+            X Z    Z X
+             ⋅ ⋅  ⋅ ⋅ ⋅
+              ∨    ∨
+            #+END_EXAMPLE
+            So we have 2 logical qubits, but their logical X's are equivalent through 𝛕
+
+      * Z-split = |00⟩⟨0| + |11⟩⟨1|
+        + ZX-diagram
+          #+BEGIN_EXAMPLE
+             ╱
+           ─Z
              ╲
           #+END_EXAMPLE
 
@@ -174,11 +255,60 @@
 
       * Destructive :: Measure all data qubits.[fn:river:]
 
-      * Slice-off   :: = trivial [[Split]]
-        + Split off 1 column/row of weight-4 stabilizers
+      * (Trivial) [[Split]] ::
+        + ZX-diagram (for measuring Z):
+          #+BEGIN_EXAMPLE
+           +----------+
+           |          |
+          ────Z─────────
+           |  │       |
+           |  └─Xₐ─X₀ |
+           +----------+
+          #+END_EXAMPLE
+          - The ~X₀~ measurement (⦨Z) in the diagram can be performed on a trivial "logical qubit" consisting of
+            only one row or column of data qubits, e.g.:
+            #+BEGIN_EXAMPLE
+            ⋅
+             ⟩
+            ⋅
+
+            ⋅
+             ⟩
+            ⋅
+
+            ⋅
+            #+END_EXAMPLE
+
+
+        + Split off 1 column/row of weight-4 stabilizers (to measure 𝛔, do 𝛔 split)
         + ➾ each data qubit in single remaining column/row holds observable value up to sign
         + Careful: distance may decrease ([[Expand]] before?)
-        + TODO :: how to handle error detecting info that arises?
+        + TODO :: how to handle error detecting info that arises?  (The product of every 2 consecutive data qubits
+          in the row/column is a stabilizer known.)
+            #+BEGIN_EXAMPLE
+              ∧   ∧
+             ⋅ ⋅ ⋅ ⋅
+            X Z X Z
+             ⋅ ⋅ ⋅ ⋅
+            Z X Z X ⟩
+             ⋅ ⋅ ⋅ ⋅
+            X Z X Z
+             ⋅ ⋅ ⋅ ⋅
+            Z X Z X ⟩
+             ⋅ ⋅ ⋅ ⋅
+            ∨   ∨
+            #+END_EXAMPLE
+
+      * (Trivial) [[Merge]] ::
+        + ZX-diagram (for measuring Z):
+          #+BEGIN_EXAMPLE
+           +----------+
+           |          |
+          ──────────Z───
+           | X₀───Xₐ┘ |
+           +----------+
+          #+END_EXAMPLE
+          - The ~X₀~ state preparation (i.e., |0⟩) can be a performed on a trivial logical qubit consisting of
 
 *** 2-qubit ZZ,XX measurement
 *** CNOT
@@ -197,7 +327,8 @@
         𝖺=1.  (Of course, applying the Z-gate can be done virtually.)  The vertical line in the ZX-diagram can be
         thought of as an auxiliary logical qubit.
 
-***** mZZ + mXX
+***** Measure ZZ,XX
+
 
 * Footnotes = Bibliography
   * Riverlane [fn:river: ~arXiv:2307.03233~ /Compilation of a simple chemistry application/ (Riverlane)]
