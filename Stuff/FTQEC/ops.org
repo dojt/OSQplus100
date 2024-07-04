@@ -4,7 +4,7 @@
 :SET_STUFF_UP:
 #+INCLUDE: "~/Git/DOT_LaTeX/org-latex-export-defs.org"
 #+STARTUP: overview
-#+SEQ_TODO: TODO MORE ↘️ | REVIEW NEW
+#+SEQ_TODO: TODO MORE ↘️ ARGH | REVIEW NEW
 #+BEGIN_HTML
 \(
 \newcommand{\sodifjosidjfosidjfosijdfosijdfoisjdfoijsdofijsodifjosidjfosidj}{\mathscr{A}}
@@ -110,7 +110,14 @@
 
 
 ** TODO Memory
-*** Syndrome measurement
+*** TODO Syndrome measurement
+
+      * TODO :: Measurement circuits for single code block.  This is the question: How can you squeeze the
+        measurement of all stabilizer generators into a quantum circuit that's as shallow as possible?
+
+      * TODO :: Maybe?  Measurement circuits for two code blocks that are close together; see [[»Close Shave«]]
+        implementation of [[Split]] below.
+
 *** Decoding
 *** Fixing
 
@@ -119,13 +126,23 @@
 ***** TODO Expand
 ***** MORE Split
 
-      * X-split = |++⟩⟨+| + |--⟩⟨-|  = (|00⟩+|11⟩)⟨0| + (|01⟩+|10⟩)⟨1|  ⫽√2
-        + ZX-diagram
-          #+BEGIN_EXAMPLE
-             ╱
-           ─X
-             ╲
-          #+END_EXAMPLE
+      * Definitions
+        - X-split = |++⟩⟨+| + |--⟩⟨-|  = (|00⟩+|11⟩)⟨0| + (|01⟩+|10⟩)⟨1|  ⫽√2
+          + ZX-diagram
+            #+BEGIN_EXAMPLE
+               ╱
+             ─X
+               ╲
+            #+END_EXAMPLE
+        - Z-split = |00⟩⟨0| + |11⟩⟨1|
+          + ZX-diagram
+            #+BEGIN_EXAMPLE
+               ╱
+             ─Z
+               ╲
+            #+END_EXAMPLE
+
+      * Implementation 1: /»Close Shave«/  <<»Close Shave«>>
         + Measurement pattern
           1. Center part of logical qubit, boundaries left and right, not shown, are Z; logX is vertical X's:
             #+BEGIN_EXAMPLE
@@ -158,13 +175,15 @@
             #+END_EXAMPLE
             So we have 2 logical qubits, but their logical X's are equivalent through 𝛕
 
-      * Z-split = |00⟩⟨0| + |11⟩⟨1|
-        + ZX-diagram
-          #+BEGIN_EXAMPLE
-             ╱
-           ─Z
-             ╲
-          #+END_EXAMPLE
+      * TODO :: Implementation 2: As in[fn:river]
+
+      * Differences between Implementations 1 & 2:
+        + In #2, two rows/columns of stabilizers — i.e., a whole row of data qubits — are measured out, while in
+          #1, only one row/column of stabilizers is measured out, and no individual data qubits are measured.
+        + TODO :: In #1, if you use measurement qubits, the same measurement qubit is used for two different code
+          blocks (left and right) after the split.  This makes it more difficult (TODO: Impossible??) to squeeze
+          the stabilizer measurements into an as-shallow-as-possible circuit.  This probably makes the
+          Implementation 1 [[»Close Shave«]] simply silly.
 
 ***** TODO Merge
 
@@ -182,6 +201,7 @@
              X─
           ─Zₐ┘
           #+END_EXAMPLE
+       * TODO :: Implementation with stabilizer picture
 
 ***** REVIEW Full rotate
 
@@ -194,7 +214,7 @@
 
 ***** TODO FoGi rotate
 
-      From [fn:FoGiLS]
+      From [fn:FoGi]
 
 ***** TODO etc
 
@@ -251,55 +271,50 @@
         + Cf. [[Full rotate]]
 
 *** ↘️ Single-qubit measurement
-***** Z,X
+***** ARGH Z,X
 
-      * Destructive :: Measure all data qubits.[fn:river:]
+      * Destructive :: Measure all data qubits.[fn:river]
+        + TODO :: Question: How to handle error detecting info that arises?
+        + TODO :: Write pseudocode
 
-      * (Trivial) [[Split]] ::
+      * Slicing off ::  (Trivial) 𝞂-[[Split]] then 𝞂-basis measurement
+        + Split off 1 column/row of weight-4 stabilizers (to measure 𝛔, do 𝛔 split)
+          - In other words, [[Split]] qubit in two and perform destructive measurement of one of the 2 parts.
         + ZX-diagram (for measuring Z):
           #+BEGIN_EXAMPLE
-           +----------+
-           |          |
-          ────Z─────────
-           |  │       |
-           |  └─Xₐ─X₀ |
-           +----------+
+           +-------+
+           |       |
+          ────Z──────
+           |  │    |
+           |  └─Xₐ |
+           +-------+
           #+END_EXAMPLE
-          - The ~X₀~ measurement (⦨Z) in the diagram can be performed on a trivial "logical qubit" consisting of
-            only one row or column of data qubits, e.g.:
+          - The ~─Xₐ~ measurement (i.e., ⦨Z) in the diagram can be performed on a trivial "logical qubit"
+            consisting of only one row or column of data qubits, e.g.:
             #+BEGIN_EXAMPLE
-            ⋅
-             ⟩
-            ⋅
-
-            ⋅
-             ⟩
-            ⋅
-
-            ⋅
+               ∧
+            ⋅ ⋅ ⋅        ⋅ ⋅  ⋅
+             Z 𝗫          Z ⟩⟨
+            ⋅ ⋅ ⋅        ⋅ ⋅  ⋅
+             X 𝗭 ⟩        X    ⟩
+            ⋅ ⋅ ⋅    ⇒   ⋅ ⋅  ⋅
+             Z 𝗫          Z ⟩⟨
+            ⋅ ⋅ ⋅        ⋅ ⋅  ⋅
+             X 𝗭 ⟩        X    ⟩
+            ⋅ ⋅ ⋅        ⋅ ⋅  ⋅
+             ∨            ∨
             #+END_EXAMPLE
-
-
-        + Split off 1 column/row of weight-4 stabilizers (to measure 𝛔, do 𝛔 split)
+          - Remember that on the RHS there's an additional stabilizer from the split that's not part of any of the
+            two logical qubits: the tensor product of the Z's of all the data qubits (10, in our case) on the
+            deleted stabilizer column; the value of it is known (as it's the product of all bold plus one ~∧~
+            Z-stabilizers in the logical qubit before the split, and it means that the Z-value on the left
+            remaining logQ is up-to-sign the same as the Z-value of the right remaining (trivial) logQ.
         + ➾ each data qubit in single remaining column/row holds observable value up to sign
         + Careful: distance may decrease ([[Expand]] before?)
-        + TODO :: how to handle error detecting info that arises?  (The product of every 2 consecutive data qubits
-          in the row/column is a stabilizer known.)
-            #+BEGIN_EXAMPLE
-              ∧   ∧
-             ⋅ ⋅ ⋅ ⋅
-            X Z X Z
-             ⋅ ⋅ ⋅ ⋅
-            Z X Z X ⟩
-             ⋅ ⋅ ⋅ ⋅
-            X Z X Z
-             ⋅ ⋅ ⋅ ⋅
-            Z X Z X ⟩
-             ⋅ ⋅ ⋅ ⋅
-            ∨   ∨
-            #+END_EXAMPLE
+        + TODO :: Question: How to handle error detecting info that arises?  (The product of every 2 consecutive
+          data qubits in the row/column is a stabilizer known.)
 
-      * (Trivial) [[Merge]] ::
+      * Slicing on :: 𝞂-stateprep + (trivial) 𝞂-[[Merge]]
         + ZX-diagram (for measuring Z):
           #+BEGIN_EXAMPLE
            +----------+
@@ -308,13 +323,15 @@
            | X₀───Xₐ┘ |
            +----------+
           #+END_EXAMPLE
-          - The ~X₀~ state preparation (i.e., |0⟩) can be a performed on a trivial logical qubit consisting of
+        + The |0⟩ state preparation (~X₀─~ in ZX-diagram) can be a performed on a trivial logical qubit
+          consisting of a single row/column.
+          - ... or any size, really.
+        + Interestingly, there's no destructive measurement anywhere in this approach.
 
-*** 2-qubit ZZ,XX measurement
 *** 2-qubit Clifford gates
 ***** MORE CNOT
 
-      * Z-split + X-merge + fix
+      * Z-split + X-merge + fix[fn:HFDM11] <<Z-split+X-merge>>
         + 'Fix' refers to fixing the effect of the measurement outcome "𝖺": a Z-gate has to be applied if that 𝖺=1.
         + ZX-diagram:
           #+BEGIN_EXAMPLE
@@ -332,25 +349,36 @@
         + The vertical line in the ZX-diagram can be thought of as an auxiliary logical qubit.
         + Applying the Z-gate can be done virtually, of course.
         + TODO :: Split & merge can be done in parallel — TODO: *Work out how!*[fn:GiCNOT]
-        + TODO :: Work out cost & compare with ⦨ZZ+⦨XX
+        + TODO :: Work out cost & compare with [[⦨ZZ+⦨XX]]
+        + TODO :: Write pseudocode!
 
-      * ⦨ZZ + ⦨XX + fix
+      * ⦨ZZ + ⦨XX + fix <<⦨ZZ+⦨XX>>
+        + This is used in[fn:river]
         + ZX-diagram:
           #+BEGIN_EXAMPLE
-           +--------+
-           |        |
-          ────Z──Zₐ───
-           |  │     |
-           |  │     |
-           |  Zₐ    |
-           |  │     |
-          ────X───────
-           |        |
-           +--------+
+           +--------------------+
+           |                    |
+          ───────Z─────────Zₑ─────
+           |     │              |
+           |     Xₐ             |
+           |     │              |
+           | Z₀──Z───X──Xₕ      |
+           |         │          |
+           |         Zₑ         |
+           |         │          |
+          ───────────X─────Xₐ₊ₕ───
+           |                    |
+           +--------------------+
           #+END_EXAMPLE
+        + Don't forget: ~Z₀─~ is |+⟩ state prep (i.e., X-basis), and ~─Xₕ~ is Z-basis measurement.
+        + Why is this correct? Use standard ZX-calculus!
+        + TODO :: Work out cost & compare with [[Z-split+X-merge]]
+        + TODO :: Write pseudocode!
+        + TODO :: 🤔🤔🤔 On the level of elementary operations (Pasm) is this really different from
+          [[Z-split+X-merge]]?
 
-*** Multi-qubit Pauli measurement
-***** Measure ZZ,XX
+*** ↘️ Multi-qubit Pauli measurement
+***** MORE Measure ZZ,XX
 
       * Z-split /then/ Z-merge
         + ZX-diagram for ⦨ZZ
@@ -366,6 +394,8 @@
            |        |
            +--------+
           #+END_EXAMPLE
+        + I think this is the same as in[fn:FoGi]
+        + TODO :: Write pseudocode!
 
       * Z-merge /then/ Z-split, plus fix
         + ZX-diagram for ⦨ZZ
@@ -405,14 +435,35 @@
               |            |
               +------------+
              #+END_EXAMPLE
+        + TODO :: Write pseudocode!
+
 
 
 * Footnotes = Bibliography
-  * Riverlane [fn:river: ~arXiv:2307.03233~ /Compilation of a simple chemistry application/ (Riverlane)]
-  * Fowler-Gidney-LS [fn:FoGiLS: ~arXiv:1808.06709~ /Low overhead quantum computation using lattice surgery/ Fowler & Gidney]
+** Necessary reading
+
+  1) Microsoft[fn:microsoft: ~arXiv:2211.07629~ /Assessing requirements to scale to practical quantum advantage/] *Source code = Where?!?*
+
+  2) Riverlane[fn:river: ~arXiv:2307.03233~ /Compilation of a simple chemistry application/ (Riverlane)] *Source code = Where?!?*
+
+  3) Lattice Surgery Compiler[fn:LaSuCom: ~arXiv:2302.02459~ /A High Performance Compiler for Very Large Scale Surface Code Computations./]  [[https://latticesurgery.com][latticesurgery.com]]  *Has a test suite!*
+
+  4) Oak Ridge[fn:oak: ~arXiv:2311.10687~ /TISCC: A Surface Code Compiler and Resource Estimator for Trapped-Ion Processors/] *Includes verification!* [[https://github.com/ORNL-QCI/TISCC][github.com/ORNL-QCI/TISCC]]
+
+  5) Fowler-Gidney[fn:FoGi: ~arXiv:1808.06709~ /Low overhead quantum computation using lattice surgery/ Fowler & Gidney]
+
+** Other references
+
+  * HFDM11[fn:HFDM11: ~arXiv:1111.4022~ /Surface code quantum computing by lattice surgery./ Horsman, Fowler,
+    Devitt, Meter] Keep in mind that this paper is about the un-rotated surface code.
+
+** Online discussions
+
   * Gidney-QCSX-CNOT [fn:GiCNOT: Gidney's answer on Quantum-Computing Stackexchange,
     [[https://quantumcomputing.stackexchange.com/questions/20830/how-can-surface-codes-perform-splitting-and-merging-at-the-same-time-when-they-i]]]
-  * DOT: Read this! [[https://quantumcomputing.stackexchange.com/questions/38232/deformation-rules-for-zx-pipe-diagrams][Gidney's reply to /Deformation rules for ZX-pipe diagrams/.]]
+
+  * [[https://quantumcomputing.stackexchange.com/questions/38232/deformation-rules-for-zx-pipe-diagrams][Gidney's reply to /Deformation rules for ZX-pipe diagrams/.]]  DOT: Read this!
+
 ** EOF
 # Local Variables:
 # fill-column: 115
