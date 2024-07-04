@@ -119,6 +119,9 @@
         implementation of [[Split]] below.
 
 *** Decoding
+
+      * (Current) standard work is "Sparse Blossom"[fn:SparseBlossom]
+
 *** Fixing
 
 
@@ -440,7 +443,7 @@
 
 
 * Footnotes = Bibliography
-** Necessary reading
+** Necessary reading: Now
 
   1) Microsoft[fn:microsoft: ~arXiv:2211.07629~ /Assessing requirements to scale to practical quantum advantage/] *Source code = Where?!?*
 
@@ -450,12 +453,21 @@
 
   4) Oak Ridge[fn:oak: ~arXiv:2311.10687~ /TISCC: A Surface Code Compiler and Resource Estimator for Trapped-Ion Processors/] *Includes verification!* [[https://github.com/ORNL-QCI/TISCC][github.com/ORNL-QCI/TISCC]]
 
-  5) Fowler-Gidney[fn:FoGi: ~arXiv:1808.06709~ /Low overhead quantum computation using lattice surgery/ Fowler & Gidney]
+** Necessary reading: Later
+
+  5) [@5] Fowler-Gidney[fn:FoGi: ~arXiv:1808.06709~ /Low overhead quantum computation using lattice surgery/ Fowler & Gidney]
+
+  6) Litinski /Game of Surface Codes/
+
+  7) Other Litinski stuff, e.g., on magic states.
 
 ** Other references
 
   * HFDM11[fn:HFDM11: ~arXiv:1111.4022~ /Surface code quantum computing by lattice surgery./ Horsman, Fowler,
     Devitt, Meter] Keep in mind that this paper is about the un-rotated surface code.
+
+  * Sparse Blossom[fn:SparseBlossom: ~arXiv:2303:15933~ /Sparse Blossom: Correcting a million errors per
+        core second with minimum-weight matching./ Higgot & Gidney] [[https://github.com/oscarhiggott/PyMatching][github.com/oscarhiggott/PyMatching]]
 
 ** Online discussions
 
