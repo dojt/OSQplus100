@@ -20,9 +20,9 @@
 
 * Lattice Surgery
 ** ↘️ Code
-***** Shapes
+***** MORE Shapes
 
-      * Textbook shape d=7: 7×7 physical qubits
+      * Textbook shape 𝑑=7: 7×7 physical qubits
         #+BEGIN_EXAMPLE
          ∧ ∧ ∧
          XZXZXZ⟩
@@ -34,25 +34,43 @@
           ∨ ∨ ∨
         #+END_EXAMPLE
 
-      * (more)
+      * Textbook expansion (growing) leads to 𝑑×𝑒 blocks, with both 𝑑,𝑒 odd and ≥3
+
+      * The condition 𝑑,𝑒 odd can be dropped.  Then errors of weight 𝑑/2 or 𝑒/2 can only be detected, not
+        corrected.
+
+      * Exotic rectangular :: See [fn:FoGi] 13.
+
+      * Non-rectangular :: See [fn:FoGi], figures 7,8,9,21.
+        + Note: Fig. 7(b) has 1 logical qubit; Fig. 8(b) has 2 logical qubits.
+
+      * What?!?? :: What is Fig. 9(b) in [fn:FoGi] ???
 
 ***** MORE "Logical contributions" of physical qubit neighborhoods
 
-      * In the bulk: 1-(1/4+1/4+1/4+1/4)                      = 0
+      * In the bulk :: 1-(1/4+1/4+1/4+1/4)                                             = 0
         #+BEGIN_EXAMPLE
         Z X
          ⊙
         X Z
         #+END_EXAMPLE
 
-      * On an edge: 1-(1/4+1/4+1/2)                           = 0
+      * On an edge :: 1-(1/4+1/4+1/2)                                                  = 0
         #+BEGIN_EXAMPLE
         X
          ⊙
         Z ⟩
         #+END_EXAMPLE
 
-      * Convex corner std Z-X: 1-(1/4+1/2)                    = 1/4
+      * Skip 1 on an edge :: 1-(1/4+1/4)                                               = 1/2
+        #+BEGIN_EXAMPLE
+          ∧     ∧
+         ⋅ ⋅ ⊙ ⋅ ⋅
+        Z X Z X Z X
+        #+END_EXAMPLE
+        See Figs. 7,13 in [fn:FoGi]
+
+      * Convex corner std Z-X :: 1-(1/4+1/2)                                           = 1/4
         #+BEGIN_EXAMPLE
         ∧   ∧
          ⋅ ⋅ ⊙
@@ -61,7 +79,7 @@
         X Z X ⟩
         #+END_EXAMPLE
 
-      * Convex corner weird 𝛔-𝛔:  1-(1/4+1/2+1/2)             = -1/4
+      * Convex corner near 𝛔-𝛔 :: 1-(1/4+1/2+1/2)                                      = -1/4
         #+BEGIN_EXAMPLE
         ∧   ∧
          ⋅ ⋅ ⊙
@@ -71,8 +89,9 @@
          ⋅ ⋅ ⋅
         Z X Z ⟩
         #+END_EXAMPLE
+        See Fig. 21 in [fn:FoGi]
 
-      * Convex corner obtuse 𝛔-𝛔 near:  3 − 2⋅(1/2+1/4+1/3) − (1/4+1/4+1/4+1/3)  = -1/4
+      * Convex corner obtuse 𝛔-𝛔 near :: 3 − 2⋅(1/2+1/4+1/3) − (1/4+1/4+1/4+1/3)       = -1/4
         #+BEGIN_EXAMPLE
           ∧
          ⋅ ⊙
@@ -82,8 +101,9 @@
          ⋅ ⋅ ⋅
         Z X Z
         #+END_EXAMPLE
+        See Figs. 7,8,9,13 in [fn:FoGi]
 
-      * Convex corner obtuse 𝛔-𝛔 far:  3 − 2⋅(1/4+1/3) − (1/4+1/4+1/4+1/3)  = 3/4 = SHIT
+      * Convex corner obtuse 𝛔-𝛔 far :: 3 − 2⋅(1/4+1/3) − (1/4+1/4+1/4+1/3)            = 3/4 = /SHIT/
         #+BEGIN_EXAMPLE
         ∧
          ⋅ ⊙
@@ -94,7 +114,7 @@
         Z X Z ⟩
         #+END_EXAMPLE
 
-      * Convex corner obtuse Z-X:  3 − (1/2+1/4+1/3) − (1/4+1/3) − (1/4+1/4+1/4+1/3) = 1/4
+      * Convex corner obtuse Z-X :: 3 − (1/2+1/4+1/3) − (1/4+1/3) − (1/4+1/4+1/4+1/3)  = 1/4
         #+BEGIN_EXAMPLE
           ∧
          ⋅ ⊙
@@ -105,8 +125,44 @@
         Z X Z ⟩
         #+END_EXAMPLE
 
+      * Concave corner 𝛔-𝛔 near :: 1-(1/4+1/4+1/4)                                     = 1/4
+        #+BEGIN_EXAMPLE
+        ⋅ ⋅ ⋅ ⋅
+         X Z X ⟩
+        ⋅ ⋅ ⋅ ⋅
+         Z X Z
+        ⋅ ⋅ ⋅ ⋅
+         X Z X ⟩
+        ⋅ ⋅ ⋅ ⋅
+         Z X Z   ∧   ∧
+        ⋅ ⋅ ⋅ ⊙ ⋅ ⋅ ⋅ ⋅
+         X Z X Z X Z X
+        ⋅ ⋅ ⋅ ⋅ ⋅ ⋅ ⋅ ⋅
+        #+END_EXAMPLE
+        Figs. 8,9,21 in [fn:FoGi]
+
+      * Concave corner 𝛔-𝛔 far+ramp :: 3 − 2⋅(1/4+1/4+1/3) − (1/4+1/4+1/4+1/3)         = 1/4
+        #+BEGIN_EXAMPLE
+        ⋅ ⋅ ⋅ ⋅
+         Z X Z ⟩
+        ⋅ ⋅ ⋅ ⋅
+         X Z X
+        ⋅ ⋅ ⋅ ⊙
+         Z X Z ◺   ∧
+        ⋅ ⋅ ⋅ ⊙ ⊙ ⋅ ⋅ ⋅
+         X Z X Z X Z X
+        ⋅ ⋅ ⋅ ⋅ ⋅ ⋅ ⋅ ⋅
+        #+END_EXAMPLE
+        Figs. 8,9,21 in [fn:FoGi]
+
+      * ❓❓❓ :: What is Fig. 9(b) in [fn:FoGi] ???
+
       * etc
-      * etc
+
+      _Notes_
+
+      - »Concave corner 𝛔-𝛔 near« and »Concave corner 𝛔-𝛔 far+ramp« can be combined to give a 180° turn, as in
+        Figs. 8,9 of [fn:FoGi].  The logQ contribution adds up to 1/2.
 
 
 ** TODO Memory
@@ -126,7 +182,31 @@
 
 
 ** ↘️ Shape changes & moves
-***** TODO Expand
+***** MORE Expand / Grow and Shrink
+
+      * Expand along 𝞂-boundary
+
+        + Process:
+          1. Prepare all new qubits in +𝞂 state
+          2. Measure all (new) stabilizers
+
+        + Caveat: I have only checked it for expanding along into a rectangle, not around corners or whatnot (but
+          it should work).
+
+        + What you have to check is that there's 1 qubit degree of freedom left after step #2
+
+
+        + *Wrong* process for expand along Z boundary:
+          1. Prepare all new qubits in *+X (wrong!)* state
+          2. Measure all (new) stabilizers
+          It's wrong because it leads to a logical X in the stabilizer group, i.e., there's 0 qubit degrees of
+          freedom left.
+          - Idea :: Maybe that's a cool way for log-qubit reset? 🤔
+
+        + TODO :: Pseudo code with log-frame updates
+
+      * Shrink
+
 ***** MORE Split
 
       * Definitions
