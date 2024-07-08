@@ -620,7 +620,9 @@
   * Gidney-QCSX-CNOT [fn:GiCNOT: Gidney's answer on Quantum-Computing Stackexchange,
     [[https://quantumcomputing.stackexchange.com/questions/20830/how-can-surface-codes-perform-splitting-and-merging-at-the-same-time-when-they-i]]]
 
-  * [[https://quantumcomputing.stackexchange.com/questions/38232/deformation-rules-for-zx-pipe-diagrams][Gidney's reply to /Deformation rules for ZX-pipe diagrams/.]]  DOT: Read this!
+  * [[https://quantumcomputing.stackexchange.com/questions/32048/rigorous-understanding-that-one-should-correct-pauli-drift-before-non-clifford][Gidney on propagating physical Pauli fixups through non-Clifford gates]]
+
+  * [[https://quantumcomputing.stackexchange.com/questions/38232/deformation-rules-for-zx-pipe-diagrams][Gidney's reply to /Deformation rules for ZX-pipe diagrams/.]]  DOT: Has recommended reading! 😊
 
 ** EOF
 # Local Variables:
