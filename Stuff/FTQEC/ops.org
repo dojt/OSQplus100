@@ -409,7 +409,7 @@
         - difference is global phase
         - can be done in parallel
 
-***** REVIEW H-gate
+***** MORE H-gate
 
       * Transversal :: (TODO explain)
 
@@ -418,6 +418,39 @@
           - before: Z̅ between Z-boundaries, X̅  between X-boundaries;
           - after:  Z̅ between X-boundaries, X̅  between Z-boundaries.
         + Cf. [[Code rotations]]
+
+      * With rotation :: TODO
+
+***** S-gate
+
+      * Magic state ::
+        + Prepare 𝗦|+⟩ state on aux, measure Z⊗Z, measure Xₐᵤₓ, fix[fn:river]
+          - ZX-diagram:
+            #+BEGIN_EXAMPLE
+             +----------------+
+             |                |
+             | Z─Z½──Z──Zₜ    |
+             |       │        |
+             |       Xₐ       |
+             |       │        |
+            ─────────Z───Zₜ₊ₐ───
+             |                |
+             +----------------+
+            #+END_EXAMPLE
+        + Simpler: 𝗦|+⟩ state on aux, merge, fix:
+          - ZX-diagram (also fused ~Z─Z½─~ to ~Z½─~):
+            #+BEGIN_EXAMPLE
+             +------------+
+             |            |
+             | Z½         |
+             |   ╲        |
+             |    Xₐ      |
+             |     ╲      |
+            ────────Z──Zₐ───
+             |            |
+             +------------+
+            #+END_EXAMPLE
+
 
 *** ↘️ Single-qubit measurement
 ***** ARGH Z,X
