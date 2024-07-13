@@ -423,7 +423,7 @@
 
 ***** S-gate
 
-      * Magic state ::
+      * Magic state :: <<¤S-magic>>
         + Prepare 𝗦|+⟩ state on aux, measure Z⊗Z, measure Xₐᵤₓ, fix[fn:river]
           - ZX-diagram:
             #+BEGIN_EXAMPLE
@@ -620,6 +620,23 @@
         + TODO :: Write pseudocode!
 
 
+*** MORE Non-Clifford stuff
+***** ARGH T-gate
+
+      * Gate teleportation when magic state |0⟩+√𝒊|1⟩ is available
+        + Similar to [[¤S-magic]]
+        + ARGH :: ZX-diagram (also fused ~Z─Z½─~ to ~Z½─~):
+          #+BEGIN_EXAMPLE
+           +------------+
+           |            |
+           | Z¼         |
+           |   ╲        |
+           |    Xₐ      |
+           |     ╲      |
+          ────────Z──Zₐ───
+           |            |
+           +------------+
+          #+END_EXAMPLE
 
 * Footnotes = Bibliography
 ** Necessary reading: Now
