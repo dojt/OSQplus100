@@ -451,7 +451,6 @@
              +------------+
             #+END_EXAMPLE
 
-
 *** ↘️ Single-qubit measurement
 ***** ARGH Z,X
 
