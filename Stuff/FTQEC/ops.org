@@ -618,24 +618,30 @@
              #+END_EXAMPLE
         + TODO :: Write pseudocode!
 
-
 *** MORE Non-Clifford stuff
-***** ARGH T-gate
+**** MORE T-gate
+***** Gate teleportation when magic state |0⟩+√𝒊|1⟩ is available
 
       * Gate teleportation when magic state |0⟩+√𝒊|1⟩ is available
         + Similar to [[¤S-magic]]
-        + ARGH :: ZX-diagram (also fused ~Z─Z½─~ to ~Z½─~):
+        + ZX-diagram (also fused ~Z─Z½─~ to ~Z½─~):
           #+BEGIN_EXAMPLE
-           +------------+
-           |            |
-           | Z¼         |
-           |   ╲        |
-           |    Xₐ      |
-           |     ╲      |
-          ────────Z──Zₐ───
-           |            |
-           +------------+
+           +---------------+
+           |               |
+           | Z¼            |
+           |   ╲           |
+           |    Xₐ         |
+           |     ╲         |
+          ────────Z──Zₐ⸝₂────
+           |               |
+           +---------------+
           #+END_EXAMPLE
+
+      * River[fn:river:] have their own complicated way of doing the same thing, cf. [[¤S-magic][S-Gate with magic states]].
+
+***** Magic state factories
+
+
 
 * Footnotes = Bibliography
 ** Necessary reading: Now
@@ -655,6 +661,14 @@
   6) Litinski /Game of Surface Codes/
 
   7) Other Litinski stuff, e.g., on magic states.
+
+  Further:
+
+  * Beverland-Kliuchnikov-Schoute: /Surface code compilation via edge-disjoint paths/.  arXiv:2110.11493
+
+  * Kliuchnikov-Beverland-Paetznick: /Stabilizer circuit verification/.  arXiv:2309.08676
+
+  * Beverland-...-Kliuchnikov: /Fault tolerance of stabilizer channels/.  arXiv:2401.12017
 
 ** Other references
 
