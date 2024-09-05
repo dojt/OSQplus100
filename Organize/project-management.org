@@ -226,14 +226,14 @@ Sparse tree showing all items that are not done: C-c / t
 
 ***** Contributing partners
 
-      | Partner    | Total PMs |
-      |            | in WP7    |
-      |------------+-----------|
-      | _UTartu_   | 36        |
-      | FZJ        | 70        |
-      | CHALMERS   | 54        |
-      | UPV/EHU    | 38        |
-      | Qruise     | 0         |
+      | Partner  | Total PMs | Notes                                 |
+      |          |    in WP7 |                                       |
+      |----------+-----------+---------------------------------------|
+      | _UTartu_   |        36 |                                       |
+      | FZJ      |        70 | Mistake: They are not active Task 7.3 |
+      | CHALMERS |        54 |                                       |
+      | UPV/EHU  |        38 |                                       |
+      | Qruise   |         0 | Mistake: Not active in WP 7           |
 
 *** Sub-task 7.4.1 /Generic simulator with simple noise models/
 **** Task description
