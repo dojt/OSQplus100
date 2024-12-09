@@ -15,27 +15,14 @@ class My_Quantum_Circuit_Thing:
         Builds the quantum circuit based on a list of gate specifications.
 
         Args:
-            gates: A list of tuples, where each tuple represents a gate.
-                   The tuple format is (gate_name, target_qubits, params).
-                   For example: ('h', [0], []), ('cx', [0, 1], []), ('rx', [1], [0.5]).
+            parameters: A dummy list argument holding the only parameter
+                   that the quantum circuit uses.
         """
-
-        gates = [
-           ('h', [0], []),  # Hadamard on qubit 0
-            ('cx', [0, 1], []),  # CNOT on qubits 0 and 1
-            ('ry', [1], [parameters[0]]),  # Rotation around y-axis on qubit 1
-            ('cx', [1,2], []), # CNOT on qubits 1 and 2
-            ('measure', [0,1,2], [])
-        ]
-
-        for gate_name, target_qubits, params in gates:
-
-            if hasattr(self.circuit,gate_name):
-                gate_method = getattr(self.circuit, gate_name)
-                gate_method(*params, *target_qubits)  # Apply gate
-
-            else:
-                raise ValueError(f"Gate {gate_name} is not supported.")
+        self.circuit.h(0)
+        self.circuit.cx(0, 1)
+        self.circuit.ry(parameters[0], 1)
+        self.circuit.cx(1, 2)
+        self.circuit.measure_all()  # Direct measurement of all qubits
 
 
 
