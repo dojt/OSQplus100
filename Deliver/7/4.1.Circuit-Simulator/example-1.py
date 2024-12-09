@@ -13,7 +13,6 @@ print(qc)
 
 # Initialize the AerSimulator with the tensor_network method
 simulator = AerSimulator(device='GPU',method='tensor_network')
-#simulator = AerSimulator(device='GPU')
 
 # Transpile the circuit for the simulator
 transpiled_qc = transpile(qc, simulator)
