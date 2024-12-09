@@ -1,1 +1,3 @@
-# Do not add any confidential Intellectual Property here!
+# No sensitive IP here!
+
+License: CC0 = grants right to use **except** for patent rights.
