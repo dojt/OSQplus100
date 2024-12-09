@@ -5,6 +5,7 @@
 #+DATE:   Tue Jun 11 12:19:44 CEST 2024
 #+STARTUP: latexpreview
 #+STARTUP: show2levels
+#+STARTUP: indent
 #+SEQ_TODO: :::: NOW! NEXT ARGH ↘️ | DONE
 #+COLUMNS: %70ITEM %TODO
 #+BEGIN_COMMENT
@@ -238,15 +239,21 @@ Sparse tree showing all items that are not done: C-c / t
 *** Sub-task 7.4.1 /Generic simulator with simple noise models/
 **** Task description
 
-      From Grant Agreement: (highlight & paragraph break mine):
+From Grant Agreement: (highlight & paragraph break mine):
 
-      #+BEGIN_QUOTE
-      *UTartu* will *make the cuQuantum* or QuEST quantum-circuit simulator *available* to OpenSuperQPlus100
-      partners and *add noise models from OpenSuperQPlus100 hardware*.
+#+BEGIN_QUOTE
+*UTartu* will *make the cuQuantum* or QuEST quantum-circuit simulator *available* to OpenSuperQPlus100 partners and *add noise models from OpenSuperQPlus100 hardware*.
 
-      CHALMERS will survey alternative quantum-circuit simulators. Wigner RCP will create infrastructure for
-      testing of sampling algorithms and quantum-kernel-based algorithms, using FPGA-based dataflow engines.
-      #+END_QUOTE
+CHALMERS will survey alternative quantum-circuit simulators. Wigner RCP will create infrastructure for testing of sampling algorithms and quantum-kernel-based algorithms, using FPGA-based dataflow engines.
+#+END_QUOTE
+
+**** Milestone 19 /Recommended quantum-circuit simulator available for at least 3 OpenSuperQPlus100 partners/
+DEADLINE: <2025-02-28>
++ Means of verification: Software used by at least 3 OpenSuperQ partners
+
+
+**** 
+
 
 *** Sub-task 7.5.1 /HPC connection/
 **** Task description
@@ -293,5 +300,5 @@ Sparse tree showing all items that are not done: C-c / t
 
 * End Of File
 # Local Variables:
-# fill-column: 115
+# fill-column: 9999999
 # End:
