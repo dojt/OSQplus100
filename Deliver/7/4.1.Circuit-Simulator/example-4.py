@@ -24,15 +24,14 @@ class My_Quantum_Circuit_Thing:
         while gates_applied < num_gates:
             for i in range(self.num_qubits):
                 # Randomly choose a single-qubit gate (H, RX, RY, RZ)
-                gate_choice = random.choice(['h', 'rx', 'ry', 'rz'])
-                if gate_choice == 'h':
-                    self.circuit.h(i)
-                elif gate_choice == 'rx':
-                    self.circuit.rx(random.uniform(0, 2 * 3.14159), i)  # Random rotation angle
+                gate_choice = random.choice(['rx', 'ry', 'rz'])
+                random_angle = random.randint(0, 7) * (3.14159 / 4)
+                if gate_choice == 'rx':
+                    self.circuit.rx(random_angle, i)  # Random rotation angle
                 elif gate_choice == 'ry':
-                    self.circuit.ry(random.uniform(0, 2 * 3.14159), i)
+                    self.circuit.ry(random_angle, i)
                 elif gate_choice == 'rz': # Or just else: would work too
-                    self.circuit.rz(random.uniform(0, 2 * 3.14159), i) 
+                    self.circuit.rz(random_angle, i) 
                 gates_applied += 1
 
                 if gates_applied >= num_gates:
