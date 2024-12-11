@@ -27,8 +27,12 @@ class My_Quantum_Circuit_Thing:
                 gate_choice = random.choice(['h', 'rx', 'ry', 'rz'])
                 if gate_choice == 'h':
                     self.circuit.h(i)
-                else:
-                    self.circuit[gate_choice](random.uniform(0, 2 * 3.14159), i)  # Random rotation angle
+                elif gate_choice == 'rx':
+                    self.circuit.rx(random.uniform(0, 2 * 3.14159), i)  # Random rotation angle
+                elif gate_choice == 'ry':
+                    self.circuit.ry(random.uniform(0, 2 * 3.14159), i)
+                elif gate_choice == 'rz': # Or just else: would work too
+                    self.circuit.rz(random.uniform(0, 2 * 3.14159), i) 
                 gates_applied += 1
 
                 if gates_applied >= num_gates:
