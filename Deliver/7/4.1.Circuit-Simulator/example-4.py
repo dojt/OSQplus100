@@ -66,7 +66,7 @@ class My_Quantum_Circuit_Thing:
 
 # Example usage:
 num_qubits = 30
-num_gates = 10 * num_qubits   # Set number of gates to be added
+num_gates = 3 * num_qubits   # Set number of gates to be added
 
 my_circ = My_Quantum_Circuit_Thing(num_qubits)
 my_circ.build_circuit(num_gates)
