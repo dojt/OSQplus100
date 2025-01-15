@@ -9,7 +9,7 @@ const minutes = Stabilizer_Foolers.min
 
 for n = 4:10
     for α = 0.25: 0.1 : 0.5
-        for _iter = 1:10
+        for _iter = 1:1 # →10 # ❗
 
             println("#######################################################################################")
             println("#######################################################################################")
@@ -22,7 +22,7 @@ for n = 4:10
             (;opt,slacks) =
                 reduced_false_positive_analysis(
                     ; n, α,
-                    time_limit       = max(1,n-6) * 30minutes,
+                    time_limit       = max(1,n-6) * 1minutes, # →30 ❗
                     perturb          = 1,
                     # fix_Id           = false, # default: yes, iff α ≥ 2/n
                     basis_repeats = 1_000_000 )
