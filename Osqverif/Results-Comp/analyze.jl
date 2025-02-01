@@ -1,86 +1,20 @@
-# Import required libraries
+include("iffp.jl")
+
 using CSV
 using DataFrames
 
 using Statistics: mean
 
-using DOT_NiceMath            # ⋅=* etc
-using DOT_NiceMath.Numbers64  # ℝ=Float64, ℤ=Int64, etc
-
 using Printf
 using Test
 
-function ifpp_lowerbound(;n::ℤ, α::ℝ) ::BigFloat
+using DOT_NiceMath            # ⋅=* etc
+using DOT_NiceMath.Numbers64  # ℝ=Float64, ℤ=Int64, etc
 
-    bino(n::ℤ, k::ℤ) ::BigInt =
-        let 𝐧 = big(n), 𝐤 = big(k)
-            factorial(𝐧) ÷ factorial(𝐤) ÷ factorial(𝐧-𝐤)
-        end
+using .Intrinsic_False_Positive_Probability_Bounds
+ifpp_lowerbound(;n::ℤ , m::ℤ) = Intrinsic_False_Positive_Probability_Bounds.lowerbound(;n=big(n),α=2/big(m))
+ifpp_upperbound(;n::ℤ , m::ℤ) = Intrinsic_False_Positive_Probability_Bounds.upperbound(;n=big(n),α=2/big(m))
 
-    ;                                   @assert 1 ≤ n < 256
-    ;                                   @assert 0 < α ≤ 2
-    m =  round( 2/α )  |> Int      ;    @assert m ≈ 2/α     # 2/α must be integer
-
-    𝟏 ::BigInt = 1
-    𝟐 ::BigInt = 2
-
-    if m > n
-        return 0.0 |> big
-    end
-
-    denominator = prod(  𝟐^n - 𝟐^j                              for j = 0 : m-1  )
-    numerator   =
-        if m < n
-            (-1)^m ⋅ ∑(   bino(m,j) ⋅ (-1)^j ⋅ (1+j)^n   for j = 0 : m   )
-        elseif m == n
-            factorial(big(n))
-        else
-            @assert :shit_me == :not "This line should be unreachable."
-        end
-
-    return numerator / denominator
-
-end #^ ifpp_lowerbound()
-
-function ifpp_upperbound(;n::ℤ, α::ℝ) ::BigFloat
-    ;                                   @assert 1 ≤ n < 256
-    ;                                   @assert 0 < α ≤ 2
-
-    @assert n ≥ 3
-
-    α < 2 || return big(1.0)
-
-    𝟏 ::BigInt = 1
-    𝟐 ::BigInt = 2
-
-    r(m::ℤ) ::BigFloat = begin @assert m>0 ; 𝟏/(  𝟐^(m+1) - 2  ) end
-
-    η(k::ℤ ; α::ℝ,n::ℤ) =
-        let ret = ( 1 − 2r(max(k,n-k)) )/( 𝟐 − α )   ;            @assert ret!=0 ; @assert ret > 0
-            ret
-        end
-
-    return prod(  η(k ; α,n )   for k = 0 : n-1  )
-end #^ ifpp_upperbound()
-
-
-@testset "Testing ifpp_upper/lower-bound" verbose=true begin
-
-    for m = 1:32
-        α = 2/m
-
-        for n = 3 : 32
-            lb = ifpp_lowerbound(;n,α)
-            ub = ifpp_upperbound(;n,α)
-
-            @test isfinite(lb)
-            @test isfinite(ub)
-
-            @test lb==1.0==ub || lb < ub
-        end
-    end
-
-end #^ testset
 
 # Tabulate some values:
 
@@ -89,8 +23,8 @@ let
     for n = 3 : 10
         for m = 2 : 8
             α = 2/m
-            lb = ifpp_lowerbound(;n,α)
-            ub = ifpp_upperbound(;n,α)
+            lb = ifpp_lowerbound(;n,m)
+            ub = ifpp_upperbound(;n,m)
 
             @printf("%2d\t%5.3f\t%10.3e\t%10.3e\n", n, α, lb, ub)
         end
@@ -155,12 +89,20 @@ end
 #    10      0.286    5.757e-14       4.156e-03
 #    10      0.250    4.997e-17       3.381e-03
 
+let α=0.4
+    for n = 4 : 36
+        lb = ifpp_lowerbound(;n,m=round(ℤ,2/α))
+        println("n = $n, \tlb = $lb")
+    end
+end
+
+
 using Plots
 plotly()
 
 function my_plot_lb_ub()
     # Define ranges for n and m
-    n_max = 10
+    n_max = 65
 
     m_values = [ 3,4,5,6,7,8 ]
     n_values = 3:n_max
@@ -178,8 +120,11 @@ function my_plot_lb_ub()
         for (j, m) in enumerate(m_values)
             α = α_values[j]
 
-            lb = ifpp_lowerbound(;n, α) |> Float64
-            ub = ifpp_upperbound(;n, α) |> Float64
+            lb = ifpp_lowerbound(;n, m) |> Float64
+            ub = ifpp_upperbound(;n, m) |> Float64
+
+            @assert isfinite(lb)
+            @assert isfinite(ub)
 
             lb_matrix[i, j] = lb
             ub_matrix[i, j] = ub
@@ -189,56 +134,66 @@ function my_plot_lb_ub()
 
     # Create a list to store individual plots
     plots_list = []
-    
+
     # Iterate over each α to create separate plots
     for j in 1:length(m_values)
         m = m_values[j]
         α = α_values[j]
 
         # Filter n_values and corresponding lb/ub values for the current α
-        valid_n_indices = findall(n -> 2/α >= 2/n , n_values) # Condition for positive lower bound
-        filtered_n_values = n_values[valid_n_indices]
-        lb_plot = Float64.(lb_matrix[valid_n_indices, j]) # Filter lb_matrix
-        ub_plot = Float64.(ub_matrix[valid_n_indices, j]) # Filter ub_matrix
+        lbvalid_n_indices = findall(n -> m ≤ n ≤ n_max, n_values) # Condition for positive lower bound
+        ubvalid_n_indices = findall(n -> 3 ≤ n ≤ n_max, n_values) # Superset
+        lbfiltered_n_values = n_values[lbvalid_n_indices]
+        ubfiltered_n_values = n_values[ubvalid_n_indices]
+        lb_plot = Float64.(lb_matrix[lbvalid_n_indices, j]) # Filter lb_matrix
+        ub_plot = Float64.(ub_matrix[ubvalid_n_indices, j]) # Filter ub_matrix
 
+        min_y = min( minimum(lb_plot), minimum(ub_plot), 1e-12) # Find minimum across both datasets and 1e-12 floor
+        min_exponent = round(Int, log10(min_y))
 
 
         # Create a plot for the current α
         p = scatter(
-            filtered_n_values, lb_plot, # Use filtered_n_values here
-            label = "Lower Bound",       # Add label for lower bound
-            xlabel = "n",
+            lbfiltered_n_values, lb_plot, # Use filtered_n_values here
+            label = "",       # Label box takes too much space
+            xlabel = "𝑛",
+            xticks = 8: 8 :n_max,
+            yticks = 10.0 .^( 0: -10 :min_exponent),
             ylabel = "Probability",
-            title = "α = $(round(α, digits=3))",
+            title = "𝛼 = $(round(α, digits=3))",
             yscale = :log10,
             linewidth = 2,
             marker = (:circle, 2),
+            markerstrokewidth = 0,
             legend = :topright
         )
 
         # Add the upper bound to the same plot (using filtered_n_values)
         scatter!(
             p,
-            filtered_n_values, ub_plot,  # Use filtered_n_values here
-            label = "Upper Bound",       # Add label for upper bound
+            ubfiltered_n_values, ub_plot,  # Use filtered_n_values here
+            label = "",       # Label box takes too much space
             linewidth = 2,
-            marker = (:diamond, 2)
+            marker = (:diamond, 2),
+            markerstrokewidth = 0
         )
+
+        hline!([1e-12], color = :lightgray, linestyle = :dash, label="")
 
         push!(plots_list, p)
     end
-    
+
     # Determine the layout based on the number of α values
     num_plots = length(plots_list)
-    cols = 3  # Number of columns in the layout
+    cols = 2  # Number of columns in the layout
     rows = ceil(Int, num_plots / cols)
-    
+
     # Combine all individual plots into a single figure with subplots
-    combined_plot = plot(plots_list..., layout = (rows, cols), size = (1200, 400 * rows))
-    
+    combined_plot = plot(plots_list..., layout = (rows, cols), size = (1200, 400 * rows), bottom_margin = 15Plots.mm)
+
     # Display the combined plot
     display(combined_plot)
-    
+
     # Optionally, save the plot to a file
     # savefig(combined_plot, "ifpp_bounds_plots.png")
 
@@ -320,3 +275,9 @@ end
 
 pt = plot_Probability_of_Basis_Accept_ESTIMATE_powerof2(;α=1/2)
 
+
+;; Local Variables:
+;; gptel-model: gpt-4o-mini
+;; gptel--backend-name: "ChatGPT"
+;; gptel--bounds: ((7304 . 7319) (7666 . 7681))
+;; End:
