@@ -1,4 +1,4 @@
-# Results-Comp/iffp.jl
+# Results-Comp/ifpp.jl
 module Intrinsic_False_Positive_Probability_Bounds
 
     using Test
