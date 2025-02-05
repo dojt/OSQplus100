@@ -660,7 +660,7 @@ function reduced_false_positive_analysis(;
         𝐸 = estimate_basis_reduced(opt.p; n, α, repet=basis_repeats)
         println("Probability of Basis-Accept, ESTIMATE:            ", 𝐸)
         println("Basis density in accepting rows from accept prob: ", Float64( basdens(𝐸,num_accept;n) ))
-        println("Basis density in accepting rows:                  ", Float64( basdens(acceptrowlist;n) ))
+        println("Basis density in accepting rows:                  ", Float64( basdens(acceptrowlist;n,repet=1_000_000) ))
     else
         println("Probability of Basis-Accept, ESTIMATE:            ", "(skipped)")
     end

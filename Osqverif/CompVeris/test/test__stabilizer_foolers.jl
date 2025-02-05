@@ -7,9 +7,15 @@ using CompVeris.Stabilizer_Foolers
 const minute  = Stabilizer_Foolers.min
 const minutes = Stabilizer_Foolers.min
 
+Supp(f) =  begin
+               L=length(f)
+               [ ξ for ξ=1:L if f[ξ] != 0 ]
+           end
+
 for n = 4:10
-    for α = 0.25: 0.1 : 0.5
-        for _iter = 1:1 # →10 # ❗
+    #for α = 1/4: 1/8 : 1/2
+    let α = 1/3
+        for _iter = 1:10
 
             println("#######################################################################################")
             println("#######################################################################################")
@@ -22,7 +28,7 @@ for n = 4:10
             (;opt,slacks) =
                 reduced_false_positive_analysis(
                     ; n, α,
-                    time_limit       = max(1,n-6) * 1minutes, # →30 ❗
+                    time_limit       = max(1,n-6) * 30minutes,
                     perturb          = 1,
                     # fix_Id           = false, # default: yes, iff α ≥ 2/n
                     basis_repeats = 1_000_000 )

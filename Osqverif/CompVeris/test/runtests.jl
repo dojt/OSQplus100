@@ -380,7 +380,7 @@ end
         n = 2
         α = 0.5  # Example α value
         (;opt,slacks) = redirect_stdout(devnull) do
-            Stabilizer_Foolers.reduced_false_positive_analysis(; n, α, time_limit=61.0) # Short time limit for testing
+            Stabilizer_Foolers.reduced_false_positive_analysis(; n, α, basis_repeats=1, time_limit=61.0) # Short time limit for testing
         end
 
         # Check if the optimization ran successfully (adjust tolerance as needed)
