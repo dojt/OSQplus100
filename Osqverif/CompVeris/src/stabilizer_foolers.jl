@@ -24,7 +24,7 @@ using JuMP
 using Mods
 using StatsBase: sample
 using LinearAlgebraX: rankx, nullspacex, detx
-#using Combinatorics: binomial
+import Combinatorics
 
 import ..fourier_coeff
 fourier_coeff(x ::I, y ::I) where{I<:Integer} = fourier_coeff(UInt64(x),UInt64(y))
@@ -498,9 +498,9 @@ end
 #-------------------------------------------------------------------
 
 function reduced_fooler(; n::Int, α::Float64,
-                        fix_Id     ::Bool = false,
-                        perturb    ::ℤ    = -1,
-                        time_limit        = 10min)
+                        fix_Id     ::Union{Bool,Int} = false,
+                        perturb    ::ℤ               = -1,
+                        time_limit                   = 10min )
     @assert n ≥ 1
     @assert α ≥ 0
 
@@ -514,7 +514,7 @@ function reduced_fooler(; n::Int, α::Float64,
     @variable(model, acceptrow[1:N-1], Bin)
 
 
-    @constraint(model, ∑(p[x] for x in 1:N-1) == 1)  # Probability distribution
+    @constraint(model, ∑(p[x] for x in 1:N-1) == 1)                   # Probability distribution
 
     c =
         if perturb ≥ 0
@@ -531,11 +531,13 @@ function reduced_fooler(; n::Int, α::Float64,
                    )
     end
 
-    if fix_Id
-        for j = 0:n-1
-            @constraint(model, acceptrow[ 1<<j ] == 1)
+    for w = 1:fix_Id                                                  # yes, this works even if fix_Id is a bool
+        for S in Combinatorics.combinations(1:n,w)
+            s = ∑(  1<<(j-1) for j ∈ S  )
+            @constraint(model, acceptrow[ s ] == 1)
         end
     end
+
 
     optimize!(model)
 
