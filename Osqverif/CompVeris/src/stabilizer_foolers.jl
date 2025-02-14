@@ -550,7 +550,7 @@ function reduced_fooler(; n::Int, α::Float64,
         end
     else
         @assert fix_Id isa RndHypergr_t   "Why are you here?!!"
-        @assert fix_Id.w ≥ 1
+        @assert fix_Id.w ≥ 2
         @assert 0 < fix_Id.p ≤ 1
         let w=1
             for S in Combinatorics.combinations(1:n,w)
@@ -560,7 +560,7 @@ function reduced_fooler(; n::Int, α::Float64,
         let w = fix_Id.w,
             p = fix_Id.p
             for S in Combinatorics.combinations(1:n,w)
-                if rand() ≤ fix_Id.p
+                if rand() ≤ p
                     fix_this(S)
                 end
             end
