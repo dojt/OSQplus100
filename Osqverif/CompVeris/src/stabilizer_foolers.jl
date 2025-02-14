@@ -648,7 +648,7 @@ function reduced_false_positive_analysis(;
                                          time_limit        ::Float64 = 1min,
                                          basis_repeats     ::Int     = 0,
                                          perturb           ::ℤ       = -1,
-                                         fix_Id            ::Bool    = ( α ≥ 2/n) )
+                                         fix_Id     ::Union{Bool,Int}   = ( α ≥ 2/n) )
     @assert n ≥ 1
     N = 2^n
 
