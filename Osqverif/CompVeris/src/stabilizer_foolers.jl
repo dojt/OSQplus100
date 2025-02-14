@@ -497,8 +497,13 @@ end
 # reduced stuff
 #-------------------------------------------------------------------
 
+
+const RndHypergr_t  = @NamedTuple{w::ℤ, p::ℝ}
+const Fix_Stuff_t   = Union{ Bool ,  ℤ ,  RndHypergr_t }
+
+
 function reduced_fooler(; n::Int, α::Float64,
-                        fix_Id     ::Union{Bool,Int} = false,
+                        fix_Id     ::Fix_Stuff_t     = false,
                         perturb    ::ℤ               = -1,
                         time_limit                   = 10min )
     @assert n ≥ 1
@@ -531,13 +536,25 @@ function reduced_fooler(; n::Int, α::Float64,
                    )
     end
 
-    for w = 1:fix_Id                                                  # yes, this works even if fix_Id is a bool
+    if fix_Id isa Bool || fix_Id isa ℤ
+        for w = 1:fix_Id                                              # yes, this works even if fix_Id is a bool
+            for S in Combinatorics.combinations(1:n,w)
+                s = ∑(  1<<(j-1) for j ∈ S  )
+                @constraint(model, acceptrow[ s ] == 1)
+            end
+        end
+    else
+        @assert fix_Id isa RndHypergr_t   "Why are you here?!!"
+        @assert fix_Id.w ≥ 1
+        @assert 0 < fix_Id.p ≤ 1
+        (;w,p) = fix_Id
         for S in Combinatorics.combinations(1:n,w)
-            s = ∑(  1<<(j-1) for j ∈ S  )
-            @constraint(model, acceptrow[ s ] == 1)
+            if rand() ≤ p
+                s = ∑(  1<<(j-1) for j ∈ S  )
+                @constraint(model, acceptrow[ s ] == 1)
+            end
         end
     end
-
 
     optimize!(model)
 
