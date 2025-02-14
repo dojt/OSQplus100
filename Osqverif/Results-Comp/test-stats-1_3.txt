@@ -1,0 +1,2200 @@
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (4, 0.3333333333333333, 1)
+_____________________________________________________________________________________
+Start: n=4, 2/n=0.5, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       4
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              14.0
+Optimization dual bound:                14.0
+Number of ambiguous rows:               0
+Number of selected rows:                7.0
+Fraction of selected rows:              0.4666666666666667
+Fraction of selected rows (rounded):    0.4666666666666667
+Number of accepting rows:               7
+Rank of set of accepting rows:          3
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.0
+WARNING: α < 2/n.  The Basis-Accept prob should be 0.
+_____________________________________________________________________________________
+Finished n=4, 2/n=0.5, α=0.3333333333333333
+Supp(p) = [3, 4, 5, 7, 8, 10, 12, 14]
+sort(unique(p)) = [0.0, 0.0416717529296875, 0.7083282470703125]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (4, 0.3333333333333333, 2)
+_____________________________________________________________________________________
+Start: n=4, 2/n=0.5, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       4
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              13.0
+Optimization dual bound:                13.0
+Number of ambiguous rows:               0
+Number of selected rows:                7.0
+Fraction of selected rows:              0.4666666666666667
+Fraction of selected rows (rounded):    0.4666666666666667
+Number of accepting rows:               7
+Rank of set of accepting rows:          3
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.0
+WARNING: α < 2/n.  The Basis-Accept prob should be 0.
+_____________________________________________________________________________________
+Finished n=4, 2/n=0.5, α=0.3333333333333333
+Supp(p) = [5, 10]
+sort(unique(p)) = [0.0, 0.1666717529296875, 0.8333282470703125]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (4, 0.3333333333333333, 3)
+_____________________________________________________________________________________
+Start: n=4, 2/n=0.5, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       4
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              11.0
+Optimization dual bound:                11.0
+Number of ambiguous rows:               0
+Number of selected rows:                7.0
+Fraction of selected rows:              0.4666666666666667
+Fraction of selected rows (rounded):    0.4666666666666667
+Number of accepting rows:               7
+Rank of set of accepting rows:          3
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.0
+WARNING: α < 2/n.  The Basis-Accept prob should be 0.
+_____________________________________________________________________________________
+Finished n=4, 2/n=0.5, α=0.3333333333333333
+Supp(p) = [4, 5]
+sort(unique(p)) = [0.0, 0.1666717529296875, 0.8333282470703125]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (4, 0.3333333333333333, 4)
+_____________________________________________________________________________________
+Start: n=4, 2/n=0.5, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       4
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              13.000000000000034
+Optimization dual bound:                13.000000000000034
+Number of ambiguous rows:               0
+Number of selected rows:                7.0
+Fraction of selected rows:              0.4666666666666678
+Fraction of selected rows (rounded):    0.4666666666666667
+Number of accepting rows:               7
+Rank of set of accepting rows:          3
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.0
+WARNING: α < 2/n.  The Basis-Accept prob should be 0.
+_____________________________________________________________________________________
+Finished n=4, 2/n=0.5, α=0.3333333333333333
+Supp(p) = [1, 3, 4, 6, 8, 9, 11, 14]
+sort(unique(p)) = [0.0, 0.0416717529296875, 0.7083282470703125]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (4, 0.3333333333333333, 5)
+_____________________________________________________________________________________
+Start: n=4, 2/n=0.5, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       4
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              13.0
+Optimization dual bound:                13.0
+Number of ambiguous rows:               0
+Number of selected rows:                7.0
+Fraction of selected rows:              0.4666666666666667
+Fraction of selected rows (rounded):    0.4666666666666667
+Number of accepting rows:               7
+Rank of set of accepting rows:          3
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.0
+WARNING: α < 2/n.  The Basis-Accept prob should be 0.
+_____________________________________________________________________________________
+Finished n=4, 2/n=0.5, α=0.3333333333333333
+Supp(p) = [5, 9]
+sort(unique(p)) = [0.0, 0.1666717529296875, 0.8333282470703125]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (4, 0.3333333333333333, 6)
+_____________________________________________________________________________________
+Start: n=4, 2/n=0.5, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       4
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              12.0
+Optimization dual bound:                12.0
+Number of ambiguous rows:               0
+Number of selected rows:                7.0
+Fraction of selected rows:              0.4666666666666667
+Fraction of selected rows (rounded):    0.4666666666666667
+Number of accepting rows:               7
+Rank of set of accepting rows:          3
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.0
+WARNING: α < 2/n.  The Basis-Accept prob should be 0.
+_____________________________________________________________________________________
+Finished n=4, 2/n=0.5, α=0.3333333333333333
+Supp(p) = [3, 4, 6, 7, 8, 11, 12, 15]
+sort(unique(p)) = [0.0, 0.013153076171875, 0.0701751708984375, 0.736846923828125]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (4, 0.3333333333333333, 7)
+_____________________________________________________________________________________
+Start: n=4, 2/n=0.5, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       4
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              11.999999999999746
+Optimization dual bound:                11.999999999999746
+Number of ambiguous rows:               0
+Number of selected rows:                7.0
+Fraction of selected rows:              0.4666666666666625
+Fraction of selected rows (rounded):    0.4666666666666667
+Number of accepting rows:               7
+Rank of set of accepting rows:          3
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.0
+WARNING: α < 2/n.  The Basis-Accept prob should be 0.
+_____________________________________________________________________________________
+Finished n=4, 2/n=0.5, α=0.3333333333333333
+Supp(p) = [3, 4, 7, 11, 14, 15]
+sort(unique(p)) = [0.0, 0.008331298828125, 0.0749969482421875, 0.0833282470703125, 0.75]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (4, 0.3333333333333333, 8)
+_____________________________________________________________________________________
+Start: n=4, 2/n=0.5, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       4
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              11.0
+Optimization dual bound:                11.0
+Number of ambiguous rows:               0
+Number of selected rows:                7.0
+Fraction of selected rows:              0.4666666666666667
+Fraction of selected rows (rounded):    0.4666666666666667
+Number of accepting rows:               7
+Rank of set of accepting rows:          3
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.0
+WARNING: α < 2/n.  The Basis-Accept prob should be 0.
+_____________________________________________________________________________________
+Finished n=4, 2/n=0.5, α=0.3333333333333333
+Supp(p) = [2, 3, 4, 5]
+sort(unique(p)) = [0.0, 0.0833282470703125, 0.75]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (4, 0.3333333333333333, 9)
+_____________________________________________________________________________________
+Start: n=4, 2/n=0.5, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       4
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              13.0
+Optimization dual bound:                13.0
+Number of ambiguous rows:               0
+Number of selected rows:                7.0
+Fraction of selected rows:              0.4666666666666667
+Fraction of selected rows (rounded):    0.4666666666666667
+Number of accepting rows:               7
+Rank of set of accepting rows:          3
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.0
+WARNING: α < 2/n.  The Basis-Accept prob should be 0.
+_____________________________________________________________________________________
+Finished n=4, 2/n=0.5, α=0.3333333333333333
+Supp(p) = [3, 8, 11, 13]
+sort(unique(p)) = [0.0, 0.0833282470703125, 0.75]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (4, 0.3333333333333333, 10)
+_____________________________________________________________________________________
+Start: n=4, 2/n=0.5, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       4
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              12.0
+Optimization dual bound:                12.0
+Number of ambiguous rows:               0
+Number of selected rows:                7.0
+Fraction of selected rows:              0.4666666666666667
+Fraction of selected rows (rounded):    0.4666666666666667
+Number of accepting rows:               7
+Rank of set of accepting rows:          3
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.0
+WARNING: α < 2/n.  The Basis-Accept prob should be 0.
+_____________________________________________________________________________________
+Finished n=4, 2/n=0.5, α=0.3333333333333333
+Supp(p) = [2, 5, 7, 8, 10, 11, 13, 15]
+sort(unique(p)) = [0.0, 0.00555419921875, 0.0777740478515625, 0.74444580078125]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (5, 0.3333333333333333, 1)
+_____________________________________________________________________________________
+Start: n=5, 2/n=0.4, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       5
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              24.000000000000004
+Optimization dual bound:                24.000000000000004
+Number of ambiguous rows:               0
+Number of selected rows:                15.0
+Fraction of selected rows:              0.4838709677419356
+Fraction of selected rows (rounded):    0.4838709677419355
+Number of accepting rows:               15
+Rank of set of accepting rows:          4
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.0
+WARNING: α < 2/n.  The Basis-Accept prob should be 0.
+_____________________________________________________________________________________
+Finished n=5, 2/n=0.4, α=0.3333333333333333
+Supp(p) = [4, 5, 10, 12, 13, 14, 17, 20, 21, 24, 25, 27, 31]
+sort(unique(p)) = [0.0, 0.00177001953125, 0.0162353515625, 0.025421142578125, 0.0399017333984375, 0.0416717529296875, 0.7083282470703125]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (5, 0.3333333333333333, 2)
+_____________________________________________________________________________________
+Start: n=5, 2/n=0.4, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       5
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              25.0
+Optimization dual bound:                25.0
+Number of ambiguous rows:               0
+Number of selected rows:                15.0
+Fraction of selected rows:              0.4838709677419355
+Fraction of selected rows (rounded):    0.4838709677419355
+Number of accepting rows:               15
+Rank of set of accepting rows:          4
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.0
+WARNING: α < 2/n.  The Basis-Accept prob should be 0.
+_____________________________________________________________________________________
+Finished n=5, 2/n=0.4, α=0.3333333333333333
+Supp(p) = [7, 19, 20, 31]
+sort(unique(p)) = [0.0, 0.0833282470703125, 0.75]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (5, 0.3333333333333333, 3)
+_____________________________________________________________________________________
+Start: n=5, 2/n=0.4, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       5
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              25.00000000000002
+Optimization dual bound:                25.00000000000002
+Number of ambiguous rows:               0
+Number of selected rows:                15.0
+Fraction of selected rows:              0.48387096774193616
+Fraction of selected rows (rounded):    0.4838709677419355
+Number of accepting rows:               15
+Rank of set of accepting rows:          4
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.0
+WARNING: α < 2/n.  The Basis-Accept prob should be 0.
+_____________________________________________________________________________________
+Finished n=5, 2/n=0.4, α=0.3333333333333333
+Supp(p) = [1, 2, 4, 6, 9, 17, 19, 21, 22, 23]
+sort(unique(p)) = [0.0, 0.02777099609375, 0.0555572509765625, 0.72222900390625]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (5, 0.3333333333333333, 4)
+_____________________________________________________________________________________
+Start: n=5, 2/n=0.4, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       5
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              28.0
+Optimization dual bound:                28.0
+Number of ambiguous rows:               0
+Number of selected rows:                15.0
+Fraction of selected rows:              0.4838709677419355
+Fraction of selected rows (rounded):    0.4838709677419355
+Number of accepting rows:               15
+Rank of set of accepting rows:          4
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.0
+WARNING: α < 2/n.  The Basis-Accept prob should be 0.
+_____________________________________________________________________________________
+Finished n=5, 2/n=0.4, α=0.3333333333333333
+Supp(p) = [6, 8, 9, 10, 11, 12, 14, 15, 19, 20, 25, 27, 28, 29]
+sort(unique(p)) = [0.0, 6.103515625e-5, 0.00592041015625, 0.0059814453125, 0.01190185546875, 0.0202178955078125, 0.026153564453125, 0.0452728271484375, 0.05120849609375, 0.7238006591796875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (5, 0.3333333333333333, 5)
+_____________________________________________________________________________________
+Start: n=5, 2/n=0.4, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       5
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              26.000000000000007
+Optimization dual bound:                26.000000000000007
+Number of ambiguous rows:               0
+Number of selected rows:                15.0
+Fraction of selected rows:              0.4838709677419356
+Fraction of selected rows (rounded):    0.4838709677419355
+Number of accepting rows:               15
+Rank of set of accepting rows:          4
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.0
+WARNING: α < 2/n.  The Basis-Accept prob should be 0.
+_____________________________________________________________________________________
+Finished n=5, 2/n=0.4, α=0.3333333333333333
+Supp(p) = [3, 5, 6, 10, 17, 18, 20, 23]
+sort(unique(p)) = [0.0, 0.013153076171875, 0.0701751708984375, 0.736846923828125]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (5, 0.3333333333333333, 6)
+_____________________________________________________________________________________
+Start: n=5, 2/n=0.4, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       5
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              25.000000000000004
+Optimization dual bound:                25.000000000000004
+Number of ambiguous rows:               0
+Number of selected rows:                15.0
+Fraction of selected rows:              0.4838709677419357
+Fraction of selected rows (rounded):    0.4838709677419355
+Number of accepting rows:               15
+Rank of set of accepting rows:          4
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.0
+WARNING: α < 2/n.  The Basis-Accept prob should be 0.
+_____________________________________________________________________________________
+Finished n=5, 2/n=0.4, α=0.3333333333333333
+Supp(p) = [5, 9, 11, 13, 17, 20, 25, 31]
+sort(unique(p)) = [0.0, 0.018524169921875, 0.0308685302734375, 0.08642578125, 0.753082275390625]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (5, 0.3333333333333333, 7)
+_____________________________________________________________________________________
+Start: n=5, 2/n=0.4, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       5
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              25.000000000000004
+Optimization dual bound:                25.000000000000004
+Number of ambiguous rows:               0
+Number of selected rows:                15.0
+Fraction of selected rows:              0.4838709677419356
+Fraction of selected rows (rounded):    0.4838709677419355
+Number of accepting rows:               15
+Rank of set of accepting rows:          4
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.0
+WARNING: α < 2/n.  The Basis-Accept prob should be 0.
+_____________________________________________________________________________________
+Finished n=5, 2/n=0.4, α=0.3333333333333333
+Supp(p) = [12, 13, 14, 15, 20, 22, 23, 27]
+sort(unique(p)) = [0.0, 0.025634765625, 0.0576934814453125, 0.724365234375]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (5, 0.3333333333333333, 8)
+_____________________________________________________________________________________
+Start: n=5, 2/n=0.4, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       5
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              25.0
+Optimization dual bound:                25.0
+Number of ambiguous rows:               0
+Number of selected rows:                15.0
+Fraction of selected rows:              0.4838709677419355
+Fraction of selected rows (rounded):    0.4838709677419355
+Number of accepting rows:               15
+Rank of set of accepting rows:          4
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.0
+WARNING: α < 2/n.  The Basis-Accept prob should be 0.
+_____________________________________________________________________________________
+Finished n=5, 2/n=0.4, α=0.3333333333333333
+Supp(p) = [4, 7, 12, 15]
+sort(unique(p)) = [0.0, 0.0833282470703125, 0.75]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (5, 0.3333333333333333, 9)
+_____________________________________________________________________________________
+Start: n=5, 2/n=0.4, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       5
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              24.0
+Optimization dual bound:                24.0
+Number of ambiguous rows:               0
+Number of selected rows:                15.0
+Fraction of selected rows:              0.4838709677419355
+Fraction of selected rows (rounded):    0.4838709677419355
+Number of accepting rows:               15
+Rank of set of accepting rows:          4
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.0
+WARNING: α < 2/n.  The Basis-Accept prob should be 0.
+_____________________________________________________________________________________
+Finished n=5, 2/n=0.4, α=0.3333333333333333
+Supp(p) = [1, 2, 11, 14, 15, 20, 21, 26, 27, 31]
+sort(unique(p)) = [0.0, 0.0151519775390625, 0.0454559326171875, 0.06060791015625, 0.742431640625]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (5, 0.3333333333333333, 10)
+_____________________________________________________________________________________
+Start: n=5, 2/n=0.4, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       5
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              25.0
+Optimization dual bound:                25.0
+Number of ambiguous rows:               0
+Number of selected rows:                15.0
+Fraction of selected rows:              0.4838709677419355
+Fraction of selected rows (rounded):    0.4838709677419355
+Number of accepting rows:               15
+Rank of set of accepting rows:          4
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.0
+WARNING: α < 2/n.  The Basis-Accept prob should be 0.
+_____________________________________________________________________________________
+Finished n=5, 2/n=0.4, α=0.3333333333333333
+Supp(p) = [3, 5, 10, 12, 16, 19, 22, 31]
+sort(unique(p)) = [0.0, 0.0416717529296875, 0.7083282470703125]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (6, 0.3333333333333333, 1)
+_____________________________________________________________________________________
+Start: n=6, 2/n=0.3333333333333333, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       6
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              10.00000000000004
+Optimization dual bound:                10.00000000000004
+Number of ambiguous rows:               0
+Number of selected rows:                6.0
+Fraction of selected rows:              0.09523809523809589
+Fraction of selected rows (rounded):    0.09523809523809523
+Number of accepting rows:               6
+Rank of set of accepting rows:          6
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  1.0
+WARNING: α ≈ 2/n.  The Basis-Accept prob should be 3.571657157486650574208177894813839514300343793431351035037670982371443200936285e-08
+_____________________________________________________________________________________
+Finished n=6, 2/n=0.3333333333333333, α=0.3333333333333333
+Supp(p) = [1, 2, 4, 8, 16, 32]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (6, 0.3333333333333333, 2)
+_____________________________________________________________________________________
+Start: n=6, 2/n=0.3333333333333333, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       6
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              9.000000000001432
+Optimization dual bound:                9.000000000001432
+Number of ambiguous rows:               0
+Number of selected rows:                6.0
+Fraction of selected rows:              0.0952380952381066
+Fraction of selected rows (rounded):    0.09523809523809523
+Number of accepting rows:               6
+Rank of set of accepting rows:          6
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  1.0
+WARNING: α ≈ 2/n.  The Basis-Accept prob should be 3.571657157486650574208177894813839514300343793431351035037670982371443200936285e-08
+_____________________________________________________________________________________
+Finished n=6, 2/n=0.3333333333333333, α=0.3333333333333333
+Supp(p) = [1, 2, 4, 8, 16, 32]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (6, 0.3333333333333333, 3)
+_____________________________________________________________________________________
+Start: n=6, 2/n=0.3333333333333333, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       6
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              11.0
+Optimization dual bound:                11.0
+Number of ambiguous rows:               0
+Number of selected rows:                6.0
+Fraction of selected rows:              0.09523809523809523
+Fraction of selected rows (rounded):    0.09523809523809523
+Number of accepting rows:               6
+Rank of set of accepting rows:          6
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  1.0
+WARNING: α ≈ 2/n.  The Basis-Accept prob should be 3.571657157486650574208177894813839514300343793431351035037670982371443200936285e-08
+_____________________________________________________________________________________
+Finished n=6, 2/n=0.3333333333333333, α=0.3333333333333333
+Supp(p) = [1, 2, 4, 8, 16, 32]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (6, 0.3333333333333333, 4)
+_____________________________________________________________________________________
+Start: n=6, 2/n=0.3333333333333333, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       6
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              10.0
+Optimization dual bound:                10.0
+Number of ambiguous rows:               0
+Number of selected rows:                6.0
+Fraction of selected rows:              0.09523809523809523
+Fraction of selected rows (rounded):    0.09523809523809523
+Number of accepting rows:               6
+Rank of set of accepting rows:          6
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  1.0
+WARNING: α ≈ 2/n.  The Basis-Accept prob should be 3.571657157486650574208177894813839514300343793431351035037670982371443200936285e-08
+_____________________________________________________________________________________
+Finished n=6, 2/n=0.3333333333333333, α=0.3333333333333333
+Supp(p) = [1, 2, 4, 8, 16, 32]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (6, 0.3333333333333333, 5)
+_____________________________________________________________________________________
+Start: n=6, 2/n=0.3333333333333333, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       6
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              8.0
+Optimization dual bound:                8.0
+Number of ambiguous rows:               0
+Number of selected rows:                6.0
+Fraction of selected rows:              0.09523809523809523
+Fraction of selected rows (rounded):    0.09523809523809523
+Number of accepting rows:               6
+Rank of set of accepting rows:          6
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  1.0
+WARNING: α ≈ 2/n.  The Basis-Accept prob should be 3.571657157486650574208177894813839514300343793431351035037670982371443200936285e-08
+_____________________________________________________________________________________
+Finished n=6, 2/n=0.3333333333333333, α=0.3333333333333333
+Supp(p) = [1, 2, 4, 8, 16, 32]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (6, 0.3333333333333333, 6)
+_____________________________________________________________________________________
+Start: n=6, 2/n=0.3333333333333333, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       6
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              7.0
+Optimization dual bound:                7.0
+Number of ambiguous rows:               0
+Number of selected rows:                6.0
+Fraction of selected rows:              0.09523809523809523
+Fraction of selected rows (rounded):    0.09523809523809523
+Number of accepting rows:               6
+Rank of set of accepting rows:          6
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  1.0
+WARNING: α ≈ 2/n.  The Basis-Accept prob should be 3.571657157486650574208177894813839514300343793431351035037670982371443200936285e-08
+_____________________________________________________________________________________
+Finished n=6, 2/n=0.3333333333333333, α=0.3333333333333333
+Supp(p) = [1, 2, 4, 8, 16, 32]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (6, 0.3333333333333333, 7)
+_____________________________________________________________________________________
+Start: n=6, 2/n=0.3333333333333333, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       6
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              9.0
+Optimization dual bound:                9.0
+Number of ambiguous rows:               0
+Number of selected rows:                6.0
+Fraction of selected rows:              0.09523809523809523
+Fraction of selected rows (rounded):    0.09523809523809523
+Number of accepting rows:               6
+Rank of set of accepting rows:          6
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  1.0
+WARNING: α ≈ 2/n.  The Basis-Accept prob should be 3.571657157486650574208177894813839514300343793431351035037670982371443200936285e-08
+_____________________________________________________________________________________
+Finished n=6, 2/n=0.3333333333333333, α=0.3333333333333333
+Supp(p) = [1, 2, 4, 8, 16, 32]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (6, 0.3333333333333333, 8)
+_____________________________________________________________________________________
+Start: n=6, 2/n=0.3333333333333333, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       6
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              7.0
+Optimization dual bound:                7.0
+Number of ambiguous rows:               0
+Number of selected rows:                6.0
+Fraction of selected rows:              0.09523809523809523
+Fraction of selected rows (rounded):    0.09523809523809523
+Number of accepting rows:               6
+Rank of set of accepting rows:          6
+Probability of Basis-Accept, ESTIMATE:            2.0e-6
+Basis density in accepting rows from accept prob: 55.996415999999996
+Basis density in accepting rows:                  1.0
+WARNING: α ≈ 2/n.  The Basis-Accept prob should be 3.571657157486650574208177894813839514300343793431351035037670982371443200936285e-08
+_____________________________________________________________________________________
+Finished n=6, 2/n=0.3333333333333333, α=0.3333333333333333
+Supp(p) = [1, 2, 4, 8, 16, 32]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (6, 0.3333333333333333, 9)
+_____________________________________________________________________________________
+Start: n=6, 2/n=0.3333333333333333, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       6
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              8.00000000000006
+Optimization dual bound:                8.00000000000006
+Number of ambiguous rows:               0
+Number of selected rows:                6.0
+Fraction of selected rows:              0.09523809523809572
+Fraction of selected rows (rounded):    0.09523809523809523
+Number of accepting rows:               6
+Rank of set of accepting rows:          6
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  1.0
+WARNING: α ≈ 2/n.  The Basis-Accept prob should be 3.571657157486650574208177894813839514300343793431351035037670982371443200936285e-08
+_____________________________________________________________________________________
+Finished n=6, 2/n=0.3333333333333333, α=0.3333333333333333
+Supp(p) = [1, 2, 4, 8, 16, 32]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (6, 0.3333333333333333, 10)
+_____________________________________________________________________________________
+Start: n=6, 2/n=0.3333333333333333, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       6
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              9.000000000000055
+Optimization dual bound:                9.000000000000055
+Number of ambiguous rows:               0
+Number of selected rows:                6.0
+Fraction of selected rows:              0.0952380952380961
+Fraction of selected rows (rounded):    0.09523809523809523
+Number of accepting rows:               6
+Rank of set of accepting rows:          6
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  1.0
+WARNING: α ≈ 2/n.  The Basis-Accept prob should be 3.571657157486650574208177894813839514300343793431351035037670982371443200936285e-08
+_____________________________________________________________________________________
+Finished n=6, 2/n=0.3333333333333333, α=0.3333333333333333
+Supp(p) = [1, 2, 4, 8, 16, 32]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (7, 0.3333333333333333, 1)
+_____________________________________________________________________________________
+Start: n=7, 2/n=0.2857142857142857, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       7
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              24.000000000007827
+Optimization dual bound:                24.000000000007823
+Number of ambiguous rows:               0
+Number of selected rows:                13.0
+Fraction of selected rows:              0.10236220472445448
+Fraction of selected rows (rounded):    0.10236220472440945
+Number of accepting rows:               13
+Rank of set of accepting rows:          7
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.148584
+α > 2/n: The Basis-Accept prob should be at least 3.075984264567736e-11
+_____________________________________________________________________________________
+Finished n=7, 2/n=0.2857142857142857, α=0.3333333333333333
+Supp(p) = [2, 5, 8, 16, 32, 64]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (7, 0.3333333333333333, 2)
+_____________________________________________________________________________________
+Start: n=7, 2/n=0.2857142857142857, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       7
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              23.000000000003435
+Optimization dual bound:                23.000000000003435
+Number of ambiguous rows:               0
+Number of selected rows:                13.0
+Fraction of selected rows:              0.10236220472442718
+Fraction of selected rows (rounded):    0.10236220472440945
+Number of accepting rows:               13
+Rank of set of accepting rows:          7
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.149167
+α > 2/n: The Basis-Accept prob should be at least 3.075984264567736e-11
+_____________________________________________________________________________________
+Finished n=7, 2/n=0.2857142857142857, α=0.3333333333333333
+Supp(p) = [1, 2, 4, 8, 16, 96]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (7, 0.3333333333333333, 3)
+_____________________________________________________________________________________
+Start: n=7, 2/n=0.2857142857142857, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       7
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              20.999999999999996
+Optimization dual bound:                20.999999999999996
+Number of ambiguous rows:               0
+Number of selected rows:                13.0
+Fraction of selected rows:              0.10236220472440942
+Fraction of selected rows (rounded):    0.10236220472440945
+Number of accepting rows:               13
+Rank of set of accepting rows:          7
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.149357
+α > 2/n: The Basis-Accept prob should be at least 3.075984264567736e-11
+_____________________________________________________________________________________
+Finished n=7, 2/n=0.2857142857142857, α=0.3333333333333333
+Supp(p) = [1, 2, 8, 16, 32, 64]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (7, 0.3333333333333333, 4)
+_____________________________________________________________________________________
+Start: n=7, 2/n=0.2857142857142857, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       7
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              21.999999999999996
+Optimization dual bound:                22.0
+Number of ambiguous rows:               0
+Number of selected rows:                13.0
+Fraction of selected rows:              0.10236220472440945
+Fraction of selected rows (rounded):    0.10236220472440945
+Number of accepting rows:               13
+Rank of set of accepting rows:          7
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.148756
+α > 2/n: The Basis-Accept prob should be at least 3.075984264567736e-11
+_____________________________________________________________________________________
+Finished n=7, 2/n=0.2857142857142857, α=0.3333333333333333
+Supp(p) = [1, 2, 8, 16, 32, 68]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (7, 0.3333333333333333, 5)
+_____________________________________________________________________________________
+Start: n=7, 2/n=0.2857142857142857, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       7
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              22.000000000000234
+Optimization dual bound:                22.000000000000234
+Number of ambiguous rows:               0
+Number of selected rows:                13.0
+Fraction of selected rows:              0.10236220472441063
+Fraction of selected rows (rounded):    0.10236220472440945
+Number of accepting rows:               13
+Rank of set of accepting rows:          7
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.149195
+α > 2/n: The Basis-Accept prob should be at least 3.075984264567736e-11
+_____________________________________________________________________________________
+Finished n=7, 2/n=0.2857142857142857, α=0.3333333333333333
+Supp(p) = [1, 2, 4, 8, 32, 80]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (7, 0.3333333333333333, 6)
+_____________________________________________________________________________________
+Start: n=7, 2/n=0.2857142857142857, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       7
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              21.000000000000036
+Optimization dual bound:                21.000000000000036
+Number of ambiguous rows:               0
+Number of selected rows:                13.0
+Fraction of selected rows:              0.10236220472440959
+Fraction of selected rows (rounded):    0.10236220472440945
+Number of accepting rows:               13
+Rank of set of accepting rows:          7
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.149234
+α > 2/n: The Basis-Accept prob should be at least 3.075984264567736e-11
+_____________________________________________________________________________________
+Finished n=7, 2/n=0.2857142857142857, α=0.3333333333333333
+Supp(p) = [2, 4, 8, 17, 32, 64]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (7, 0.3333333333333333, 7)
+_____________________________________________________________________________________
+Start: n=7, 2/n=0.2857142857142857, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       7
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              21.000000000000245
+Optimization dual bound:                21.00000000000024
+Number of ambiguous rows:               0
+Number of selected rows:                13.0
+Fraction of selected rows:              0.10236220472441337
+Fraction of selected rows (rounded):    0.10236220472440945
+Number of accepting rows:               13
+Rank of set of accepting rows:          7
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.148918
+α > 2/n: The Basis-Accept prob should be at least 3.075984264567736e-11
+_____________________________________________________________________________________
+Finished n=7, 2/n=0.2857142857142857, α=0.3333333333333333
+Supp(p) = [1, 4, 8, 16, 34, 64]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (7, 0.3333333333333333, 8)
+_____________________________________________________________________________________
+Start: n=7, 2/n=0.2857142857142857, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       7
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              20.00000000000019
+Optimization dual bound:                20.000000000000192
+Number of ambiguous rows:               0
+Number of selected rows:                13.0
+Fraction of selected rows:              0.1023622047244104
+Fraction of selected rows (rounded):    0.10236220472440945
+Number of accepting rows:               13
+Rank of set of accepting rows:          7
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.150373
+α > 2/n: The Basis-Accept prob should be at least 3.075984264567736e-11
+_____________________________________________________________________________________
+Finished n=7, 2/n=0.2857142857142857, α=0.3333333333333333
+Supp(p) = [1, 4, 10, 16, 32, 64]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (7, 0.3333333333333333, 9)
+_____________________________________________________________________________________
+Start: n=7, 2/n=0.2857142857142857, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       7
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              21.000000000011763
+Optimization dual bound:                21.000000000011763
+Number of ambiguous rows:               0
+Number of selected rows:                13.0
+Fraction of selected rows:              0.10236220472445612
+Fraction of selected rows (rounded):    0.10236220472440945
+Number of accepting rows:               13
+Rank of set of accepting rows:          7
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.149515
+α > 2/n: The Basis-Accept prob should be at least 3.075984264567736e-11
+_____________________________________________________________________________________
+Finished n=7, 2/n=0.2857142857142857, α=0.3333333333333333
+Supp(p) = [1, 4, 10, 16, 32, 64]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (7, 0.3333333333333333, 10)
+_____________________________________________________________________________________
+Start: n=7, 2/n=0.2857142857142857, α=0.3333333333333333
+
+====================================================================================
+
+------------------------------------------------------------------------------------
+n                                       7
+α                                       0.3333333333333333
+Optimization termination status:        OPTIMAL
+Optimization primal bound:              22.0
+Optimization dual bound:                22.0
+Number of ambiguous rows:               0
+Number of selected rows:                13.0
+Fraction of selected rows:              0.10236220472440945
+Fraction of selected rows (rounded):    0.10236220472440945
+Number of accepting rows:               13
+Rank of set of accepting rows:          7
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.149381
+α > 2/n: The Basis-Accept prob should be at least 3.075984264567736e-11
+_____________________________________________________________________________________
+Finished n=7, 2/n=0.2857142857142857, α=0.3333333333333333
+Supp(p) = [1, 2, 8, 16, 32, 64]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (8, 0.3333333333333333, 1)
+_____________________________________________________________________________________
+Start: n=8, 2/n=0.25, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       8
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              47.000000000026056
+Optimization dual bound:                57.0
+Number of ambiguous rows:               0
+Number of selected rows:                27.0
+Fraction of selected rows:              0.1058823529411821
+Fraction of selected rows (rounded):    0.10588235294117647
+Number of accepting rows:               27
+Rank of set of accepting rows:          8
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.091249
+α > 2/n: The Basis-Accept prob should be at least 7.539177119038568e-15
+_____________________________________________________________________________________
+Finished n=8, 2/n=0.25, α=0.3333333333333333
+Supp(p) = [1, 2, 8, 16, 64, 132]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (8, 0.3333333333333333, 2)
+_____________________________________________________________________________________
+Start: n=8, 2/n=0.25, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       8
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              46.00000000011985
+Optimization dual bound:                55.0
+Number of ambiguous rows:               0
+Number of selected rows:                27.0
+Fraction of selected rows:              0.10588235294153178
+Fraction of selected rows (rounded):    0.10588235294117647
+Number of accepting rows:               27
+Rank of set of accepting rows:          8
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.091275
+α > 2/n: The Basis-Accept prob should be at least 7.539177119038568e-15
+_____________________________________________________________________________________
+Finished n=8, 2/n=0.25, α=0.3333333333333333
+Supp(p) = [1, 4, 18, 32, 64, 136]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (8, 0.3333333333333333, 3)
+_____________________________________________________________________________________
+Start: n=8, 2/n=0.25, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       8
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              47.00000000000626
+Optimization dual bound:                57.0
+Number of ambiguous rows:               0
+Number of selected rows:                27.0
+Fraction of selected rows:              0.10588235294119126
+Fraction of selected rows (rounded):    0.10588235294117647
+Number of accepting rows:               27
+Rank of set of accepting rows:          8
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.09148
+α > 2/n: The Basis-Accept prob should be at least 7.539177119038568e-15
+_____________________________________________________________________________________
+Finished n=8, 2/n=0.25, α=0.3333333333333333
+Supp(p) = [1, 2, 4, 16, 96, 136]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (8, 0.3333333333333333, 4)
+_____________________________________________________________________________________
+Start: n=8, 2/n=0.25, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       8
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              51.00000000000856
+Optimization dual bound:                65.0
+Number of ambiguous rows:               0
+Number of selected rows:                27.0
+Fraction of selected rows:              0.105882352941205
+Fraction of selected rows (rounded):    0.10588235294117647
+Number of accepting rows:               27
+Rank of set of accepting rows:          8
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.091409
+α > 2/n: The Basis-Accept prob should be at least 7.539177119038568e-15
+_____________________________________________________________________________________
+Finished n=8, 2/n=0.25, α=0.3333333333333333
+Supp(p) = [2, 12, 16, 32, 65, 128]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (8, 0.3333333333333333, 5)
+_____________________________________________________________________________________
+Start: n=8, 2/n=0.25, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       8
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              44.00000000001239
+Optimization dual bound:                65.0
+Number of ambiguous rows:               0
+Number of selected rows:                27.0
+Fraction of selected rows:              0.10588235294120138
+Fraction of selected rows (rounded):    0.10588235294117647
+Number of accepting rows:               27
+Rank of set of accepting rows:          8
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.091509
+α > 2/n: The Basis-Accept prob should be at least 7.539177119038568e-15
+_____________________________________________________________________________________
+Finished n=8, 2/n=0.25, α=0.3333333333333333
+Supp(p) = [4, 8, 16, 32, 64, 129]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (8, 0.3333333333333333, 6)
+_____________________________________________________________________________________
+Start: n=8, 2/n=0.25, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       8
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              49.000000000009415
+Optimization dual bound:                58.0
+Number of ambiguous rows:               0
+Number of selected rows:                27.0
+Fraction of selected rows:              0.10588235294119687
+Fraction of selected rows (rounded):    0.10588235294117647
+Number of accepting rows:               27
+Rank of set of accepting rows:          8
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.09103
+α > 2/n: The Basis-Accept prob should be at least 7.539177119038568e-15
+_____________________________________________________________________________________
+Finished n=8, 2/n=0.25, α=0.3333333333333333
+Supp(p) = [1, 4, 10, 32, 64, 144]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (8, 0.3333333333333333, 7)
+_____________________________________________________________________________________
+Start: n=8, 2/n=0.25, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       8
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              46.00000000001342
+Optimization dual bound:                58.0
+Number of ambiguous rows:               0
+Number of selected rows:                27.0
+Fraction of selected rows:              0.10588235294120542
+Fraction of selected rows (rounded):    0.10588235294117647
+Number of accepting rows:               27
+Rank of set of accepting rows:          8
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.091203
+α > 2/n: The Basis-Accept prob should be at least 7.539177119038568e-15
+_____________________________________________________________________________________
+Finished n=8, 2/n=0.25, α=0.3333333333333333
+Supp(p) = [1, 8, 16, 32, 68, 130]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (8, 0.3333333333333333, 8)
+_____________________________________________________________________________________
+Start: n=8, 2/n=0.25, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       8
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              49.00000000000256
+Optimization dual bound:                58.0
+Number of ambiguous rows:               0
+Number of selected rows:                27.0
+Fraction of selected rows:              0.1058823529411849
+Fraction of selected rows (rounded):    0.10588235294117647
+Number of accepting rows:               27
+Rank of set of accepting rows:          8
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.0913
+α > 2/n: The Basis-Accept prob should be at least 7.539177119038568e-15
+_____________________________________________________________________________________
+Finished n=8, 2/n=0.25, α=0.3333333333333333
+Supp(p) = [4, 8, 17, 32, 66, 128]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (8, 0.3333333333333333, 9)
+_____________________________________________________________________________________
+Start: n=8, 2/n=0.25, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       8
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              46.00000000000241
+Optimization dual bound:                52.0
+Number of ambiguous rows:               0
+Number of selected rows:                27.0
+Fraction of selected rows:              0.10588235294119873
+Fraction of selected rows (rounded):    0.10588235294117647
+Number of accepting rows:               27
+Rank of set of accepting rows:          8
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.091403
+α > 2/n: The Basis-Accept prob should be at least 7.539177119038568e-15
+_____________________________________________________________________________________
+Finished n=8, 2/n=0.25, α=0.3333333333333333
+Supp(p) = [1, 2, 16, 36, 64, 128]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (8, 0.3333333333333333, 10)
+_____________________________________________________________________________________
+Start: n=8, 2/n=0.25, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       8
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              47.00000000001935
+Optimization dual bound:                57.0
+Number of ambiguous rows:               0
+Number of selected rows:                27.0
+Fraction of selected rows:              0.10588235294123123
+Fraction of selected rows (rounded):    0.10588235294117647
+Number of accepting rows:               27
+Rank of set of accepting rows:          8
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.091487
+α > 2/n: The Basis-Accept prob should be at least 7.539177119038568e-15
+_____________________________________________________________________________________
+Finished n=8, 2/n=0.25, α=0.3333333333333333
+Supp(p) = [1, 2, 4, 8, 48, 64]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (9, 0.3333333333333333, 1)
+_____________________________________________________________________________________
+Start: n=9, 2/n=0.2222222222222222, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       9
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              90.00000000001594
+Optimization dual bound:                346.0
+Number of ambiguous rows:               0
+Number of selected rows:                55.0
+Fraction of selected rows:              0.10763209393348579
+Fraction of selected rows (rounded):    0.10763209393346379
+Number of accepting rows:               55
+Rank of set of accepting rows:          9
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.080787
+α > 2/n: The Basis-Accept prob should be at least 5.186872712156549e-19
+_____________________________________________________________________________________
+Finished n=9, 2/n=0.2222222222222222, α=0.3333333333333333
+Supp(p) = [1, 2, 12, 16, 192, 288]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (9, 0.3333333333333333, 2)
+_____________________________________________________________________________________
+Start: n=9, 2/n=0.2222222222222222, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       9
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              90.00000000612587
+Optimization dual bound:                327.0
+Number of ambiguous rows:               0
+Number of selected rows:                55.0
+Fraction of selected rows:              0.10763209394008276
+Fraction of selected rows (rounded):    0.10763209393346379
+Number of accepting rows:               55
+Rank of set of accepting rows:          9
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.080839
+α > 2/n: The Basis-Accept prob should be at least 5.186872712156549e-19
+_____________________________________________________________________________________
+Finished n=9, 2/n=0.2222222222222222, α=0.3333333333333333
+Supp(p) = [5, 8, 16, 64, 130, 288]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (9, 0.3333333333333333, 3)
+_____________________________________________________________________________________
+Start: n=9, 2/n=0.2222222222222222, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       9
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              93.99999999999999
+Optimization dual bound:                349.0
+Number of ambiguous rows:               0
+Number of selected rows:                55.0
+Fraction of selected rows:              0.10763209393346379
+Fraction of selected rows (rounded):    0.10763209393346379
+Number of accepting rows:               55
+Rank of set of accepting rows:          9
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.080851
+α > 2/n: The Basis-Accept prob should be at least 5.186872712156549e-19
+_____________________________________________________________________________________
+Finished n=9, 2/n=0.2222222222222222, α=0.3333333333333333
+Supp(p) = [1, 2, 20, 96, 136, 256]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (9, 0.3333333333333333, 4)
+_____________________________________________________________________________________
+Start: n=9, 2/n=0.2222222222222222, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       9
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              91.99999999998506
+Optimization dual bound:                339.0
+Number of ambiguous rows:               0
+Number of selected rows:                55.0
+Fraction of selected rows:              0.10763209393344514
+Fraction of selected rows (rounded):    0.10763209393346379
+Number of accepting rows:               55
+Rank of set of accepting rows:          9
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.081094
+α > 2/n: The Basis-Accept prob should be at least 5.186872712156549e-19
+_____________________________________________________________________________________
+Finished n=9, 2/n=0.2222222222222222, α=0.3333333333333333
+Supp(p) = [3, 16, 32, 64, 136, 260]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (9, 0.3333333333333333, 5)
+_____________________________________________________________________________________
+Start: n=9, 2/n=0.2222222222222222, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       9
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              91.00000000006978
+Optimization dual bound:                326.0
+Number of ambiguous rows:               0
+Number of selected rows:                55.0
+Fraction of selected rows:              0.10763209393355508
+Fraction of selected rows (rounded):    0.10763209393346379
+Number of accepting rows:               55
+Rank of set of accepting rows:          9
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.0805
+α > 2/n: The Basis-Accept prob should be at least 5.186872712156549e-19
+_____________________________________________________________________________________
+Finished n=9, 2/n=0.2222222222222222, α=0.3333333333333333
+Supp(p) = [1, 4, 8, 32, 64, 128]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (9, 0.3333333333333333, 6)
+_____________________________________________________________________________________
+Start: n=9, 2/n=0.2222222222222222, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       9
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              91.00000000002265
+Optimization dual bound:                345.0
+Number of ambiguous rows:               0
+Number of selected rows:                55.0
+Fraction of selected rows:              0.10763209393349285
+Fraction of selected rows (rounded):    0.10763209393346379
+Number of accepting rows:               55
+Rank of set of accepting rows:          9
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.080784
+α > 2/n: The Basis-Accept prob should be at least 5.186872712156549e-19
+_____________________________________________________________________________________
+Finished n=9, 2/n=0.2222222222222222, α=0.3333333333333333
+Supp(p) = [4, 9, 16, 34, 192, 256]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (9, 0.3333333333333333, 7)
+_____________________________________________________________________________________
+Start: n=9, 2/n=0.2222222222222222, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       9
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              90.0000000000115
+Optimization dual bound:                355.0
+Number of ambiguous rows:               0
+Number of selected rows:                55.0
+Fraction of selected rows:              0.1076320939334824
+Fraction of selected rows (rounded):    0.10763209393346379
+Number of accepting rows:               55
+Rank of set of accepting rows:          9
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.080768
+α > 2/n: The Basis-Accept prob should be at least 5.186872712156549e-19
+_____________________________________________________________________________________
+Finished n=9, 2/n=0.2222222222222222, α=0.3333333333333333
+Supp(p) = [2, 4, 8, 48, 192, 257]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (9, 0.3333333333333333, 8)
+_____________________________________________________________________________________
+Start: n=9, 2/n=0.2222222222222222, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       9
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              89.0000000000024
+Optimization dual bound:                335.0
+Number of ambiguous rows:               0
+Number of selected rows:                55.0
+Fraction of selected rows:              0.10763209393346736
+Fraction of selected rows (rounded):    0.10763209393346379
+Number of accepting rows:               55
+Rank of set of accepting rows:          9
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.08078
+α > 2/n: The Basis-Accept prob should be at least 5.186872712156549e-19
+_____________________________________________________________________________________
+Finished n=9, 2/n=0.2222222222222222, α=0.3333333333333333
+Supp(p) = [1, 2, 32, 72, 144, 260]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (9, 0.3333333333333333, 9)
+_____________________________________________________________________________________
+Start: n=9, 2/n=0.2222222222222222, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       9
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              90.00000000000284
+Optimization dual bound:                347.0
+Number of ambiguous rows:               0
+Number of selected rows:                55.0
+Fraction of selected rows:              0.10763209393346738
+Fraction of selected rows (rounded):    0.10763209393346379
+Number of accepting rows:               55
+Rank of set of accepting rows:          9
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.080734
+α > 2/n: The Basis-Accept prob should be at least 5.186872712156549e-19
+_____________________________________________________________________________________
+Finished n=9, 2/n=0.2222222222222222, α=0.3333333333333333
+Supp(p) = [1, 10, 16, 32, 68, 384]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (9, 0.3333333333333333, 10)
+_____________________________________________________________________________________
+Start: n=9, 2/n=0.2222222222222222, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       9
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              90.99999999999599
+Optimization dual bound:                353.0
+Number of ambiguous rows:               0
+Number of selected rows:                54.0
+Fraction of selected rows:              0.10567514677102995
+Fraction of selected rows (rounded):    0.10567514677103718
+Number of accepting rows:               54
+Rank of set of accepting rows:          9
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.08036
+α > 2/n: The Basis-Accept prob should be at least 5.186872712156549e-19
+_____________________________________________________________________________________
+Finished n=9, 2/n=0.2222222222222222, α=0.3333333333333333
+Supp(p) = [3, 8, 16, 32, 192, 260]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (10, 0.3333333333333333, 1)
+_____________________________________________________________________________________
+Start: n=10, 2/n=0.2, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       10
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              174.0000000000002
+Optimization dual bound:                842.0
+Number of ambiguous rows:               0
+Number of selected rows:                111.0
+Fraction of selected rows:              0.10850439882697961
+Fraction of selected rows (rounded):    0.10850439882697947
+Number of accepting rows:               111
+Rank of set of accepting rows:          10
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.083089
+α > 2/n: The Basis-Accept prob should be at least 9.902845323490478e-24
+_____________________________________________________________________________________
+Finished n=10, 2/n=0.2, α=0.3333333333333333
+Supp(p) = [4, 18, 32, 64, 129, 768]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (10, 0.3333333333333333, 2)
+_____________________________________________________________________________________
+Start: n=10, 2/n=0.2, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       10
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              175.00000000000045
+Optimization dual bound:                858.0
+Number of ambiguous rows:               0
+Number of selected rows:                109.0
+Fraction of selected rows:              0.10654936461388126
+Fraction of selected rows (rounded):    0.10654936461388075
+Number of accepting rows:               109
+Rank of set of accepting rows:          10
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.081968
+α > 2/n: The Basis-Accept prob should be at least 9.902845323490478e-24
+_____________________________________________________________________________________
+Finished n=10, 2/n=0.2, α=0.3333333333333333
+Supp(p) = [3, 8, 64, 132, 304, 512]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (10, 0.3333333333333333, 3)
+_____________________________________________________________________________________
+Start: n=10, 2/n=0.2, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       10
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              179.0000000000012
+Optimization dual bound:                838.0
+Number of ambiguous rows:               0
+Number of selected rows:                111.0
+Fraction of selected rows:              0.10850439882698022
+Fraction of selected rows (rounded):    0.10850439882697947
+Number of accepting rows:               111
+Rank of set of accepting rows:          10
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.083594
+α > 2/n: The Basis-Accept prob should be at least 9.902845323490478e-24
+_____________________________________________________________________________________
+Finished n=10, 2/n=0.2, α=0.3333333333333333
+Supp(p) = [1, 4, 32, 210, 264, 512]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (10, 0.3333333333333333, 4)
+_____________________________________________________________________________________
+Start: n=10, 2/n=0.2, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       10
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              173.99999999999866
+Optimization dual bound:                845.0
+Number of ambiguous rows:               0
+Number of selected rows:                111.0
+Fraction of selected rows:              0.10850439882697854
+Fraction of selected rows (rounded):    0.10850439882697947
+Number of accepting rows:               111
+Rank of set of accepting rows:          10
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.0833
+α > 2/n: The Basis-Accept prob should be at least 9.902845323490478e-24
+_____________________________________________________________________________________
+Finished n=10, 2/n=0.2, α=0.3333333333333333
+Supp(p) = [1, 2, 96, 144, 264, 512]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (10, 0.3333333333333333, 5)
+_____________________________________________________________________________________
+Start: n=10, 2/n=0.2, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       10
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              188.00000000052373
+Optimization dual bound:                867.0
+Number of ambiguous rows:               0
+Number of selected rows:                111.0
+Fraction of selected rows:              0.10850439882731883
+Fraction of selected rows (rounded):    0.10850439882697947
+Number of accepting rows:               111
+Rank of set of accepting rows:          10
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.083544
+α > 2/n: The Basis-Accept prob should be at least 9.902845323490478e-24
+_____________________________________________________________________________________
+Finished n=10, 2/n=0.2, α=0.3333333333333333
+Supp(p) = [6, 8, 17, 32, 320, 640]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (10, 0.3333333333333333, 6)
+_____________________________________________________________________________________
+Start: n=10, 2/n=0.2, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       10
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              168.000000000237
+Optimization dual bound:                833.0
+Number of ambiguous rows:               0
+Number of selected rows:                111.0
+Fraction of selected rows:              0.10850439882711316
+Fraction of selected rows (rounded):    0.10850439882697947
+Number of accepting rows:               111
+Rank of set of accepting rows:          10
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.083245
+α > 2/n: The Basis-Accept prob should be at least 9.902845323490478e-24
+_____________________________________________________________________________________
+Finished n=10, 2/n=0.2, α=0.3333333333333333
+Supp(p) = [1, 2, 8, 64, 128, 512]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (10, 0.3333333333333333, 7)
+_____________________________________________________________________________________
+Start: n=10, 2/n=0.2, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       10
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              176.0
+Optimization dual bound:                857.0
+Number of ambiguous rows:               0
+Number of selected rows:                111.0
+Fraction of selected rows:              0.10850439882697949
+Fraction of selected rows (rounded):    0.10850439882697947
+Number of accepting rows:               111
+Rank of set of accepting rows:          10
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.083293
+α > 2/n: The Basis-Accept prob should be at least 9.902845323490478e-24
+_____________________________________________________________________________________
+Finished n=10, 2/n=0.2, α=0.3333333333333333
+Supp(p) = [8, 16, 33, 68, 384, 514]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (10, 0.3333333333333333, 8)
+_____________________________________________________________________________________
+Start: n=10, 2/n=0.2, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       10
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              186.0000000001407
+Optimization dual bound:                856.0
+Number of ambiguous rows:               0
+Number of selected rows:                111.0
+Fraction of selected rows:              0.10850439882711414
+Fraction of selected rows (rounded):    0.10850439882697947
+Number of accepting rows:               111
+Rank of set of accepting rows:          10
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.083319
+α > 2/n: The Basis-Accept prob should be at least 9.902845323490478e-24
+_____________________________________________________________________________________
+Finished n=10, 2/n=0.2, α=0.3333333333333333
+Supp(p) = [4, 8, 17, 64, 130, 800]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (10, 0.3333333333333333, 9)
+_____________________________________________________________________________________
+Start: n=10, 2/n=0.2, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       10
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              172.00000000003507
+Optimization dual bound:                855.0
+Number of ambiguous rows:               0
+Number of selected rows:                111.0
+Fraction of selected rows:              0.10850439882700239
+Fraction of selected rows (rounded):    0.10850439882697947
+Number of accepting rows:               111
+Rank of set of accepting rows:          10
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.083
+α > 2/n: The Basis-Accept prob should be at least 9.902845323490478e-24
+_____________________________________________________________________________________
+Finished n=10, 2/n=0.2, α=0.3333333333333333
+Supp(p) = [2, 5, 16, 160, 320, 520]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################################################################################
+#######################################################################################
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+(n, α, _iter) = (10, 0.3333333333333333, 10)
+_____________________________________________________________________________________
+Start: n=10, 2/n=0.2, α=0.3333333333333333
+
+====================================================================================
+termination_status(model) = MathOptInterface.TIME_LIMIT
+
+------------------------------------------------------------------------------------
+n                                       10
+α                                       0.3333333333333333
+Optimization termination status:        TIME_LIMIT
+Optimization primal bound:              177.0000000000091
+Optimization dual bound:                869.0
+Number of ambiguous rows:               0
+Number of selected rows:                111.0
+Fraction of selected rows:              0.10850439882698512
+Fraction of selected rows (rounded):    0.10850439882697947
+Number of accepting rows:               111
+Rank of set of accepting rows:          10
+Probability of Basis-Accept, ESTIMATE:            0.0
+Basis density in accepting rows from accept prob: 0.0
+Basis density in accepting rows:                  0.08355
+α > 2/n: The Basis-Accept prob should be at least 9.902845323490478e-24
+_____________________________________________________________________________________
+Finished n=10, 2/n=0.2, α=0.3333333333333333
+Supp(p) = [4, 10, 32, 129, 320, 528]
+sort(unique(p)) = [0.0, 0.1666717529296875]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
