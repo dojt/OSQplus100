@@ -536,22 +536,33 @@ function reduced_fooler(; n::Int, α::Float64,
                    )
     end
 
+    function fix_this(S)
+        s = ∑(  1<<(j-1) for j ∈ S  )
+        @constraint(model, acceptrow[ s ] == 1)
+    end
+
+
     if fix_Id isa Bool || fix_Id isa ℤ
         for w = 1:fix_Id                                              # yes, this works even if fix_Id is a bool
             for S in Combinatorics.combinations(1:n,w)
-                s = ∑(  1<<(j-1) for j ∈ S  )
-                @constraint(model, acceptrow[ s ] == 1)
+                fix_this(S)
             end
         end
     else
         @assert fix_Id isa RndHypergr_t   "Why are you here?!!"
         @assert fix_Id.w ≥ 1
         @assert 0 < fix_Id.p ≤ 1
-        (;w,p) = fix_Id
-        for S in Combinatorics.combinations(1:n,w)
-            if rand() ≤ p
-                s = ∑(  1<<(j-1) for j ∈ S  )
-                @constraint(model, acceptrow[ s ] == 1)
+        let w=1
+            for S in Combinatorics.combinations(1:n,w)
+                fix_this(S)
+            end
+        end
+        let w = fix_Id.w,
+            p = fix_Id.p
+            for S in Combinatorics.combinations(1:n,w)
+                if rand() ≤ fix_Id.p
+                    fix_this(S)
+                end
             end
         end
     end
