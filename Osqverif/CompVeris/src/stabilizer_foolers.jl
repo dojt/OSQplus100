@@ -605,23 +605,29 @@ function estimate_basis_reduced(p; n, α, repet, eps=1e-10, verbose::Bool=false)
     @assert (N - 1,) == size(p)
     @assert 0 ≤ α
 
-    B = Int64[]
+    if  ∑(p) ≥ 0.99   # Exclude cases where p=0
 
-    count = 0
-    for _r = 1:repet
-        _sample_basis!(B; n)
-        m = maximum(
-                   ∑((count_ones(b & x) % 2) * p[x] for x in 1:N-1)
-                   for b in B
-               )
-        if m ≤ α / 2 +eps
-            count += 1
+        B = Int64[]
+
+        count = 0
+        for _r = 1:repet
+            _sample_basis!(B; n)
+            m = maximum(
+                       ∑((count_ones(b & x) % 2) * p[x] for x in 1:N-1)
+                       for b in B
+                   )
+            if m ≤ α / 2 +eps
+                count += 1
+            end
+            if verbose && m > α/2 && m ≈ α/2
+                @show α/2-m
+            end
         end
-        if verbose && m > α/2 && m ≈ α/2
-            @show α/2-m
-        end
+        return count / repet
+    else
+        # Broken p
+        return NaN
     end
-    return count / repet
 end
 
 numbas(dim::Int) = begin 𝟐=BigInt(2); prod( (𝟐^dim-𝟐^j) for j=0:dim-1 ) end

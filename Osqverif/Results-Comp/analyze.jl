@@ -217,6 +217,93 @@ function tabular_estimates(csv_filename::String)
     data = CSV.read(csv_filename, DataFrame)
 
     n_values = 4:10  # Specify the desired n values
+    α_values = unique(data[!, Symbol("α")]) |> (L -> sort(L; rev = true))
+
+    # LaTeX table header
+    header = "\\begin{tabular}{|c|" * repeat("c", length(α_values)) * "|}\n" *
+             "\\hline\n" *
+             "\\diagbox{\$n\$}{\$\\alpha\$}& " *
+             join(map(α -> format_fraction(rationalize(α)), α_values), " & ") * "\\\\\n\\hline\n"
+
+    rows = ""
+    for n in n_values
+        row = "$n & "
+        for α in α_values
+            filtered_data = filter(r -> r.n == n && r[Symbol("α")] == α, data)
+
+            if !isempty(filtered_data)
+                estimates = filtered_data[!, Symbol("Probability of Basis-Accept, ESTIMATE")]
+                nonmissing_estimates = collect(skipmissing(estimates))
+
+                if !isempty(nonmissing_estimates)
+                    # Compute m and bounds
+                    m = round(Int, 2 / α)
+                    m_integral::Bool = m ≈ 2 / α
+
+                    lb = ifpp_lowerbound(; n = n, m = m)
+                    lb_str =
+                        if m_integral
+                            lb == 0.0 ? "0" : @sprintf("%.3e", lb)
+                        else
+                            "\\%"
+                        end
+
+                    ub = ifpp_upperbound(; n = n, m = m)
+                    ub_str = ub == 0.0 ? "0" : @sprintf("%.3e", ub)
+
+                    # Format estimates over non-missing values
+                    min_val = minimum(nonmissing_estimates)
+                    min_est_str = min_val == 0.0 ? "0" : @sprintf("%.3e", min_val)
+
+                    mean_val = mean(nonmissing_estimates)
+                    mean_est_str = mean_val == 0.0 ? "0" : @sprintf("%.3e", mean_val)
+
+                    max_val = maximum(nonmissing_estimates)
+                    max_est_str = max_val == 0.0 ? "0" : @sprintf("%.3e", max_val)
+
+                    cell = "\\begin{tabular}[c]{@{}c@{}} " *
+                        @sprintf("%s\\\\%s, %s, %s\\\\%s\\end{tabular}",
+                                 lb_str, min_est_str, mean_est_str, max_est_str, ub_str)
+                else
+                    # All values are missing
+                    cell = "\\begin{tabular}[c]{@{}c@{}} -\\\\-\\\\-\\end{tabular}"
+                end
+            else
+                # No data rows at all
+                cell = "\\begin{tabular}[c]{@{}c@{}} -\\\\-\\\\-\\end{tabular}"
+            end
+
+            row *= cell * " & "
+        end
+        row = chop(row, tail = 2) * "\\\\\n\\hline\n"
+        rows *= row
+    end
+
+    footer = "\\end{tabular}\n"
+
+    latex_table = header * rows * footer
+
+    # Write the LaTeX table to file
+    open("ifpp-estimates.tex", "w") do io
+        write(io, latex_table)
+    end
+
+    return latex_table
+end
+
+function tabular_estimates(csv_filename::String)
+
+    function format_fraction(r::Rational)
+        if denominator(r) == 1
+            return string(numerator(r))  # Whole numbers
+        else
+            return "\$" * string(numerator(r)) * "/" * string(denominator(r)) * "\$"
+        end
+    end
+
+    data = CSV.read(csv_filename, DataFrame)
+
+    n_values = 4:10  # Specify the desired n values
     α_values = unique(data[!, Symbol("α")]) |> ( L -> sort(L;rev=true) )
 
     # LaTeX table header
