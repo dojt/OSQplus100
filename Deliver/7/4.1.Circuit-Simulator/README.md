@@ -36,4 +36,4 @@ Continue with step 3.
 
 ### Step 3: Run your code, using `AerSimulator(device="GPU",method="tensor_network")`
 
-That's basically it.  But the examples files have more ... examples.
+That's basically it.  But the examples files have more examples.
