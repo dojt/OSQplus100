@@ -1,5 +1,41 @@
 # Qiskit background: transpile and friends
 
+## Long story short
+
+We first only need to create a `Backend` class. This will be used in
+transpilation.
+
+The `Provider` class is for dealing with simulators, authentication etc. Each
+actual provider (say IQM, Julich, etc) will write implement a `Provider` class.
+
+As an example of how to create `Backend`, here's example code taken from
+[https://docs.quantum.ibm.com/guides/custom-backend](https://docs.quantum.ibm.com/guides/custom-backend)
+showing a fake backend and a transpilation snippet, see the folder
+`Compiler/examples` and the example below.
+
+Usage:
+
+    % cd Compiler/examples
+    % python3 example-transpile.py
+    Pre-Transpilation:
+    CX gates: 49
+    H gates: 50
+
+    ##############################
+
+    Post-Transpilation:
+    CZ gates: 142
+    ECR gates: 8
+    SX gates: 302
+    RZ gates: 272
+
+The files:
+
+- `fakeosq_backend.py` contains the `FakeOSQBackend` backend class.
+
+- `example-transpile.py` shows (above) how to use that in actual transpilation.
+
+
 ## Qiskit transpiler
 
 What Qiskit calls transpilation is actually compilation. An elementary example
