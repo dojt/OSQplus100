@@ -6,9 +6,9 @@ We first only need to create a `Backend` class. This will be used in
 transpilation.
 
 The `Provider` class is for dealing with simulators, authentication etc. Each
-actual provider (say IQM, Julich, etc) will write implement a `Provider` class.
+actual provider (say IQM, Julich, etc) will implement their `Provider` class.
 
-As an example of how to create `Backend`, here's example code taken from
+As an example of how to create `Backend`, here's code example taken from
 [https://docs.quantum.ibm.com/guides/custom-backend](https://docs.quantum.ibm.com/guides/custom-backend)
 showing a fake backend and a transpilation snippet, see the folder
 `Compiler/examples` and the example below.
