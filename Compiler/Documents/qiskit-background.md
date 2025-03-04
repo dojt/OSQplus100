@@ -59,6 +59,10 @@ More detailed explanations of how Qiskit transpilation works are here:
 
 - [Transpiler stages](https://docs.quantum.ibm.com/guides/transpiler-stages)
 
+- [Transpile with pass managers](https://docs.quantum.ibm.com/guides/transpile-with-pass-managers)
+
+- [Write a custom transpiler pass](https://docs.quantum.ibm.com/guides/custom-transpiler-pass)
+
 - [Transpiler: qiskit.transpiler](https://docs.quantum.ibm.com/api/qiskit/transpiler#layout-stage)
 
 
