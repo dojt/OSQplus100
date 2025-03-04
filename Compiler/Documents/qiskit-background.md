@@ -36,7 +36,7 @@ The files:
 - `example-transpile.py` shows (above) how to use that in actual transpilation.
 
 
-## Qiskit transpiler
+### More details on Qiskit transpiler
 
 What Qiskit calls transpilation is actually compilation. An elementary example
 of how to create, transpile and run a circuit is here
@@ -59,6 +59,10 @@ More detailed explanations of how Qiskit transpilation works are here:
 
 - [Transpiler stages](https://docs.quantum.ibm.com/guides/transpiler-stages)
 
+- [Transpile against custom
+backends](https://docs.quantum.ibm.com/guides/custom-backend). The above
+example code is from this page.
+
 - [Transpile with pass managers](https://docs.quantum.ibm.com/guides/transpile-with-pass-managers)
 
 - [Write a custom transpiler pass](https://docs.quantum.ibm.com/guides/custom-transpiler-pass)
@@ -66,9 +70,9 @@ More detailed explanations of how Qiskit transpilation works are here:
 - [Transpiler: qiskit.transpiler](https://docs.quantum.ibm.com/api/qiskit/transpiler#layout-stage)
 
 
-## We need to implement a (OSQ) backend: IQM example
+## IQM example: how to implement Provider, Backend, Transpile
 
-We can take IQM as an example of how to implement the Python objects needed for
+We can use IQM as an example of how to implement the Python objects needed for
 running one's own backend in the Qiskit framework.
 
 - [Qiskit on IQM](https://github.com/iqm-finland/qiskit-on-iqm)
@@ -100,21 +104,8 @@ transpiler passes,
 
 [https://github.com/iqm-finland/qiskit-on-iqm/tree/main/src/iqm/qiskit_iqm](https://github.com/iqm-finland/qiskit-on-iqm/tree/main/src/iqm/qiskit_iqm)
 
-However, we can start by by implementing the Provider and Backend classes, and
-then see if we can add anything into the transpiler.
 
-
-## Better documentation: IBM on how implement custom Provider, Backend and transpile
-
-IBM has collected all the information on how to write custom transpilers with
-custom backends here:
-
-- [Transpile against custom backends](https://docs.quantum.ibm.com/guides/custom-backend)
-
-It also features explicit code examples.
-
-
-## Chalmers Tergite stack
+## Aside: Chalmers Tergite stack
 
 This is not directly relevant, but let's mention that Chalmers have now open
 sourced their stack to run their quantum devices.
