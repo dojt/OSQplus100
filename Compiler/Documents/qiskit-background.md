@@ -64,6 +64,16 @@ However, we can start by by implementing the Provider and Backend classes, and
 then see if we can add anything into the transpiler.
 
 
+## Better documentation: IBM on how implement custom Provider, Backend and transpile
+
+IBM has collected all the information on how to write custom transpilers with
+custom backends here:
+
+- [Transpile against custom backends](https://docs.quantum.ibm.com/guides/custom-backend)
+
+It also features explicit code examples.
+
+
 ## Chalmers Tergite stack
 
 This is not directly relevant, but let's mention that Chalmers have now open
